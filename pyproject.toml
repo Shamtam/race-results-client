@@ -1,21 +1,22 @@
 [build-system]
-requires = ["setup-tools"]
+requires = ["setuptools"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "axware"
+name = "race-results"
 dynamic = ["version"]
 dependencies = [
-  "beautifulsoup4==4.13.3",
+  "beautifulsoup4==4.14.3",
+  "PySide6==6.10.1",
 ]
-requires-python = ">=3.13"
+requires-python = ">=3.14"
 authors = [
   {name = "Shamit Som", email = "shamitsom@gmail.com"},
 ]
-description = "AxWare Python Tools"
+description = "Race Results Live-Timing Client"
 license = "MIT"
 license-files = ["LICEN[CS]E.*"]
-keywords = ["axware", "autocross", "parser"]
+keywords = ["axware", "autocross", "parser", "race-results"]
 classifiers = [
   "Programming Language :: Python"
 ]

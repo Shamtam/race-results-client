@@ -3,14 +3,15 @@ import argparse
 import re
 import logging
 import json
-import pathlib
 
+from pathlib import Path
 from typing import Tuple, Any
 from bs4 import BeautifulSoup
 
 _logger = logging.getLogger(__name__)
 
 _re_time = re.compile(r"^\s*(?P<raw_time>\d+\.\d+)(\+(?P<penalty>.+?))?\s*$")
+
 
 def parse_time(raw_value: str | None) -> Tuple[float, int, str] | None:
     try:
@@ -36,7 +37,7 @@ def parse_time(raw_value: str | None) -> Tuple[float, int, str] | None:
         return None
 
 
-def parse_axware_live_results(fpath: str) -> list[dict[str, Any]]:
+def parse_axware_live_results(fpath: Path) -> list[dict[str, Any]]:
     """Returns all results in the event"""
 
     with open(fpath, "r", encoding="utf-8") as fp:
@@ -63,8 +64,8 @@ def parse_axware_live_results(fpath: str) -> list[dict[str, Any]]:
     results = []
 
     # only used for multirow mode
-    current_entry = None
-    current_runs = None
+    current_entry = {}
+    current_runs = []
     current_row = 0
 
     for result in result_rows:
@@ -130,10 +131,7 @@ def parse_axware_live_results(fpath: str) -> list[dict[str, Any]]:
             else:
 
                 # in multiday-files, terminate day1 results when encountering 2nd day row
-                if(
-                    "Day" in entry
-                    and entry["Day"] == "D2"
-                ):
+                if "Day" in entry and entry["Day"] == "D2":
                     current_entry["runs"].append(current_runs)
                     current_runs = []
 
@@ -162,12 +160,11 @@ if __name__ == "__main__":
     argp = argparse.ArgumentParser(
         description="Simple parser to convert AxWare live results HTML file into JSON"
     )
-    argp.add_argument("file", nargs="*", type=pathlib.Path)
+    argp.add_argument("file", nargs="*", type=Path)
 
     args = argp.parse_args()
 
     for fpath in args.file:
-        fpath: pathlib.Path
         results = parse_axware_live_results(fpath)
 
         outpath = fpath.with_suffix(".json")
