@@ -3,117 +3,242 @@ import logging
 
 from pathlib import Path
 
-from PySide6.QtWidgets import QApplication, QMainWindow, QDialog
-from PySide6.QtCore import Slot, QSettings
+from PySide6.QtCore import Slot, Signal, Qt
+from PySide6.QtGui import QCloseEvent, QHideEvent
+from PySide6.QtWidgets import (
+    QApplication,
+    QMainWindow,
+    QDialog,
+    QSystemTrayIcon,
+    QMenu,
+    QMessageBox,
+)
 
 # these must be absolute imports for PyInstaller
 from race_results.ui.main_window import Ui_main_window
-from race_results.config import config_dialog
+from race_results.config import ConfigDialog
+from race_results.console import ConsoleDialog
 from race_results.executive import ResultsFileWatcher
+from race_results.settings import SettingsStore
+from race_results.log import StatusBarLogHandler
 
 _logger = logging.getLogger()
-
-_start_text = "Start Service"
-_stop_text = "Stop Service"
+_worker_logger = logging.getLogger("executive")
 
 
 class MainWindow(QMainWindow):
+
+    set_force_update_flag = Signal()
+    set_close_event_flag = Signal()
 
     def __init__(self):
         super().__init__()
         self.ui = Ui_main_window()
         self.ui.setupUi(self)
+        self.setWindowFlag(Qt.WindowType.WindowMaximizeButtonHint, False)
+        self.setWindowFlag(Qt.WindowType.MSWindowsFixedSizeDialogHint, True)
 
-        _settings_location = str((Path.home() / "race-results.ini").resolve())
-        self.settings = QSettings(_settings_location, QSettings.Format.IniFormat)
+        self.settings = SettingsStore()
 
-        OrgSlug = str(self.settings.value("OrgSlug", defaultValue=""))
-        ApiKey = str(self.settings.value("ApiKey", defaultValue=""))
-        ResultsPath = Path(str(self.settings.value("ResultsPath", defaultValue="")))
-        AutoStart = bool(
-            self.settings.value("AutoStart", defaultValue=False, type=bool)
-        )
+        ApiKey = self.settings.ApiKey
+        ResultsPath = str(Path(self.settings.ResultsPath).resolve())
+        AutoStart = self.settings.AutoStart
+        TrayStart = self.settings.TrayStart
 
-        self.config_dlg = config_dialog(
+        self.config_dlg = ConfigDialog(
             self,
-            org_slug=OrgSlug,
             api_key=ApiKey,
-            results_fpath=str(ResultsPath.resolve()),
+            results_fpath=ResultsPath,
             autostart=AutoStart,
+            traystart=TrayStart,
         )
+
+        self.console_dlg = ConsoleDialog(self)
+        _logger.addHandler(self.console_dlg.Handler)
+        _logger.addHandler(StatusBarLogHandler(self.ui.statusbar))
 
         self.watch_worker = ResultsFileWatcher(self, self.settings)
+
+        # setup tray icon
+        self.tray_menu = QMenu(parent=self)
+        self.tray_menu.addActions(
+            [
+                self.ui.actionConnect,
+                self.ui.actionDisconnect,
+            ]
+        )
+        self.tray_menu.addSeparator()
+        self.tray_menu.addActions(
+            [
+                self.ui.actionForceUpdate,
+                self.ui.actionCloseEvent,
+            ]
+        )
+        self.tray_menu.addSeparator()
+        self.tray_menu.addActions(
+            [
+                self.ui.actionConsole,
+                self.ui.actionQuit,
+            ]
+        )
+        self.tray = QSystemTrayIcon(self.windowIcon())
+        self.tray.setContextMenu(self.tray_menu)
+        self.tray.show()
+
+        # setup actions
+        self.ui.actionForceUpdate.triggered.connect(self.force_update)
+        self.ui.actionConfigure.triggered.connect(self.modify_config)
+        self.ui.actionConsole.toggled.connect(self.console_dlg.setVisible)
+
+        # setup signals/slots
         self.watch_worker.started.connect(self.watcher_started)
-        self.watch_worker.finished.connect(self.watcher_stopped)
-        self.watch_worker.status_update.connect(self.ui.statusbar.showMessage)
+        self.watch_worker.connected.connect(self.connected)
+        self.watch_worker.finished.connect(self.disconnected)
+        self.watch_worker.log_message.connect(self.process_worker_log)
+        self.watch_worker.notification.connect(self.notify)
+        self.set_close_event_flag.connect(self.watch_worker.queue_event_close)
+        self.set_force_update_flag.connect(self.watch_worker.queue_force_update)
+        self.config_dlg.finished.connect(self.update_config)
+        self.console_dlg.rejected.connect(self.ui.actionConsole.toggle)
+        self.tray.activated.connect(self.process_tray)
 
         if AutoStart:
-            if self.start_watcher():
-                self.watcher_started()
+            self.connect()
+        else:
+            self.disconnected(notify=False)
+
+        if TrayStart:
+            self.setVisible(False)
+        else:
+            self.showNormal()
+            self.activateWindow()
 
     @Slot()
     def modify_config(self):
         self.config_dlg.open()
-        self.config_dlg.finished.connect(self.update_config)
+
+    @Slot()
+    def close_event(self):
+        self.set_close_event_flag.emit()
+
+    @Slot()
+    def force_update(self):
+        self.set_force_update_flag.emit()
 
     @Slot(int)
     def update_config(self, result):
         if result != QDialog.DialogCode.Accepted:
             return
 
-        org_slug = self.config_dlg.OrgSlug
-        api_key = self.config_dlg.ApiKey
-        results_path = self.config_dlg.ResultsPath
+        self.settings.clear()
 
-        self.settings.setValue("OrgSlug", org_slug)
-        self.settings.setValue("ApiKey", api_key)
-        self.settings.setValue("ResultsPath", results_path)
+        self.settings.setValue("ApiKey", self.config_dlg.ApiKey)
+        self.settings.setValue("ResultsPath", self.config_dlg.ResultsPath)
         self.settings.setValue("AutoStart", self.config_dlg.AutoStart)
+        self.settings.setValue("TrayStart", self.config_dlg.TrayStart)
+
         self.settings.sync()
 
     @Slot()
-    def toggle_service(self):
+    def connect(self):
         if not self.watch_worker.isRunning() and self.watch_worker.CanRun:
             self.start_watcher()
 
-        elif self.watch_worker.isRunning():
+    @Slot()
+    def disconnect(self):
+        if self.watch_worker.isRunning():
             self.watch_worker.requestInterruption()
 
-        self.ui.button_service.setEnabled(False)
+            for elem in (
+                self.ui.actionDisconnect,
+                self.ui.actionForceUpdate,
+                self.ui.actionCloseEvent,
+            ):
+                elem.setEnabled(False)
+
+    @Slot(str, str)
+    def connected(self, org: str, event: str):
+        self.ui.text_org.setText(org)
+        self.ui.text_event.setText(event)
+        self.ui.actionConnect.setVisible(False)
+        self.ui.actionDisconnect.setVisible(True)
+
+        for elem in (
+            self.ui.actionDisconnect,
+            self.ui.actionForceUpdate,
+            self.ui.actionCloseEvent,
+        ):
+            elem.setEnabled(True)
+
+        _logger.info("Service successfully started")
+        self.ui.text_status.setText("Connected to server, watching live results file")
+        self.notify("Connected to server")
 
     @Slot()
-    def force_update(self):
-        if self.watch_worker.isRunning():
-            self.watch_worker.force_update = True
+    def disconnected(self, notify=True):
+        _logger.info("Service stopped")
 
-    def start_watcher(self) -> bool:
+        self.watch_worker.wait()
+        self.ui.actionConfigure.setEnabled(True)
+        self.ui.actionForceUpdate.setEnabled(False)
+        self.ui.actionConnect.setVisible(True)
+        self.ui.actionConnect.setEnabled(True)
+        self.ui.actionDisconnect.setVisible(False)
+
+        self.ui.text_org.setText("")
+        self.ui.text_event.setText("")
+        self.ui.text_status.setText("Service not running.")
+
+        if notify:
+            self.notify("Disconnected from server")
+
+    @Slot(int, str)
+    def process_worker_log(self, loglvl: int, msg: str):
+        _worker_logger.log(loglvl, msg)
+
+    @Slot(QSystemTrayIcon.ActivationReason)
+    def process_tray(self, reason: QSystemTrayIcon.ActivationReason):
+        if reason == QSystemTrayIcon.ActivationReason.DoubleClick:
+            self.showNormal()
+
+    @Slot(str)
+    def notify(self, msg: str):
+        self.tray.showMessage(self.windowTitle(), msg)
+
+    def hideEvent(self, event: QHideEvent) -> None:
+        self.setVisible(False)
+        event.ignore()
+
+    def closeEvent(self, event: QCloseEvent) -> None:
+        result = QMessageBox.question(
+            self,
+            "Confirm exit",
+            "Are you sure you want to exit?",
+        )
+
+        if result == QMessageBox.StandardButton.Yes:
+            self.disconnect()
+            self.watch_worker.wait()
+            QApplication.quit()
+        else:
+            event.ignore()
+
+    def start_watcher(self):
         if self.watch_worker.isRunning():
             _logger.error("Worker thread is already running")
-            return False
 
         if not self.watch_worker.CanRun:
-            _logger.error("Unable to start watch service due to invalid configuration")
-            return False
+            _logger.error("Missing API Key or Invalid Results File")
 
         self.watch_worker.start()
-        return True
-
-    def watcher_stopped(self):
-        self.ui.button_config.setEnabled(True)
-        self.ui.button_forceupdate.setEnabled(False)
-        self.ui.button_service.setEnabled(True)
-        self.ui.button_service.setText(_start_text)
-        self.ui.statusbar.showMessage("Worker thread stopped")
 
     def watcher_started(self):
-        self.ui.button_config.setEnabled(False)
-        self.ui.button_forceupdate.setEnabled(True)
-        self.ui.button_service.setEnabled(True)
-        self.ui.button_service.setText(_stop_text)
-        self.ui.statusbar.showMessage("Worker thread running...")
+        _logger.debug("Worker thread launched...")
+        self.ui.text_status.setText("Authenticating with server...")
+        self.ui.actionConnect.setEnabled(False)
+        self.ui.actionConfigure.setEnabled(False)
 
 
 app = QApplication(sys.argv)
 window = MainWindow()
-window.show()
 sys.exit(app.exec())

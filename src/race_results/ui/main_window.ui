@@ -6,145 +6,338 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>350</width>
-    <height>189</height>
+    <width>450</width>
+    <height>160</height>
    </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="contextMenuPolicy">
+   <enum>Qt::ContextMenuPolicy::NoContextMenu</enum>
   </property>
   <property name="windowTitle">
    <string>Race Results</string>
   </property>
+  <property name="windowIcon">
+   <iconset resource="resource.qrc">
+    <normaloff>:/icons/emoji_u1f3c1.svg</normaloff>:/icons/emoji_u1f3c1.svg</iconset>
+  </property>
   <property name="toolButtonStyle">
-   <enum>Qt::ToolButtonStyle::ToolButtonIconOnly</enum>
+   <enum>Qt::ToolButtonStyle::ToolButtonTextUnderIcon</enum>
+  </property>
+  <property name="documentMode">
+   <bool>false</bool>
   </property>
   <property name="unifiedTitleAndToolBarOnMac">
    <bool>true</bool>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <layout class="QGridLayout" name="gridLayout" columnstretch="0,1">
-    <item row="2" column="0">
-     <widget class="QLabel" name="label_lastupdate">
-      <property name="text">
-       <string>Last Update:</string>
-      </property>
-     </widget>
-    </item>
-    <item row="5" column="0" colspan="2">
-     <widget class="QPushButton" name="button_forceupdate">
-      <property name="enabled">
-       <bool>false</bool>
-      </property>
-      <property name="text">
-       <string>Force Update</string>
-      </property>
-     </widget>
-    </item>
-    <item row="1" column="0">
-     <widget class="QLabel" name="label_event">
-      <property name="text">
-       <string>Event:</string>
-      </property>
-     </widget>
-    </item>
+   <layout class="QFormLayout" name="formLayout">
     <item row="0" column="0">
      <widget class="QLabel" name="label_org">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
       <property name="text">
        <string>Organization:</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignmentFlag::AlignRight|Qt::AlignmentFlag::AlignTrailing|Qt::AlignmentFlag::AlignVCenter</set>
       </property>
      </widget>
     </item>
     <item row="0" column="1">
      <widget class="QLabel" name="text_org">
       <property name="text">
-       <string>orgName</string>
+       <string/>
       </property>
      </widget>
     </item>
-    <item row="4" column="0" colspan="2">
-     <widget class="QPushButton" name="button_service">
+    <item row="1" column="0">
+     <widget class="QLabel" name="label_event">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
       <property name="text">
-       <string>Start Service</string>
+       <string>Event:</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignmentFlag::AlignRight|Qt::AlignmentFlag::AlignTrailing|Qt::AlignmentFlag::AlignVCenter</set>
       </property>
      </widget>
     </item>
     <item row="1" column="1">
      <widget class="QLabel" name="text_event">
       <property name="text">
-       <string>event#</string>
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <widget class="QLabel" name="label_status">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="text">
+       <string>Status:</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignmentFlag::AlignRight|Qt::AlignmentFlag::AlignTrailing|Qt::AlignmentFlag::AlignVCenter</set>
       </property>
      </widget>
     </item>
     <item row="2" column="1">
-     <widget class="QLabel" name="text_lastupdate">
+     <widget class="QLabel" name="text_status">
       <property name="text">
-       <string>timestamp</string>
-      </property>
-     </widget>
-    </item>
-    <item row="6" column="0" colspan="2">
-     <widget class="QPushButton" name="button_config">
-      <property name="text">
-       <string>Configuration</string>
+       <string/>
       </property>
      </widget>
     </item>
    </layout>
   </widget>
-  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QStatusBar" name="statusbar">
+   <property name="sizeGripEnabled">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <property name="movable">
+    <bool>false</bool>
+   </property>
+   <property name="floatable">
+    <bool>false</bool>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionConnect"/>
+   <addaction name="actionDisconnect"/>
+   <addaction name="actionForceUpdate"/>
+   <addaction name="actionCloseEvent"/>
+   <addaction name="actionConfigure"/>
+   <addaction name="actionConsole"/>
+  </widget>
+  <action name="actionForceUpdate">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset theme="QIcon::ThemeIcon::SyncSynchronizing"/>
+   </property>
+   <property name="text">
+    <string>Force Update</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionCloseEvent">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset theme="QIcon::ThemeIcon::DocumentSave"/>
+   </property>
+   <property name="text">
+    <string>Close Event</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionConfigure">
+   <property name="icon">
+    <iconset theme="QIcon::ThemeIcon::DocumentProperties"/>
+   </property>
+   <property name="text">
+    <string>Configure</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::PreferencesRole</enum>
+   </property>
+  </action>
+  <action name="actionConnect">
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset theme="QIcon::ThemeIcon::SystemShutdown"/>
+   </property>
+   <property name="text">
+    <string>Connect</string>
+   </property>
+   <property name="statusTip">
+    <string>Connect to Server</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionConsole">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset theme="QIcon::ThemeIcon::DialogInformation"/>
+   </property>
+   <property name="text">
+    <string>Console</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionDisconnect">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset theme="QIcon::ThemeIcon::NetworkOffline"/>
+   </property>
+   <property name="text">
+    <string>Disconnect</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
+   </property>
+  </action>
+  <action name="actionQuit">
+   <property name="icon">
+    <iconset theme="QIcon::ThemeIcon::ApplicationExit"/>
+   </property>
+   <property name="text">
+    <string>Quit</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::QuitRole</enum>
+   </property>
+  </action>
  </widget>
- <resources/>
+ <resources>
+  <include location="resource.qrc"/>
+ </resources>
  <connections>
   <connection>
-   <sender>button_config</sender>
-   <signal>clicked()</signal>
+   <sender>actionCloseEvent</sender>
+   <signal>triggered()</signal>
+   <receiver>main_window</receiver>
+   <slot>close_event()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>199</x>
+     <y>109</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionConfigure</sender>
+   <signal>triggered()</signal>
    <receiver>main_window</receiver>
    <slot>modify_config()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>174</x>
-     <y>146</y>
+     <x>-1</x>
+     <y>-1</y>
     </hint>
     <hint type="destinationlabel">
-     <x>174</x>
-     <y>94</y>
+     <x>199</x>
+     <y>109</y>
     </hint>
    </hints>
   </connection>
   <connection>
-   <sender>button_forceupdate</sender>
-   <signal>clicked()</signal>
+   <sender>actionForceUpdate</sender>
+   <signal>triggered()</signal>
    <receiver>main_window</receiver>
    <slot>force_update()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>174</x>
-     <y>116</y>
+     <x>-1</x>
+     <y>-1</y>
     </hint>
     <hint type="destinationlabel">
-     <x>174</x>
-     <y>94</y>
+     <x>199</x>
+     <y>109</y>
     </hint>
    </hints>
   </connection>
   <connection>
-   <sender>button_service</sender>
-   <signal>clicked()</signal>
+   <sender>actionConnect</sender>
+   <signal>triggered()</signal>
    <receiver>main_window</receiver>
-   <slot>toggle_service()</slot>
+   <slot>connect()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>174</x>
-     <y>86</y>
+     <x>-1</x>
+     <y>-1</y>
     </hint>
     <hint type="destinationlabel">
-     <x>174</x>
-     <y>94</y>
+     <x>199</x>
+     <y>109</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionDisconnect</sender>
+   <signal>triggered()</signal>
+   <receiver>main_window</receiver>
+   <slot>disconnect()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>224</x>
+     <y>76</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionQuit</sender>
+   <signal>triggered()</signal>
+   <receiver>main_window</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>224</x>
+     <y>76</y>
     </hint>
    </hints>
   </connection>
  </connections>
  <slots>
   <slot>modify_config()</slot>
-  <slot>toggle_service()</slot>
+  <slot>connect()</slot>
   <slot>force_update()</slot>
+  <slot>close_event()</slot>
+  <slot>disconnect()</slot>
  </slots>
 </ui>
