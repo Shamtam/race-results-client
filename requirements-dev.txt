@@ -10,6 +10,7 @@ mypy_extensions==1.1.0
 packaging==25.0
 pathspec==1.0.3
 pefile==2024.8.26
+pillow==12.1.0
 platformdirs==4.5.1
 pyinstaller==6.18.0
 pyinstaller-hooks-contrib==2026.0
