@@ -100,7 +100,7 @@ class ResultsFileWatcher(QThread):
 
             # validate response
             data = json.loads(r.content)
-            if "org" in data and all(
+            if all(x in data for x in ("org", "event")) and all(
                 x in data["org"] for x in ("id", "name", "slug", "apis")
             ):
                 self.state = data
@@ -160,11 +160,16 @@ class ResultsFileWatcher(QThread):
         if not self.authenticate():
             return
 
+        # ensure event has been created on server end
+        if self.state["event"] is None:
+            self.log_message.emit(
+                ERROR, "No current event configured on Race Results server!"
+            )
+            return
+
         # update UI
         try:
-            self.connected.emit(
-                self.state["org"]["name"], "TODO: get event from server"
-            )
+            self.connected.emit(self.state["org"]["name"], self.state["event"]["name"])
         except KeyError:
             self.log_message.emit(ERROR, "Invalid state, unable to start watcher")
             self.log_message.emit(ERROR, f"State: {str(self.state)}")
