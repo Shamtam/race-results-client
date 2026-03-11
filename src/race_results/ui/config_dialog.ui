@@ -15,7 +15,7 @@
   </property>
   <property name="windowIcon">
    <iconset resource="resource.qrc">
-    <normaloff>:/icons/emoji_u1f3c1.svg</normaloff>:/icons/emoji_u1f3c1.svg</iconset>
+    <normaloff>:/icons/RR_logo.svg</normaloff>:/icons/RR_logo.svg</iconset>
   </property>
   <property name="modal">
    <bool>true</bool>

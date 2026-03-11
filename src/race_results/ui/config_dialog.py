@@ -26,7 +26,7 @@ class Ui_config_dialog(object):
             config_dialog.setObjectName(u"config_dialog")
         config_dialog.resize(400, 160)
         icon = QIcon()
-        icon.addFile(u":/icons/emoji_u1f3c1.svg", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
+        icon.addFile(u":/icons/RR_logo.svg", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
         config_dialog.setWindowIcon(icon)
         config_dialog.setModal(True)
         self.formLayout = QFormLayout(config_dialog)

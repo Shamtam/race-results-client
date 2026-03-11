@@ -32,7 +32,7 @@ exe = EXE(
     target_arch=None,
     codesign_identity=None,
     entitlements_file=None,
-    icon='src\\race_results\\ui\\emoji_u1f3c1.ico',
+    icon='src\\race_results\\ui\\RR_logo.ico',
 
 )
 coll = COLLECT(
