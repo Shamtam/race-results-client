@@ -196,6 +196,10 @@ class MainWindow(QMainWindow):
     def process_worker_log(self, loglvl: int, msg: str):
         _worker_logger.log(loglvl, msg)
 
+        # pop up notification for warnings/errors
+        if loglvl >= logging.WARNING:
+            self.notify(msg)
+
     @Slot(QSystemTrayIcon.ActivationReason)
     def process_tray(self, reason: QSystemTrayIcon.ActivationReason):
         if reason == QSystemTrayIcon.ActivationReason.DoubleClick:
