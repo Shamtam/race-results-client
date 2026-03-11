@@ -41,6 +41,8 @@ class ResultsFileWatcher(QThread):
         }
 
         _axware_to_submit_map = {
+            "Unique ID": "msrId",
+            "Email #1": "email",
             "Class": "class",
             "#": "carNumber",
             "Driver": "driverName",
