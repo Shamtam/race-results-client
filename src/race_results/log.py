@@ -50,5 +50,5 @@ class StatusBarLogHandler(logging.Handler):
             else "*** ERROR: See console for details ***"
         )
         self.statusbar.showMessage(
-            msg, timeout=(30000 if record.levelno < logging.WARNING else None)
+            msg, timeout=(30000 if record.levelno < logging.WARNING else 0)
         )
