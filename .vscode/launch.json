@@ -19,7 +19,6 @@
             "console": "integratedTerminal",
             "args": [
                 "tests/mock_data/results-live_bmw.htm",
-                "tests/mock_data/results-live_multiday.htm",
                 "tests/mock_data/results-live_multiday_multirow.htm",
                 "tests/mock_data/results_live_multirow.htm",
                 "tests/mock_data/results_live_nesvt.htm",

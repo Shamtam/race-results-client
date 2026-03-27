@@ -73,6 +73,7 @@ def parse_axware_live_results(fpath: Path) -> list[dict[str, Any]]:
         entry = {}
         row_runs = []
 
+        # extract all information from this row
         for header, raw_value in zip(headers, row_data):
 
             text = raw_value.text.strip()
@@ -110,47 +111,47 @@ def parse_axware_live_results(fpath: Path) -> list[dict[str, Any]]:
             else:
                 entry[header] = value
 
-        # for multi-day events, multirow mode is guaranteed
+        # multi-row and/or multi-day, (multirow mode is guaranteed for multi-day)
         if multirow:
             # new entry, create new dictionary
             if row_data[0].text:
 
                 # add previous entry to output results
                 if current_entry:
-                    current_entry["runs"].append(current_runs)
                     results.append(current_entry)
 
                 current_entry = {}
                 current_entry.update(entry)
                 current_entry["Diff."] = None
-                current_entry["runs"] = []
+                current_entry["runs"] = {entry.get("Day", "Segment 1"): row_runs}
                 current_runs = row_runs
                 current_row = 0
 
             # next row for current entry, append runs to existing entry
             else:
 
-                # in multiday-files, terminate day1 results when encountering 2nd day row
-                if "Day" in entry and entry["Day"] == "D2":
-                    current_entry["runs"].append(current_runs)
+                # in multiday-files, terminate previous day results when encountering next day row
+                if "Day" in entry and entry["Day"] and entry["Day"] not in current_entry["runs"]:
                     current_runs = []
+                    current_entry["runs"][entry["Day"]] = current_runs
 
                 # diff is stored in "Total" column in second row when in multirow
                 if current_entry["Diff."] is None and current_row == 1:
                     current_entry["Diff."] = entry["Total"]
 
-                for run in row_runs:
-                    current_runs.append(run)
+                current_runs.extend(row_runs)
 
             current_row += 1
 
+        # single row mode
         else:
-            entry["runs"] = [row_runs]
+            entry["runs"] = {"D1": row_runs}  # use default 'D1' for segment name
             results.append(entry)
 
     # append final entry to results in multirow mode
     if multirow:
-        current_entry["runs"].append(current_runs)
+        last_segment = next(reversed(current_entry["runs"].keys()))
+        current_entry["runs"][last_segment] = current_runs
         results.append(current_entry)
 
     return results
