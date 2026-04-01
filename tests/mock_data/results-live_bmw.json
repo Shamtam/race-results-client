@@ -1,14 +1,13 @@
 [
     {
-        "Pos.": "1T",
-        "Class": "a",
-        "#": "722",
-        "Driver": "Alexander Callow",
-        "Car Model": "2009 BMW M3",
-        "Car Color": "Blue",
-        "Total": "125.029 / 125.029",
-        "Day": "D1",
-        "Diff.": "-",
+        "msrId": "",
+        "email": "",
+        "class": "a",
+        "carNumber": "722",
+        "driverName": "Alexander Callow",
+        "carModel": "2009 BMW M3",
+        "carColor": "Blue",
+        "sponsor": "",
         "runs": {
             "D1": [
                 [
@@ -64,18 +63,21 @@
                     "dirty"
                 ]
             ]
-        }
+        },
+        "Pos.": "1T",
+        "Total": "125.029 / 125.029",
+        "Day": "D1",
+        "Diff.": "-"
     },
     {
-        "Pos.": "1T",
-        "Class": "b",
-        "#": "200",
-        "Driver": "Ryan Casillo",
-        "Car Model": "2024 BMW M2",
-        "Car Color": "Black",
-        "Total": "119.793 / 119.793",
-        "Day": "D1",
-        "Diff.": "[-]0.650",
+        "msrId": "",
+        "email": "",
+        "class": "b",
+        "carNumber": "200",
+        "driverName": "Ryan Casillo",
+        "carModel": "2024 BMW M2",
+        "carColor": "Black",
+        "sponsor": "",
         "runs": {
             "D1": [
                 [
@@ -131,18 +133,21 @@
                     "clean"
                 ]
             ]
-        }
+        },
+        "Pos.": "1T",
+        "Total": "119.793 / 119.793",
+        "Day": "D1",
+        "Diff.": "[-]0.650"
     },
     {
-        "Pos.": "2T",
-        "Class": "b",
-        "#": "207",
-        "Driver": "Ralph Zajac",
-        "Car Model": "2013 BMW M3",
-        "Car Color": "Gray",
-        "Total": "120.443 / 120.443",
-        "Day": "D1",
-        "Diff.": "+0.650",
+        "msrId": "",
+        "email": "",
+        "class": "b",
+        "carNumber": "207",
+        "driverName": "Ralph Zajac",
+        "carModel": "2013 BMW M3",
+        "carColor": "Gray",
+        "sponsor": "",
         "runs": {
             "D1": [
                 [
@@ -198,18 +203,21 @@
                     "clean"
                 ]
             ]
-        }
+        },
+        "Pos.": "2T",
+        "Total": "120.443 / 120.443",
+        "Day": "D1",
+        "Diff.": "+0.650"
     },
     {
-        "Pos.": "3T",
-        "Class": "b",
-        "#": "919",
-        "Driver": "Savelei Nemchuk",
-        "Car Model": "2008 BMW 335i",
-        "Car Color": "",
-        "Total": "120.601 / 120.601",
-        "Day": "D1",
-        "Diff.": "+0.158",
+        "msrId": "",
+        "email": "",
+        "class": "b",
+        "carNumber": "919",
+        "driverName": "Savelei Nemchuk",
+        "carModel": "2008 BMW 335i",
+        "carColor": "",
+        "sponsor": "",
         "runs": {
             "D1": [
                 [
@@ -265,18 +273,21 @@
                     "dirty"
                 ]
             ]
-        }
+        },
+        "Pos.": "3T",
+        "Total": "120.601 / 120.601",
+        "Day": "D1",
+        "Diff.": "+0.158"
     },
     {
-        "Pos.": "4",
-        "Class": "b",
-        "#": "95",
-        "Driver": "Jeff Noyes",
-        "Car Model": "1998 BMW M3 Sedan",
-        "Car Color": "Silver",
-        "Total": "121.423 / 121.423",
-        "Day": "D1",
-        "Diff.": "+0.822",
+        "msrId": "",
+        "email": "",
+        "class": "b",
+        "carNumber": "95",
+        "driverName": "Jeff Noyes",
+        "carModel": "1998 BMW M3 Sedan",
+        "carColor": "Silver",
+        "sponsor": "",
         "runs": {
             "D1": [
                 [
@@ -332,18 +343,21 @@
                     "clean"
                 ]
             ]
-        }
+        },
+        "Pos.": "4",
+        "Total": "121.423 / 121.423",
+        "Day": "D1",
+        "Diff.": "+0.822"
     },
     {
-        "Pos.": "5",
-        "Class": "b",
-        "#": "32",
-        "Driver": "Robert Rolsma",
-        "Car Model": "2009 Mini R56 Cooper S",
-        "Car Color": "Red",
-        "Total": "123.936 / 123.936",
-        "Day": "D1",
-        "Diff.": "+2.513",
+        "msrId": "",
+        "email": "",
+        "class": "b",
+        "carNumber": "32",
+        "driverName": "Robert Rolsma",
+        "carModel": "2009 Mini R56 Cooper S",
+        "carColor": "Red",
+        "sponsor": "",
         "runs": {
             "D1": [
                 [
@@ -399,18 +413,21 @@
                     "dirty"
                 ]
             ]
-        }
+        },
+        "Pos.": "5",
+        "Total": "123.936 / 123.936",
+        "Day": "D1",
+        "Diff.": "+2.513"
     },
     {
-        "Pos.": "6",
-        "Class": "b",
-        "#": "312",
-        "Driver": "Simon Rolsma",
-        "Car Model": "2009 Mini R56 Cooper S",
-        "Car Color": "Red",
-        "Total": "124.293 / 124.293",
-        "Day": "D1",
-        "Diff.": "+0.357",
+        "msrId": "",
+        "email": "",
+        "class": "b",
+        "carNumber": "312",
+        "driverName": "Simon Rolsma",
+        "carModel": "2009 Mini R56 Cooper S",
+        "carColor": "Red",
+        "sponsor": "",
         "runs": {
             "D1": [
                 [
@@ -466,18 +483,21 @@
                     "dirty"
                 ]
             ]
-        }
+        },
+        "Pos.": "6",
+        "Total": "124.293 / 124.293",
+        "Day": "D1",
+        "Diff.": "+0.357"
     },
     {
-        "Pos.": "7",
-        "Class": "b",
-        "#": "45",
-        "Driver": "Nick DePasquale",
-        "Car Model": "2016 BMW M4",
-        "Car Color": "Mineral Grey",
-        "Total": "141.918 / 141.918",
-        "Day": "D1",
-        "Diff.": "+17.625",
+        "msrId": "",
+        "email": "",
+        "class": "b",
+        "carNumber": "45",
+        "driverName": "Nick DePasquale",
+        "carModel": "2016 BMW M4",
+        "carColor": "Mineral Grey",
+        "sponsor": "",
         "runs": {
             "D1": [
                 [
@@ -533,18 +553,21 @@
                     "clean"
                 ]
             ]
-        }
+        },
+        "Pos.": "7",
+        "Total": "141.918 / 141.918",
+        "Day": "D1",
+        "Diff.": "+17.625"
     },
     {
-        "Pos.": "8",
-        "Class": "b",
-        "#": "450",
-        "Driver": "Shawn Smith",
-        "Car Model": "2016 BMW M4",
-        "Car Color": "Minimal Grey",
-        "Total": "144.826 / 144.826",
-        "Day": "D1",
-        "Diff.": "+2.908",
+        "msrId": "",
+        "email": "",
+        "class": "b",
+        "carNumber": "450",
+        "driverName": "Shawn Smith",
+        "carModel": "2016 BMW M4",
+        "carColor": "Minimal Grey",
+        "sponsor": "",
         "runs": {
             "D1": [
                 [
@@ -600,18 +623,21 @@
                     "dirty"
                 ]
             ]
-        }
+        },
+        "Pos.": "8",
+        "Total": "144.826 / 144.826",
+        "Day": "D1",
+        "Diff.": "+2.908"
     },
     {
-        "Pos.": "1T",
-        "Class": "c",
-        "#": "194",
-        "Driver": "Brandon Dryer",
-        "Car Model": "2012 Mini Cooper S",
-        "Car Color": "Midnight Black",
-        "Total": "116.279 / 116.279",
-        "Day": "D1",
-        "Diff.": "[-]4.838",
+        "msrId": "",
+        "email": "",
+        "class": "c",
+        "carNumber": "194",
+        "driverName": "Brandon Dryer",
+        "carModel": "2012 Mini Cooper S",
+        "carColor": "Midnight Black",
+        "sponsor": "",
         "runs": {
             "D1": [
                 [
@@ -667,18 +693,21 @@
                     "clean"
                 ]
             ]
-        }
+        },
+        "Pos.": "1T",
+        "Total": "116.279 / 116.279",
+        "Day": "D1",
+        "Diff.": "[-]4.838"
     },
     {
-        "Pos.": "2T",
-        "Class": "c",
-        "#": "724",
-        "Driver": "Angelo Andres",
-        "Car Model": "2012 BMW 128i",
-        "Car Color": "Black",
-        "Total": "121.117 / 121.117",
-        "Day": "D1",
-        "Diff.": "+4.838",
+        "msrId": "",
+        "email": "",
+        "class": "c",
+        "carNumber": "724",
+        "driverName": "Angelo Andres",
+        "carModel": "2012 BMW 128i",
+        "carColor": "Black",
+        "sponsor": "",
         "runs": {
             "D1": [
                 [
@@ -734,18 +763,21 @@
                     "clean"
                 ]
             ]
-        }
+        },
+        "Pos.": "2T",
+        "Total": "121.117 / 121.117",
+        "Day": "D1",
+        "Diff.": "+4.838"
     },
     {
-        "Pos.": "3",
-        "Class": "c",
-        "#": "94",
-        "Driver": "Melanie Kwong",
-        "Car Model": "2012 Mini Cooper S",
-        "Car Color": "Midnight Black",
-        "Total": "122.190 / 122.190",
-        "Day": "D1",
-        "Diff.": "+1.073",
+        "msrId": "",
+        "email": "",
+        "class": "c",
+        "carNumber": "94",
+        "driverName": "Melanie Kwong",
+        "carModel": "2012 Mini Cooper S",
+        "carColor": "Midnight Black",
+        "sponsor": "",
         "runs": {
             "D1": [
                 [
@@ -801,18 +833,21 @@
                     "clean"
                 ]
             ]
-        }
+        },
+        "Pos.": "3",
+        "Total": "122.190 / 122.190",
+        "Day": "D1",
+        "Diff.": "+1.073"
     },
     {
-        "Pos.": "4",
-        "Class": "c",
-        "#": "287",
-        "Driver": "Kris Schreiner",
-        "Car Model": "2007 BMW z4",
-        "Car Color": "Blue",
-        "Total": "124.542 / 124.542",
-        "Day": "D1",
-        "Diff.": "+2.352",
+        "msrId": "",
+        "email": "",
+        "class": "c",
+        "carNumber": "287",
+        "driverName": "Kris Schreiner",
+        "carModel": "2007 BMW z4",
+        "carColor": "Blue",
+        "sponsor": "",
         "runs": {
             "D1": [
                 [
@@ -868,18 +903,21 @@
                     "clean"
                 ]
             ]
-        }
+        },
+        "Pos.": "4",
+        "Total": "124.542 / 124.542",
+        "Day": "D1",
+        "Diff.": "+2.352"
     },
     {
-        "Pos.": "1T",
-        "Class": "d",
-        "#": "429",
-        "Driver": "Robert Dandaraw",
-        "Car Model": "1998 BMW M3",
-        "Car Color": "Blue",
-        "Total": "121.357 / 121.357",
-        "Day": "D1",
-        "Diff.": "[-]0.337",
+        "msrId": "",
+        "email": "",
+        "class": "d",
+        "carNumber": "429",
+        "driverName": "Robert Dandaraw",
+        "carModel": "1998 BMW M3",
+        "carColor": "Blue",
+        "sponsor": "",
         "runs": {
             "D1": [
                 [
@@ -935,18 +973,21 @@
                     "clean"
                 ]
             ]
-        }
+        },
+        "Pos.": "1T",
+        "Total": "121.357 / 121.357",
+        "Day": "D1",
+        "Diff.": "[-]0.337"
     },
     {
-        "Pos.": "2T",
-        "Class": "d",
-        "#": "137",
-        "Driver": "Matthew Lore",
-        "Car Model": "2022 BMW m240i xdrive",
-        "Car Color": "red",
-        "Total": "121.694 / 121.694",
-        "Day": "D1",
-        "Diff.": "+0.337",
+        "msrId": "",
+        "email": "",
+        "class": "d",
+        "carNumber": "137",
+        "driverName": "Matthew Lore",
+        "carModel": "2022 BMW m240i xdrive",
+        "carColor": "red",
+        "sponsor": "",
         "runs": {
             "D1": [
                 [
@@ -1002,18 +1043,21 @@
                     "clean"
                 ]
             ]
-        }
+        },
+        "Pos.": "2T",
+        "Total": "121.694 / 121.694",
+        "Day": "D1",
+        "Diff.": "+0.337"
     },
     {
-        "Pos.": "3",
-        "Class": "d",
-        "#": "317",
-        "Driver": "Doug Ingram",
-        "Car Model": "2015 BMW M235i",
-        "Car Color": "Silver",
-        "Total": "127.915 / 127.915",
-        "Day": "D1",
-        "Diff.": "+6.221",
+        "msrId": "",
+        "email": "",
+        "class": "d",
+        "carNumber": "317",
+        "driverName": "Doug Ingram",
+        "carModel": "2015 BMW M235i",
+        "carColor": "Silver",
+        "sponsor": "",
         "runs": {
             "D1": [
                 [
@@ -1069,18 +1113,21 @@
                     "clean"
                 ]
             ]
-        }
+        },
+        "Pos.": "3",
+        "Total": "127.915 / 127.915",
+        "Day": "D1",
+        "Diff.": "+6.221"
     },
     {
-        "Pos.": "4",
-        "Class": "d",
-        "#": "852",
-        "Driver": "Panos Argyrakis",
-        "Car Model": "2017 Volkswagen Golf GTI",
-        "Car Color": "Black",
-        "Total": "136.010 / 136.010",
-        "Day": "D1",
-        "Diff.": "+8.095",
+        "msrId": "",
+        "email": "",
+        "class": "d",
+        "carNumber": "852",
+        "driverName": "Panos Argyrakis",
+        "carModel": "2017 Volkswagen Golf GTI",
+        "carColor": "Black",
+        "sponsor": "",
         "runs": {
             "D1": [
                 [
@@ -1136,18 +1183,21 @@
                     "clean"
                 ]
             ]
-        }
+        },
+        "Pos.": "4",
+        "Total": "136.010 / 136.010",
+        "Day": "D1",
+        "Diff.": "+8.095"
     },
     {
-        "Pos.": "5",
-        "Class": "d",
-        "#": "678",
-        "Driver": "Timothy Callow",
-        "Car Model": "2019 BMW M850iX",
-        "Car Color": "Dravit Grey",
-        "Total": "143.479 / 143.479",
-        "Day": "D1",
-        "Diff.": "+7.469",
+        "msrId": "",
+        "email": "",
+        "class": "d",
+        "carNumber": "678",
+        "driverName": "Timothy Callow",
+        "carModel": "2019 BMW M850iX",
+        "carColor": "Dravit Grey",
+        "sponsor": "",
         "runs": {
             "D1": [
                 [
@@ -1203,18 +1253,21 @@
                     "dirty"
                 ]
             ]
-        }
+        },
+        "Pos.": "5",
+        "Total": "143.479 / 143.479",
+        "Day": "D1",
+        "Diff.": "+7.469"
     },
     {
-        "Pos.": "1T",
-        "Class": "e",
-        "#": "123",
-        "Driver": "Amitoj Sukhija",
-        "Car Model": "2001 BMW Z3",
-        "Car Color": "Black",
-        "Total": "131.984 / 131.984",
-        "Day": "D1",
-        "Diff.": "[-]0.292",
+        "msrId": "",
+        "email": "",
+        "class": "e",
+        "carNumber": "123",
+        "driverName": "Amitoj Sukhija",
+        "carModel": "2001 BMW Z3",
+        "carColor": "Black",
+        "sponsor": "",
         "runs": {
             "D1": [
                 [
@@ -1270,18 +1323,21 @@
                     "clean"
                 ]
             ]
-        }
+        },
+        "Pos.": "1T",
+        "Total": "131.984 / 131.984",
+        "Day": "D1",
+        "Diff.": "[-]0.292"
     },
     {
-        "Pos.": "2T",
-        "Class": "e",
-        "#": "323",
-        "Driver": "Bob Mendelson",
-        "Car Model": "1999 BMW 323is",
-        "Car Color": "Black",
-        "Total": "132.276 / 132.276",
-        "Day": "D1",
-        "Diff.": "+0.292",
+        "msrId": "",
+        "email": "",
+        "class": "e",
+        "carNumber": "323",
+        "driverName": "Bob Mendelson",
+        "carModel": "1999 BMW 323is",
+        "carColor": "Black",
+        "sponsor": "",
         "runs": {
             "D1": [
                 [
@@ -1337,18 +1393,21 @@
                     "dirty"
                 ]
             ]
-        }
+        },
+        "Pos.": "2T",
+        "Total": "132.276 / 132.276",
+        "Day": "D1",
+        "Diff.": "+0.292"
     },
     {
-        "Pos.": "3",
-        "Class": "e",
-        "#": "21",
-        "Driver": "Peter Giordano",
-        "Car Model": "1989 BMW 325i",
-        "Car Color": "Bronze",
-        "Total": "137.556 / 137.556",
-        "Day": "D1",
-        "Diff.": "+5.280",
+        "msrId": "",
+        "email": "",
+        "class": "e",
+        "carNumber": "21",
+        "driverName": "Peter Giordano",
+        "carModel": "1989 BMW 325i",
+        "carColor": "Bronze",
+        "sponsor": "",
         "runs": {
             "D1": [
                 [
@@ -1404,18 +1463,21 @@
                     "dirty"
                 ]
             ]
-        }
+        },
+        "Pos.": "3",
+        "Total": "137.556 / 137.556",
+        "Day": "D1",
+        "Diff.": "+5.280"
     },
     {
-        "Pos.": "4",
-        "Class": "e",
-        "#": "230",
-        "Driver": "Nancy Henderson",
-        "Car Model": "BMW Z4",
-        "Car Color": "Sterling Grey",
-        "Total": "163.122 / 163.122",
-        "Day": "D1",
-        "Diff.": "+25.566",
+        "msrId": "",
+        "email": "",
+        "class": "e",
+        "carNumber": "230",
+        "driverName": "Nancy Henderson",
+        "carModel": "BMW Z4",
+        "carColor": "Sterling Grey",
+        "sponsor": "",
         "runs": {
             "D1": [
                 [
@@ -1471,18 +1533,21 @@
                     "clean"
                 ]
             ]
-        }
+        },
+        "Pos.": "4",
+        "Total": "163.122 / 163.122",
+        "Day": "D1",
+        "Diff.": "+25.566"
     },
     {
-        "Pos.": "1T",
-        "Class": "gss",
-        "#": "404",
-        "Driver": "Daniel Quaroni",
-        "Car Model": "2024 Porsche Spyder RS",
-        "Car Color": "South Sea Blue",
-        "Total": "95.363 / 114.071",
-        "Day": "D1",
-        "Diff.": "[-]0.282",
+        "msrId": "",
+        "email": "",
+        "class": "gss",
+        "carNumber": "404",
+        "driverName": "Daniel Quaroni",
+        "carModel": "2024 Porsche Spyder RS",
+        "carColor": "South Sea Blue",
+        "sponsor": "",
         "runs": {
             "D1": [
                 [
@@ -1538,18 +1603,21 @@
                     "dirty"
                 ]
             ]
-        }
+        },
+        "Pos.": "1T",
+        "Total": "95.363 / 114.071",
+        "Day": "D1",
+        "Diff.": "[-]0.282"
     },
     {
-        "Pos.": "2T",
-        "Class": "gss",
-        "#": "35",
-        "Driver": "Rachel Baker",
-        "Car Model": "2022 Porsche GT4",
-        "Car Color": "Frozen Berry",
-        "Total": "95.645 / 114.408",
-        "Day": "D1",
-        "Diff.": "+0.282",
+        "msrId": "",
+        "email": "",
+        "class": "gss",
+        "carNumber": "35",
+        "driverName": "Rachel Baker",
+        "carModel": "2022 Porsche GT4",
+        "carColor": "Frozen Berry",
+        "sponsor": "",
         "runs": {
             "D1": [
                 [
@@ -1605,18 +1673,21 @@
                     "clean"
                 ]
             ]
-        }
+        },
+        "Pos.": "2T",
+        "Total": "95.645 / 114.408",
+        "Day": "D1",
+        "Diff.": "+0.282"
     },
     {
-        "Pos.": "3",
-        "Class": "gss",
-        "#": "166",
-        "Driver": "Krishna Harpanahalli",
-        "Car Model": "2021 Porsche Cayman gt4",
-        "Car Color": "Gentian Blue",
-        "Total": "95.824 / 114.622",
-        "Day": "D1",
-        "Diff.": "+0.179",
+        "msrId": "",
+        "email": "",
+        "class": "gss",
+        "carNumber": "166",
+        "driverName": "Krishna Harpanahalli",
+        "carModel": "2021 Porsche Cayman gt4",
+        "carColor": "Gentian Blue",
+        "sponsor": "",
         "runs": {
             "D1": [
                 [
@@ -1672,18 +1743,21 @@
                     "clean"
                 ]
             ]
-        }
+        },
+        "Pos.": "3",
+        "Total": "95.824 / 114.622",
+        "Day": "D1",
+        "Diff.": "+0.179"
     },
     {
-        "Pos.": "4",
-        "Class": "gss",
-        "#": "431",
-        "Driver": "Thomas Bracci",
-        "Car Model": "2023 Chevrolet Corvette",
-        "Car Color": "Blue",
-        "Total": "99.132 / 118.580",
-        "Day": "D1",
-        "Diff.": "+3.308",
+        "msrId": "",
+        "email": "",
+        "class": "gss",
+        "carNumber": "431",
+        "driverName": "Thomas Bracci",
+        "carModel": "2023 Chevrolet Corvette",
+        "carColor": "Blue",
+        "sponsor": "",
         "runs": {
             "D1": [
                 [
@@ -1739,18 +1813,21 @@
                     "clean"
                 ]
             ]
-        }
+        },
+        "Pos.": "4",
+        "Total": "99.132 / 118.580",
+        "Day": "D1",
+        "Diff.": "+3.308"
     },
     {
-        "Pos.": "5",
-        "Class": "gss",
-        "#": "17",
-        "Driver": "Mathew Nieman",
-        "Car Model": "2023 Chevrolet Corvette",
-        "Car Color": "Elkhart Blue",
-        "Total": "101.151 / 120.994",
-        "Day": "D1",
-        "Diff.": "+2.019",
+        "msrId": "",
+        "email": "",
+        "class": "gss",
+        "carNumber": "17",
+        "driverName": "Mathew Nieman",
+        "carModel": "2023 Chevrolet Corvette",
+        "carColor": "Elkhart Blue",
+        "sponsor": "",
         "runs": {
             "D1": [
                 [
@@ -1806,18 +1883,21 @@
                     "clean"
                 ]
             ]
-        }
+        },
+        "Pos.": "5",
+        "Total": "101.151 / 120.994",
+        "Day": "D1",
+        "Diff.": "+2.019"
     },
     {
-        "Pos.": "6",
-        "Class": "gfs",
-        "#": "176",
-        "Driver": "Tamara Perini",
-        "Car Model": "2022 Chevrolet Camaro",
-        "Car Color": "Blue",
-        "Total": "113.203 / 138.560",
-        "Day": "D1",
-        "Diff.": "+12.052",
+        "msrId": "",
+        "email": "",
+        "class": "gfs",
+        "carNumber": "176",
+        "driverName": "Tamara Perini",
+        "carModel": "2022 Chevrolet Camaro",
+        "carColor": "Blue",
+        "sponsor": "",
         "runs": {
             "D1": [
                 [
@@ -1873,18 +1953,21 @@
                     "clean"
                 ]
             ]
-        }
+        },
+        "Pos.": "6",
+        "Total": "113.203 / 138.560",
+        "Day": "D1",
+        "Diff.": "+12.052"
     },
     {
-        "Pos.": "1T",
-        "Class": "hds",
-        "#": "378",
-        "Driver": "Jeffrey Cheng",
-        "Car Model": "2024 Toyota GR86",
-        "Car Color": "Neptune Blue",
-        "Total": "97.217 / 119.874",
-        "Day": "D1",
-        "Diff.": "[-]0.292",
+        "msrId": "",
+        "email": "",
+        "class": "hds",
+        "carNumber": "378",
+        "driverName": "Jeffrey Cheng",
+        "carModel": "2024 Toyota GR86",
+        "carColor": "Neptune Blue",
+        "sponsor": "",
         "runs": {
             "D1": [
                 [
@@ -1940,18 +2023,21 @@
                     "clean"
                 ]
             ]
-        }
+        },
+        "Pos.": "1T",
+        "Total": "97.217 / 119.874",
+        "Day": "D1",
+        "Diff.": "[-]0.292"
     },
     {
-        "Pos.": "2T",
-        "Class": "hds",
-        "#": "147",
-        "Driver": "Noah Scott",
-        "Car Model": "2023 Toyota gr86",
-        "Car Color": "black",
-        "Total": "97.509 / 120.234",
-        "Day": "D1",
-        "Diff.": "+0.292",
+        "msrId": "",
+        "email": "",
+        "class": "hds",
+        "carNumber": "147",
+        "driverName": "Noah Scott",
+        "carModel": "2023 Toyota gr86",
+        "carColor": "black",
+        "sponsor": "",
         "runs": {
             "D1": [
                 [
@@ -2007,18 +2093,21 @@
                     "clean"
                 ]
             ]
-        }
+        },
+        "Pos.": "2T",
+        "Total": "97.509 / 120.234",
+        "Day": "D1",
+        "Diff.": "+0.292"
     },
     {
-        "Pos.": "3T",
-        "Class": "hes",
-        "#": "213",
-        "Driver": "Audra Paradie",
-        "Car Model": "2002 Mazda Miata",
-        "Car Color": "Blurple",
-        "Total": "100.076 / 126.679",
-        "Day": "D1",
-        "Diff.": "+2.567",
+        "msrId": "",
+        "email": "",
+        "class": "hes",
+        "carNumber": "213",
+        "driverName": "Audra Paradie",
+        "carModel": "2002 Mazda Miata",
+        "carColor": "Blurple",
+        "sponsor": "",
         "runs": {
             "D1": [
                 [
@@ -2074,18 +2163,21 @@
                     "dirty"
                 ]
             ]
-        }
+        },
+        "Pos.": "3T",
+        "Total": "100.076 / 126.679",
+        "Day": "D1",
+        "Diff.": "+2.567"
     },
     {
-        "Pos.": "4T",
-        "Class": "hcs",
-        "#": "72",
-        "Driver": "Jacky Chu",
-        "Car Model": "2007 Honda S2000",
-        "Car Color": "Red",
-        "Total": "100.816 / 124.005",
-        "Day": "D1",
-        "Diff.": "+0.740",
+        "msrId": "",
+        "email": "",
+        "class": "hcs",
+        "carNumber": "72",
+        "driverName": "Jacky Chu",
+        "carModel": "2007 Honda S2000",
+        "carColor": "Red",
+        "sponsor": "",
         "runs": {
             "D1": [
                 [
@@ -2141,18 +2233,21 @@
                     "clean"
                 ]
             ]
-        }
+        },
+        "Pos.": "4T",
+        "Total": "100.816 / 124.005",
+        "Day": "D1",
+        "Diff.": "+0.740"
     },
     {
-        "Pos.": "5",
-        "Class": "hcs",
-        "#": "473",
-        "Driver": "Kevin Yang",
-        "Car Model": "2007 Honda S2000",
-        "Car Color": "Red",
-        "Total": "101.388 / 124.709",
-        "Day": "D1",
-        "Diff.": "+0.572",
+        "msrId": "",
+        "email": "",
+        "class": "hcs",
+        "carNumber": "473",
+        "driverName": "Kevin Yang",
+        "carModel": "2007 Honda S2000",
+        "carColor": "Red",
+        "sponsor": "",
         "runs": {
             "D1": [
                 [
@@ -2208,18 +2303,21 @@
                     "clean"
                 ]
             ]
-        }
+        },
+        "Pos.": "5",
+        "Total": "101.388 / 124.709",
+        "Day": "D1",
+        "Diff.": "+0.572"
     },
     {
-        "Pos.": "6",
-        "Class": "hds",
-        "#": "397",
-        "Driver": "Yu-Chi Cheng",
-        "Car Model": "2025 Toyota GR86",
-        "Car Color": "Silver",
-        "Total": "105.466 / 130.045",
-        "Day": "D1",
-        "Diff.": "+4.078",
+        "msrId": "",
+        "email": "",
+        "class": "hds",
+        "carNumber": "397",
+        "driverName": "Yu-Chi Cheng",
+        "carModel": "2025 Toyota GR86",
+        "carColor": "Silver",
+        "sponsor": "",
         "runs": {
             "D1": [
                 [
@@ -2275,18 +2373,21 @@
                     "clean"
                 ]
             ]
-        }
+        },
+        "Pos.": "6",
+        "Total": "105.466 / 130.045",
+        "Day": "D1",
+        "Diff.": "+4.078"
     },
     {
-        "Pos.": "7",
-        "Class": "hds",
-        "#": "304",
-        "Driver": "Cody McLean",
-        "Car Model": "2021 Volvo S60 T8",
-        "Car Color": "Gray",
-        "Total": "107.168 / 132.144",
-        "Day": "D1",
-        "Diff.": "+1.702",
+        "msrId": "",
+        "email": "",
+        "class": "hds",
+        "carNumber": "304",
+        "driverName": "Cody McLean",
+        "carModel": "2021 Volvo S60 T8",
+        "carColor": "Gray",
+        "sponsor": "",
         "runs": {
             "D1": [
                 [
@@ -2342,18 +2443,21 @@
                     "clean"
                 ]
             ]
-        }
+        },
+        "Pos.": "7",
+        "Total": "107.168 / 132.144",
+        "Day": "D1",
+        "Diff.": "+1.702"
     },
     {
-        "Pos.": "8",
-        "Class": "hes",
-        "#": "218",
-        "Driver": "Michael Paradie",
-        "Car Model": "2002 Mazda Miata",
-        "Car Color": "Blurple",
-        "Total": "107.172 / 135.661",
-        "Day": "D1",
-        "Diff.": "+0.004",
+        "msrId": "",
+        "email": "",
+        "class": "hes",
+        "carNumber": "218",
+        "driverName": "Michael Paradie",
+        "carModel": "2002 Mazda Miata",
+        "carColor": "Blurple",
+        "sponsor": "",
         "runs": {
             "D1": [
                 [
@@ -2409,18 +2513,21 @@
                     "clean"
                 ]
             ]
-        }
+        },
+        "Pos.": "8",
+        "Total": "107.172 / 135.661",
+        "Day": "D1",
+        "Diff.": "+0.004"
     },
     {
-        "Pos.": "9",
-        "Class": "hds",
-        "#": "7",
-        "Driver": "Colin Whelan",
-        "Car Model": "2022 Subaru WRX #247",
-        "Car Color": "Blue",
-        "Total": "dns / dns",
-        "Day": "D1",
-        "Diff.": "",
+        "msrId": "",
+        "email": "",
+        "class": "hds",
+        "carNumber": "7",
+        "driverName": "Colin Whelan",
+        "carModel": "2022 Subaru WRX #247",
+        "carColor": "Blue",
+        "sponsor": "",
         "runs": {
             "D1": [
                 [
@@ -2450,33 +2557,39 @@
                 ]
             ],
             "D2": []
-        }
-    },
-    {
-        "Pos.": "10",
-        "Class": "hcs",
-        "#": "85",
-        "Driver": "Dan Fillingim",
-        "Car Model": "2019 Mazda MX5 Miata",
-        "Car Color": "Ceramic",
+        },
+        "Pos.": "9",
         "Total": "dns / dns",
         "Day": "D1",
-        "Diff.": "",
+        "Diff.": ""
+    },
+    {
+        "msrId": "",
+        "email": "",
+        "class": "hcs",
+        "carNumber": "85",
+        "driverName": "Dan Fillingim",
+        "carModel": "2019 Mazda MX5 Miata",
+        "carColor": "Ceramic",
+        "sponsor": "",
         "runs": {
             "D1": [],
             "D2": []
-        }
+        },
+        "Pos.": "10",
+        "Total": "dns / dns",
+        "Day": "D1",
+        "Diff.": ""
     },
     {
-        "Pos.": "1T",
-        "Class": "jxp",
-        "#": "889",
-        "Driver": "Michael Banas",
-        "Car Model": "1999 Chevrolet Corvette",
-        "Car Color": "silver",
-        "Total": "103.332 / 116.104",
-        "Day": "D1",
-        "Diff.": "[-]4.198",
+        "msrId": "",
+        "email": "",
+        "class": "jxp",
+        "carNumber": "889",
+        "driverName": "Michael Banas",
+        "carModel": "1999 Chevrolet Corvette",
+        "carColor": "silver",
+        "sponsor": "",
         "runs": {
             "D1": [
                 [
@@ -2532,18 +2645,21 @@
                     "clean"
                 ]
             ]
-        }
+        },
+        "Pos.": "1T",
+        "Total": "103.332 / 116.104",
+        "Day": "D1",
+        "Diff.": "[-]4.198"
     },
     {
-        "Pos.": "2",
-        "Class": "jxp",
-        "#": "88",
-        "Driver": "Mark Joyce",
-        "Car Model": "1999 Chevrolet Corvette",
-        "Car Color": "Sliver",
-        "Total": "107.530 / 120.821",
-        "Day": "D1",
-        "Diff.": "+4.198",
+        "msrId": "",
+        "email": "",
+        "class": "jxp",
+        "carNumber": "88",
+        "driverName": "Mark Joyce",
+        "carModel": "1999 Chevrolet Corvette",
+        "carColor": "Sliver",
+        "sponsor": "",
         "runs": {
             "D1": [
                 [
@@ -2599,18 +2715,21 @@
                     "clean"
                 ]
             ]
-        }
+        },
+        "Pos.": "2",
+        "Total": "107.530 / 120.821",
+        "Day": "D1",
+        "Diff.": "+4.198"
     },
     {
-        "Pos.": "1T",
-        "Class": "ksst",
-        "#": "157",
-        "Driver": "Grant Reeve",
-        "Car Model": "2003 Corvette Z06",
-        "Car Color": "Black",
-        "Total": "92.639 / 110.680",
-        "Day": "D1",
-        "Diff.": "[-]1.735",
+        "msrId": "",
+        "email": "",
+        "class": "ksst",
+        "carNumber": "157",
+        "driverName": "Grant Reeve",
+        "carModel": "2003 Corvette Z06",
+        "carColor": "Black",
+        "sponsor": "",
         "runs": {
             "D1": [
                 [
@@ -2666,18 +2785,21 @@
                     "clean"
                 ]
             ]
-        }
+        },
+        "Pos.": "1T",
+        "Total": "92.639 / 110.680",
+        "Day": "D1",
+        "Diff.": "[-]1.735"
     },
     {
-        "Pos.": "2T",
-        "Class": "kcamc",
-        "#": "33",
-        "Driver": "Dana Nicgorski",
-        "Car Model": "2018 Ford Potato GT",
-        "Car Color": "Blue",
-        "Total": "94.374 / 114.393",
-        "Day": "D1",
-        "Diff.": "+1.735",
+        "msrId": "",
+        "email": "",
+        "class": "kcamc",
+        "carNumber": "33",
+        "driverName": "Dana Nicgorski",
+        "carModel": "2018 Ford Potato GT",
+        "carColor": "Blue",
+        "sponsor": "",
         "runs": {
             "D1": [
                 [
@@ -2733,18 +2855,21 @@
                     "clean"
                 ]
             ]
-        }
+        },
+        "Pos.": "2T",
+        "Total": "94.374 / 114.393",
+        "Day": "D1",
+        "Diff.": "+1.735"
     },
     {
-        "Pos.": "3T",
-        "Class": "kxa",
-        "#": "173",
-        "Driver": "Justin Chen",
-        "Car Model": "2006 Honda S2000",
-        "Car Color": "Yellow",
-        "Total": "96.396 / 113.944",
-        "Day": "D1",
-        "Diff.": "+2.022",
+        "msrId": "",
+        "email": "",
+        "class": "kxa",
+        "carNumber": "173",
+        "driverName": "Justin Chen",
+        "carModel": "2006 Honda S2000",
+        "carColor": "Yellow",
+        "sponsor": "",
         "runs": {
             "D1": [
                 [
@@ -2800,18 +2925,21 @@
                     "clean"
                 ]
             ]
-        }
+        },
+        "Pos.": "3T",
+        "Total": "96.396 / 113.944",
+        "Day": "D1",
+        "Diff.": "+2.022"
     },
     {
-        "Pos.": "4",
-        "Class": "ksst",
-        "#": "570",
-        "Driver": "Stephanie Reeve",
-        "Car Model": "2003 Chevrolet Horse",
-        "Car Color": "plain",
-        "Total": "97.192 / 116.120",
-        "Day": "D1",
-        "Diff.": "+0.796",
+        "msrId": "",
+        "email": "",
+        "class": "ksst",
+        "carNumber": "570",
+        "driverName": "Stephanie Reeve",
+        "carModel": "2003 Chevrolet Horse",
+        "carColor": "plain",
+        "sponsor": "",
         "runs": {
             "D1": [
                 [
@@ -2867,18 +2995,21 @@
                     "clean"
                 ]
             ]
-        }
+        },
+        "Pos.": "4",
+        "Total": "97.192 / 116.120",
+        "Day": "D1",
+        "Diff.": "+0.796"
     },
     {
-        "Pos.": "5",
-        "Class": "kxa",
-        "#": "970",
-        "Driver": "Ian Lin",
-        "Car Model": "2002 Honda S2000",
-        "Car Color": "Silver",
-        "Total": "97.328 / 115.045",
-        "Day": "D1",
-        "Diff.": "+0.136",
+        "msrId": "",
+        "email": "",
+        "class": "kxa",
+        "carNumber": "970",
+        "driverName": "Ian Lin",
+        "carModel": "2002 Honda S2000",
+        "carColor": "Silver",
+        "sponsor": "",
         "runs": {
             "D1": [
                 [
@@ -2934,18 +3065,21 @@
                     "dirty"
                 ]
             ]
-        }
+        },
+        "Pos.": "5",
+        "Total": "97.328 / 115.045",
+        "Day": "D1",
+        "Diff.": "+0.136"
     },
     {
-        "Pos.": "6",
-        "Class": "kxa",
-        "#": "155",
-        "Driver": "Charles Comeau",
-        "Car Model": "2019 Toyota 86",
-        "Car Color": "Black",
-        "Total": "99.025 / 117.051",
-        "Day": "D1",
-        "Diff.": "+1.697",
+        "msrId": "",
+        "email": "",
+        "class": "kxa",
+        "carNumber": "155",
+        "driverName": "Charles Comeau",
+        "carModel": "2019 Toyota 86",
+        "carColor": "Black",
+        "sponsor": "",
         "runs": {
             "D1": [
                 [
@@ -3001,18 +3135,21 @@
                     "clean"
                 ]
             ]
-        }
+        },
+        "Pos.": "6",
+        "Total": "99.025 / 117.051",
+        "Day": "D1",
+        "Diff.": "+1.697"
     },
     {
-        "Pos.": "7",
-        "Class": "kgst",
-        "#": "595",
-        "Driver": "Clay Andrews",
-        "Car Model": "2017 Fiat 500 Abarth",
-        "Car Color": "White",
-        "Total": "102.695 / 126.785",
-        "Day": "D1",
-        "Diff.": "+3.670",
+        "msrId": "",
+        "email": "",
+        "class": "kgst",
+        "carNumber": "595",
+        "driverName": "Clay Andrews",
+        "carModel": "2017 Fiat 500 Abarth",
+        "carColor": "White",
+        "sponsor": "",
         "runs": {
             "D1": [
                 [
@@ -3068,18 +3205,21 @@
                     "clean"
                 ]
             ]
-        }
+        },
+        "Pos.": "7",
+        "Total": "102.695 / 126.785",
+        "Day": "D1",
+        "Diff.": "+3.670"
     },
     {
-        "Pos.": "1T",
-        "Class": "ldst",
-        "#": "2",
-        "Driver": "Evan LeBlanc",
-        "Car Model": "2012 Mazda OceanGate Express",
-        "Car Color": "",
-        "Total": "90.495 / 110.630",
-        "Day": "D1",
-        "Diff.": "[-]2.381",
+        "msrId": "",
+        "email": "",
+        "class": "ldst",
+        "carNumber": "2",
+        "driverName": "Evan LeBlanc",
+        "carModel": "2012 Mazda OceanGate Express",
+        "carColor": "",
+        "sponsor": "",
         "runs": {
             "D1": [
                 [
@@ -3135,18 +3275,21 @@
                     "clean"
                 ]
             ]
-        }
+        },
+        "Pos.": "1T",
+        "Total": "90.495 / 110.630",
+        "Day": "D1",
+        "Diff.": "[-]2.381"
     },
     {
-        "Pos.": "2T",
-        "Class": "lest",
-        "#": "79",
-        "Driver": "Eric Scholz",
-        "Car Model": "1992 Mazda Miata",
-        "Car Color": "No Soul Red",
-        "Total": "92.876 / 113.959",
-        "Day": "D1",
-        "Diff.": "+2.381",
+        "msrId": "",
+        "email": "",
+        "class": "lest",
+        "carNumber": "79",
+        "driverName": "Eric Scholz",
+        "carModel": "1992 Mazda Miata",
+        "carColor": "No Soul Red",
+        "sponsor": "",
         "runs": {
             "D1": [
                 [
@@ -3202,18 +3345,21 @@
                     "dirty"
                 ]
             ]
-        }
+        },
+        "Pos.": "2T",
+        "Total": "92.876 / 113.959",
+        "Day": "D1",
+        "Diff.": "+2.381"
     },
     {
-        "Pos.": "3T",
-        "Class": "lcst",
-        "#": "118",
-        "Driver": "Kyle Murray",
-        "Car Model": "2022 Toyota GR86",
-        "Car Color": "Pavement Grey",
-        "Total": "94.802 / 114.220",
-        "Day": "D1",
-        "Diff.": "+1.926",
+        "msrId": "",
+        "email": "",
+        "class": "lcst",
+        "carNumber": "118",
+        "driverName": "Kyle Murray",
+        "carModel": "2022 Toyota GR86",
+        "carColor": "Pavement Grey",
+        "sponsor": "",
         "runs": {
             "D1": [
                 [
@@ -3269,18 +3415,21 @@
                     "dirty"
                 ]
             ]
-        }
+        },
+        "Pos.": "3T",
+        "Total": "94.802 / 114.220",
+        "Day": "D1",
+        "Diff.": "+1.926"
     },
     {
-        "Pos.": "4T",
-        "Class": "lcst",
-        "#": "771",
-        "Driver": "Tomas Angaramo",
-        "Car Model": "2023 Subaru 86",
-        "Car Color": "Grey",
-        "Total": "94.888 / 114.323",
-        "Day": "D1",
-        "Diff.": "+0.086",
+        "msrId": "",
+        "email": "",
+        "class": "lcst",
+        "carNumber": "771",
+        "driverName": "Tomas Angaramo",
+        "carModel": "2023 Subaru 86",
+        "carColor": "Grey",
+        "sponsor": "",
         "runs": {
             "D1": [
                 [
@@ -3336,18 +3485,21 @@
                     "clean"
                 ]
             ]
-        }
+        },
+        "Pos.": "4T",
+        "Total": "94.888 / 114.323",
+        "Day": "D1",
+        "Diff.": "+0.086"
     },
     {
-        "Pos.": "5",
-        "Class": "lcst",
-        "#": "18",
-        "Driver": "Fouad Al-Rijleh",
-        "Car Model": "2016 Volkswagen Golf R",
-        "Car Color": "White",
-        "Total": "96.091 / 115.773",
-        "Day": "D1",
-        "Diff.": "+1.203",
+        "msrId": "",
+        "email": "",
+        "class": "lcst",
+        "carNumber": "18",
+        "driverName": "Fouad Al-Rijleh",
+        "carModel": "2016 Volkswagen Golf R",
+        "carColor": "White",
+        "sponsor": "",
         "runs": {
             "D1": [
                 [
@@ -3403,18 +3555,21 @@
                     "clean"
                 ]
             ]
-        }
+        },
+        "Pos.": "5",
+        "Total": "96.091 / 115.773",
+        "Day": "D1",
+        "Diff.": "+1.203"
     },
     {
-        "Pos.": "6",
-        "Class": "ldst",
-        "#": "210",
-        "Driver": "Shamit Som",
-        "Car Model": "2015 Scion FR-S",
-        "Car Color": "Blue",
-        "Total": "96.461 / 117.924",
-        "Day": "D1",
-        "Diff.": "+0.370",
+        "msrId": "",
+        "email": "",
+        "class": "ldst",
+        "carNumber": "210",
+        "driverName": "Shamit Som",
+        "carModel": "2015 Scion FR-S",
+        "carColor": "Blue",
+        "sponsor": "",
         "runs": {
             "D1": [
                 [
@@ -3470,18 +3625,21 @@
                     "clean"
                 ]
             ]
-        }
+        },
+        "Pos.": "6",
+        "Total": "96.461 / 117.924",
+        "Day": "D1",
+        "Diff.": "+0.370"
     },
     {
-        "Pos.": "7",
-        "Class": "ldst",
-        "#": "603",
-        "Driver": "Jake Hellman",
-        "Car Model": "2013 Scion FR-S",
-        "Car Color": "Black",
-        "Total": "96.770 / 118.301",
-        "Day": "D1",
-        "Diff.": "+0.309",
+        "msrId": "",
+        "email": "",
+        "class": "ldst",
+        "carNumber": "603",
+        "driverName": "Jake Hellman",
+        "carModel": "2013 Scion FR-S",
+        "carColor": "Black",
+        "sponsor": "",
         "runs": {
             "D1": [
                 [
@@ -3537,18 +3695,21 @@
                     "clean"
                 ]
             ]
-        }
+        },
+        "Pos.": "7",
+        "Total": "96.770 / 118.301",
+        "Day": "D1",
+        "Diff.": "+0.309"
     },
     {
-        "Pos.": "8",
-        "Class": "ldst",
-        "#": "305",
-        "Driver": "Lorenz Jakober",
-        "Car Model": "2015 Mazda Miata",
-        "Car Color": "Black",
-        "Total": "98.049 / 119.865",
-        "Day": "D1",
-        "Diff.": "+1.279",
+        "msrId": "",
+        "email": "",
+        "class": "ldst",
+        "carNumber": "305",
+        "driverName": "Lorenz Jakober",
+        "carModel": "2015 Mazda Miata",
+        "carColor": "Black",
+        "sponsor": "",
         "runs": {
             "D1": [
                 [
@@ -3604,18 +3765,21 @@
                     "clean"
                 ]
             ]
-        }
+        },
+        "Pos.": "8",
+        "Total": "98.049 / 119.865",
+        "Day": "D1",
+        "Diff.": "+1.279"
     },
     {
-        "Pos.": "9",
-        "Class": "last",
-        "#": "100",
-        "Driver": "Theresa Doyon",
-        "Car Model": "2020 Mazda Miata",
-        "Car Color": "Red",
-        "Total": "99.369 / 119.148",
-        "Day": "D1",
-        "Diff.": "+1.320",
+        "msrId": "",
+        "email": "",
+        "class": "last",
+        "carNumber": "100",
+        "driverName": "Theresa Doyon",
+        "carModel": "2020 Mazda Miata",
+        "carColor": "Red",
+        "sponsor": "",
         "runs": {
             "D1": [
                 [
@@ -3671,18 +3835,21 @@
                     "clean"
                 ]
             ]
-        }
+        },
+        "Pos.": "9",
+        "Total": "99.369 / 119.148",
+        "Day": "D1",
+        "Diff.": "+1.320"
     },
     {
-        "Pos.": "10",
-        "Class": "last",
-        "#": "134",
-        "Driver": "Sam Creasey",
-        "Car Model": "2020 Mazda Miata",
-        "Car Color": "Red",
-        "Total": "100.395 / 120.378",
-        "Day": "D1",
-        "Diff.": "+1.026",
+        "msrId": "",
+        "email": "",
+        "class": "last",
+        "carNumber": "134",
+        "driverName": "Sam Creasey",
+        "carModel": "2020 Mazda Miata",
+        "carColor": "Red",
+        "sponsor": "",
         "runs": {
             "D1": [
                 [
@@ -3738,6 +3905,10 @@
                     "dirty"
                 ]
             ]
-        }
+        },
+        "Pos.": "10",
+        "Total": "100.395 / 120.378",
+        "Day": "D1",
+        "Diff.": "+1.026"
     }
 ]

@@ -1,13 +1,13 @@
 [
     {
-        "Pos.": "1T",
-        "Class": "er",
-        "#": "86",
-        "Driver": "Ralph Stankowski",
-        "Car Model": "2015 Husqvarna Exocet",
-        "Car Color": "Orange",
-        "Total": "70.858",
-        "Diff.": "[-]1.661",
+        "msrId": "",
+        "email": "",
+        "class": "er",
+        "carNumber": "86",
+        "driverName": "Ralph Stankowski",
+        "carModel": "2015 Husqvarna Exocet",
+        "carColor": "Orange",
+        "sponsor": "",
         "runs": {
             "Segment 1": [
                 [
@@ -81,17 +81,20 @@
                     "clean"
                 ]
             ]
-        }
+        },
+        "Pos.": "1T",
+        "Total": "70.858",
+        "Diff.": "[-]1.661"
     },
     {
-        "Pos.": "2",
-        "Class": "er",
-        "#": "700",
-        "Driver": "Paul DeBitetto",
-        "Car Model": "1965 Ford Mustang",
-        "Car Color": "Red",
-        "Total": "72.519",
-        "Diff.": "+1.661",
+        "msrId": "",
+        "email": "",
+        "class": "er",
+        "carNumber": "700",
+        "driverName": "Paul DeBitetto",
+        "carModel": "1965 Ford Mustang",
+        "carColor": "Red",
+        "sponsor": "",
         "runs": {
             "Segment 1": [
                 [
@@ -165,17 +168,20 @@
                     "clean"
                 ]
             ]
-        }
+        },
+        "Pos.": "2",
+        "Total": "72.519",
+        "Diff.": "+1.661"
     },
     {
-        "Pos.": "1T",
-        "Class": "es",
-        "#": "4",
-        "Driver": "Jacob Ronald",
-        "Car Model": "2018 Fiat 124",
-        "Car Color": "Grey",
-        "Total": "64.546",
-        "Diff.": "[-]0.130",
+        "msrId": "",
+        "email": "",
+        "class": "es",
+        "carNumber": "4",
+        "driverName": "Jacob Ronald",
+        "carModel": "2018 Fiat 124",
+        "carColor": "Grey",
+        "sponsor": "",
         "runs": {
             "Segment 1": [
                 [
@@ -244,17 +250,20 @@
                     "clean"
                 ]
             ]
-        }
+        },
+        "Pos.": "1T",
+        "Total": "64.546",
+        "Diff.": "[-]0.130"
     },
     {
-        "Pos.": "2T",
-        "Class": "es",
-        "#": "11",
-        "Driver": "Jeff Bakken",
-        "Car Model": "2019 Honda Insight",
-        "Car Color": "orange",
-        "Total": "64.676",
-        "Diff.": "+0.130",
+        "msrId": "",
+        "email": "",
+        "class": "es",
+        "carNumber": "11",
+        "driverName": "Jeff Bakken",
+        "carModel": "2019 Honda Insight",
+        "carColor": "orange",
+        "sponsor": "",
         "runs": {
             "Segment 1": [
                 [
@@ -333,17 +342,20 @@
                     "clean"
                 ]
             ]
-        }
+        },
+        "Pos.": "2T",
+        "Total": "64.676",
+        "Diff.": "+0.130"
     },
     {
-        "Pos.": "3T",
-        "Class": "es",
-        "#": "1",
-        "Driver": "Steve Belliveau",
-        "Car Model": "2019 Honda Insight",
-        "Car Color": "orange",
-        "Total": "65.440",
-        "Diff.": "+0.764",
+        "msrId": "",
+        "email": "",
+        "class": "es",
+        "carNumber": "1",
+        "driverName": "Steve Belliveau",
+        "carModel": "2019 Honda Insight",
+        "carColor": "orange",
+        "sponsor": "",
         "runs": {
             "Segment 1": [
                 [
@@ -422,17 +434,20 @@
                     "dirty"
                 ]
             ]
-        }
+        },
+        "Pos.": "3T",
+        "Total": "65.440",
+        "Diff.": "+0.764"
     },
     {
-        "Pos.": "4T",
-        "Class": "es",
-        "#": "8",
-        "Driver": "Ryan Paradis",
-        "Car Model": "2006 Mazda Needs New Apex Seals",
-        "Car Color": "HockenheimWhite",
-        "Total": "65.623",
-        "Diff.": "+0.183",
+        "msrId": "",
+        "email": "",
+        "class": "es",
+        "carNumber": "8",
+        "driverName": "Ryan Paradis",
+        "carModel": "2006 Mazda Needs New Apex Seals",
+        "carColor": "HockenheimWhite",
+        "sponsor": "",
         "runs": {
             "Segment 1": [
                 [
@@ -506,17 +521,20 @@
                     "clean"
                 ]
             ]
-        }
+        },
+        "Pos.": "4T",
+        "Total": "65.623",
+        "Diff.": "+0.183"
     },
     {
-        "Pos.": "5T",
-        "Class": "es",
-        "#": "79",
-        "Driver": "Eric Scholz",
-        "Car Model": "1992 Mazda Miata",
-        "Car Color": "No Soul Red",
-        "Total": "65.624",
-        "Diff.": "+0.001",
+        "msrId": "",
+        "email": "",
+        "class": "es",
+        "carNumber": "79",
+        "driverName": "Eric Scholz",
+        "carModel": "1992 Mazda Miata",
+        "carColor": "No Soul Red",
+        "sponsor": "",
         "runs": {
             "Segment 1": [
                 [
@@ -595,17 +613,20 @@
                     "clean"
                 ]
             ]
-        }
+        },
+        "Pos.": "5T",
+        "Total": "65.624",
+        "Diff.": "+0.001"
     },
     {
-        "Pos.": "6T",
-        "Class": "es",
-        "#": "21",
-        "Driver": "Chris Lindquist",
-        "Car Model": "2023 Toyota GR Supra",
-        "Car Color": "White",
-        "Total": "66.199",
-        "Diff.": "+0.575",
+        "msrId": "",
+        "email": "",
+        "class": "es",
+        "carNumber": "21",
+        "driverName": "Chris Lindquist",
+        "carModel": "2023 Toyota GR Supra",
+        "carColor": "White",
+        "sponsor": "",
         "runs": {
             "Segment 1": [
                 [
@@ -684,17 +705,20 @@
                     "clean"
                 ]
             ]
-        }
+        },
+        "Pos.": "6T",
+        "Total": "66.199",
+        "Diff.": "+0.575"
     },
     {
-        "Pos.": "7",
-        "Class": "es",
-        "#": "109",
-        "Driver": "Robert Bouchard",
-        "Car Model": "2021 BMW /// //",
-        "Car Color": "Silver(white?)",
-        "Total": "66.201",
-        "Diff.": "+0.002",
+        "msrId": "",
+        "email": "",
+        "class": "es",
+        "carNumber": "109",
+        "driverName": "Robert Bouchard",
+        "carModel": "2021 BMW /// //",
+        "carColor": "Silver(white?)",
+        "sponsor": "",
         "runs": {
             "Segment 1": [
                 [
@@ -733,17 +757,20 @@
                     "clean"
                 ]
             ]
-        }
+        },
+        "Pos.": "7",
+        "Total": "66.201",
+        "Diff.": "+0.002"
     },
     {
-        "Pos.": "8",
-        "Class": "es",
-        "#": "970",
-        "Driver": "Ian Lin",
-        "Car Model": "2002 Honda S2000",
-        "Car Color": "Silver",
-        "Total": "66.669",
-        "Diff.": "+0.468",
+        "msrId": "",
+        "email": "",
+        "class": "es",
+        "carNumber": "970",
+        "driverName": "Ian Lin",
+        "carModel": "2002 Honda S2000",
+        "carColor": "Silver",
+        "sponsor": "",
         "runs": {
             "Segment 1": [
                 [
@@ -822,17 +849,20 @@
                     "dirty"
                 ]
             ]
-        }
+        },
+        "Pos.": "8",
+        "Total": "66.669",
+        "Diff.": "+0.468"
     },
     {
-        "Pos.": "9",
-        "Class": "es",
-        "#": "420",
-        "Driver": "John Frongillo",
-        "Car Model": "2006 Mazda Miyachta",
-        "Car Color": "Blaze It Red",
-        "Total": "66.773",
-        "Diff.": "+0.104",
+        "msrId": "",
+        "email": "",
+        "class": "es",
+        "carNumber": "420",
+        "driverName": "John Frongillo",
+        "carModel": "2006 Mazda Miyachta",
+        "carColor": "Blaze It Red",
+        "sponsor": "",
         "runs": {
             "Segment 1": [
                 [
@@ -911,17 +941,20 @@
                     "clean"
                 ]
             ]
-        }
+        },
+        "Pos.": "9",
+        "Total": "66.773",
+        "Diff.": "+0.104"
     },
     {
-        "Pos.": "10",
-        "Class": "es",
-        "#": "5",
-        "Driver": "Dennis Matveev",
-        "Car Model": "2019 Honda Civic Type R",
-        "Car Color": "Gray",
-        "Total": "66.777",
-        "Diff.": "+0.004",
+        "msrId": "",
+        "email": "",
+        "class": "es",
+        "carNumber": "5",
+        "driverName": "Dennis Matveev",
+        "carModel": "2019 Honda Civic Type R",
+        "carColor": "Gray",
+        "sponsor": "",
         "runs": {
             "Segment 1": [
                 [
@@ -1000,17 +1033,20 @@
                     "dirty"
                 ]
             ]
-        }
+        },
+        "Pos.": "10",
+        "Total": "66.777",
+        "Diff.": "+0.004"
     },
     {
-        "Pos.": "11",
-        "Class": "es",
-        "#": "13",
-        "Driver": "Chris Masiello",
-        "Car Model": "1962 Lotus Super Se7en",
-        "Car Color": "Blue",
-        "Total": "66.848",
-        "Diff.": "+0.071",
+        "msrId": "",
+        "email": "",
+        "class": "es",
+        "carNumber": "13",
+        "driverName": "Chris Masiello",
+        "carModel": "1962 Lotus Super Se7en",
+        "carColor": "Blue",
+        "sponsor": "",
         "runs": {
             "Segment 1": [
                 [
@@ -1089,17 +1125,20 @@
                     "dirty"
                 ]
             ]
-        }
+        },
+        "Pos.": "11",
+        "Total": "66.848",
+        "Diff.": "+0.071"
     },
     {
-        "Pos.": "12",
-        "Class": "es",
-        "#": "119",
-        "Driver": "Fouad Al-Rijleh",
-        "Car Model": "2016 Volkswagen Golf R",
-        "Car Color": "White",
-        "Total": "66.942",
-        "Diff.": "+0.094",
+        "msrId": "",
+        "email": "",
+        "class": "es",
+        "carNumber": "119",
+        "driverName": "Fouad Al-Rijleh",
+        "carModel": "2016 Volkswagen Golf R",
+        "carColor": "White",
+        "sponsor": "",
         "runs": {
             "Segment 1": [
                 [
@@ -1178,17 +1217,20 @@
                     "clean"
                 ]
             ]
-        }
+        },
+        "Pos.": "12",
+        "Total": "66.942",
+        "Diff.": "+0.094"
     },
     {
-        "Pos.": "13",
-        "Class": "es",
-        "#": "25",
-        "Driver": "Lou Masciarelli",
-        "Car Model": "2010 Mazda Miata",
-        "Car Color": "Red",
-        "Total": "67.084",
-        "Diff.": "+0.142",
+        "msrId": "",
+        "email": "",
+        "class": "es",
+        "carNumber": "25",
+        "driverName": "Lou Masciarelli",
+        "carModel": "2010 Mazda Miata",
+        "carColor": "Red",
+        "sponsor": "",
         "runs": {
             "Segment 1": [
                 [
@@ -1267,17 +1309,20 @@
                     "clean"
                 ]
             ]
-        }
+        },
+        "Pos.": "13",
+        "Total": "67.084",
+        "Diff.": "+0.142"
     },
     {
-        "Pos.": "14",
-        "Class": "es",
-        "#": "71",
-        "Driver": "Theresa Doyon",
-        "Car Model": "2020 Mazda Miata",
-        "Car Color": "Red",
-        "Total": "67.424",
-        "Diff.": "+0.340",
+        "msrId": "",
+        "email": "",
+        "class": "es",
+        "carNumber": "71",
+        "driverName": "Theresa Doyon",
+        "carModel": "2020 Mazda Miata",
+        "carColor": "Red",
+        "sponsor": "",
         "runs": {
             "Segment 1": [
                 [
@@ -1356,17 +1401,20 @@
                     "clean"
                 ]
             ]
-        }
+        },
+        "Pos.": "14",
+        "Total": "67.424",
+        "Diff.": "+0.340"
     },
     {
-        "Pos.": "15",
-        "Class": "es",
-        "#": "201",
-        "Driver": "Keith Johnson",
-        "Car Model": "2023 Toyota Rented Pineapple",
-        "Car Color": "White",
-        "Total": "67.518",
-        "Diff.": "+0.094",
+        "msrId": "",
+        "email": "",
+        "class": "es",
+        "carNumber": "201",
+        "driverName": "Keith Johnson",
+        "carModel": "2023 Toyota Rented Pineapple",
+        "carColor": "White",
+        "sponsor": "",
         "runs": {
             "Segment 1": [
                 [
@@ -1445,17 +1493,20 @@
                     "dirty"
                 ]
             ]
-        }
+        },
+        "Pos.": "15",
+        "Total": "67.518",
+        "Diff.": "+0.094"
     },
     {
-        "Pos.": "16",
-        "Class": "es",
-        "#": "408",
-        "Driver": "Brendan Wong",
-        "Car Model": "2023 Porsche GT4RS",
-        "Car Color": "Silver",
-        "Total": "68.202",
-        "Diff.": "+0.684",
+        "msrId": "",
+        "email": "",
+        "class": "es",
+        "carNumber": "408",
+        "driverName": "Brendan Wong",
+        "carModel": "2023 Porsche GT4RS",
+        "carColor": "Silver",
+        "sponsor": "",
         "runs": {
             "Segment 1": [
                 [
@@ -1504,17 +1555,20 @@
                     "dirty"
                 ]
             ]
-        }
+        },
+        "Pos.": "16",
+        "Total": "68.202",
+        "Diff.": "+0.684"
     },
     {
-        "Pos.": "17",
-        "Class": "es",
-        "#": "906",
-        "Driver": "Luke Liu",
-        "Car Model": "1985 BMW 316i ///M PAKET",
-        "Car Color": "",
-        "Total": "68.675",
-        "Diff.": "+0.473",
+        "msrId": "",
+        "email": "",
+        "class": "es",
+        "carNumber": "906",
+        "driverName": "Luke Liu",
+        "carModel": "1985 BMW 316i ///M PAKET",
+        "carColor": "",
+        "sponsor": "",
         "runs": {
             "Segment 1": [
                 [
@@ -1598,17 +1652,20 @@
                     "clean"
                 ]
             ]
-        }
+        },
+        "Pos.": "17",
+        "Total": "68.675",
+        "Diff.": "+0.473"
     },
     {
-        "Pos.": "18",
-        "Class": "es",
-        "#": "17",
-        "Driver": "Mike Miller",
-        "Car Model": "2013 Mazda Miata",
-        "Car Color": "Black",
-        "Total": "69.460",
-        "Diff.": "+0.785",
+        "msrId": "",
+        "email": "",
+        "class": "es",
+        "carNumber": "17",
+        "driverName": "Mike Miller",
+        "carModel": "2013 Mazda Miata",
+        "carColor": "Black",
+        "sponsor": "",
         "runs": {
             "Segment 1": [
                 [
@@ -1672,17 +1729,20 @@
                     "clean"
                 ]
             ]
-        }
+        },
+        "Pos.": "18",
+        "Total": "69.460",
+        "Diff.": "+0.785"
     },
     {
-        "Pos.": "19",
-        "Class": "es",
-        "#": "49",
-        "Driver": "Joseph Hayes",
-        "Car Model": "2006 Ford Mustang",
-        "Car Color": "Tungsten Grey",
-        "Total": "69.832",
-        "Diff.": "+0.372",
+        "msrId": "",
+        "email": "",
+        "class": "es",
+        "carNumber": "49",
+        "driverName": "Joseph Hayes",
+        "carModel": "2006 Ford Mustang",
+        "carColor": "Tungsten Grey",
+        "sponsor": "",
         "runs": {
             "Segment 1": [
                 [
@@ -1761,17 +1821,20 @@
                     "clean"
                 ]
             ]
-        }
+        },
+        "Pos.": "19",
+        "Total": "69.832",
+        "Diff.": "+0.372"
     },
     {
-        "Pos.": "20",
-        "Class": "es",
-        "#": "76",
-        "Driver": "Tamaz Shiloshvili",
-        "Car Model": "2002 Porsche 911",
-        "Car Color": "Grey",
-        "Total": "70.316",
-        "Diff.": "+0.484",
+        "msrId": "",
+        "email": "",
+        "class": "es",
+        "carNumber": "76",
+        "driverName": "Tamaz Shiloshvili",
+        "carModel": "2002 Porsche 911",
+        "carColor": "Grey",
+        "sponsor": "",
         "runs": {
             "Segment 1": [
                 [
@@ -1805,17 +1868,20 @@
                     "dnf"
                 ]
             ]
-        }
+        },
+        "Pos.": "20",
+        "Total": "70.316",
+        "Diff.": "+0.484"
     },
     {
-        "Pos.": "21",
-        "Class": "es",
-        "#": "999",
-        "Driver": "Kevin Collins",
-        "Car Model": "2017 Subaru WRX",
-        "Car Color": "White",
-        "Total": "70.436",
-        "Diff.": "+0.120",
+        "msrId": "",
+        "email": "",
+        "class": "es",
+        "carNumber": "999",
+        "driverName": "Kevin Collins",
+        "carModel": "2017 Subaru WRX",
+        "carColor": "White",
+        "sponsor": "",
         "runs": {
             "Segment 1": [
                 [
@@ -1894,17 +1960,20 @@
                     "dirty"
                 ]
             ]
-        }
+        },
+        "Pos.": "21",
+        "Total": "70.436",
+        "Diff.": "+0.120"
     },
     {
-        "Pos.": "22",
-        "Class": "es",
-        "#": "99",
-        "Driver": "John Plump",
-        "Car Model": "2019 Mazda Miata",
-        "Car Color": "Red",
-        "Total": "70.930",
-        "Diff.": "+0.494",
+        "msrId": "",
+        "email": "",
+        "class": "es",
+        "carNumber": "99",
+        "driverName": "John Plump",
+        "carModel": "2019 Mazda Miata",
+        "carColor": "Red",
+        "sponsor": "",
         "runs": {
             "Segment 1": [
                 [
@@ -1988,17 +2057,20 @@
                     "clean"
                 ]
             ]
-        }
+        },
+        "Pos.": "22",
+        "Total": "70.930",
+        "Diff.": "+0.494"
     },
     {
-        "Pos.": "23",
-        "Class": "es",
-        "#": "7",
-        "Driver": "Steven Moorhouse",
-        "Car Model": "2016 Lotus evora",
-        "Car Color": "yellow",
-        "Total": "71.164",
-        "Diff.": "+0.234",
+        "msrId": "",
+        "email": "",
+        "class": "es",
+        "carNumber": "7",
+        "driverName": "Steven Moorhouse",
+        "carModel": "2016 Lotus evora",
+        "carColor": "yellow",
+        "sponsor": "",
         "runs": {
             "Segment 1": [
                 [
@@ -2057,17 +2129,20 @@
                     "dirty"
                 ]
             ]
-        }
+        },
+        "Pos.": "23",
+        "Total": "71.164",
+        "Diff.": "+0.234"
     },
     {
-        "Pos.": "24",
-        "Class": "es",
-        "#": "502",
-        "Driver": "Bill Southworth",
-        "Car Model": "2014 Ford Mustang GT",
-        "Car Color": "Grey",
-        "Total": "71.495",
-        "Diff.": "+0.331",
+        "msrId": "",
+        "email": "",
+        "class": "es",
+        "carNumber": "502",
+        "driverName": "Bill Southworth",
+        "carModel": "2014 Ford Mustang GT",
+        "carColor": "Grey",
+        "sponsor": "",
         "runs": {
             "Segment 1": [
                 [
@@ -2146,17 +2221,20 @@
                     "clean"
                 ]
             ]
-        }
+        },
+        "Pos.": "24",
+        "Total": "71.495",
+        "Diff.": "+0.331"
     },
     {
-        "Pos.": "25",
-        "Class": "es",
-        "#": "27",
-        "Driver": "Chris Mangano",
-        "Car Model": "Porsche Boxsta",
-        "Car Color": "White",
-        "Total": "71.944",
-        "Diff.": "+0.449",
+        "msrId": "",
+        "email": "",
+        "class": "es",
+        "carNumber": "27",
+        "driverName": "Chris Mangano",
+        "carModel": "Porsche Boxsta",
+        "carColor": "White",
+        "sponsor": "",
         "runs": {
             "Segment 1": [
                 [
@@ -2230,17 +2308,20 @@
                     "clean"
                 ]
             ]
-        }
+        },
+        "Pos.": "25",
+        "Total": "71.944",
+        "Diff.": "+0.449"
     },
     {
-        "Pos.": "26",
-        "Class": "es",
-        "#": "45",
-        "Driver": "Jim Paton",
-        "Car Model": "2023 Toyota GR86",
-        "Car Color": "Blue",
-        "Total": "72.409",
-        "Diff.": "+0.465",
+        "msrId": "",
+        "email": "",
+        "class": "es",
+        "carNumber": "45",
+        "driverName": "Jim Paton",
+        "carModel": "2023 Toyota GR86",
+        "carColor": "Blue",
+        "sponsor": "",
         "runs": {
             "Segment 1": [
                 [
@@ -2319,17 +2400,20 @@
                     "clean"
                 ]
             ]
-        }
+        },
+        "Pos.": "26",
+        "Total": "72.409",
+        "Diff.": "+0.465"
     },
     {
-        "Pos.": "27",
-        "Class": "es",
-        "#": "62",
-        "Driver": "Michael King",
-        "Car Model": "2020 Ford Mustang GT",
-        "Car Color": "Black",
-        "Total": "73.844",
-        "Diff.": "+1.435",
+        "msrId": "",
+        "email": "",
+        "class": "es",
+        "carNumber": "62",
+        "driverName": "Michael King",
+        "carModel": "2020 Ford Mustang GT",
+        "carColor": "Black",
+        "sponsor": "",
         "runs": {
             "Segment 1": [
                 [
@@ -2408,17 +2492,20 @@
                     "clean"
                 ]
             ]
-        }
+        },
+        "Pos.": "27",
+        "Total": "73.844",
+        "Diff.": "+1.435"
     },
     {
-        "Pos.": "28",
-        "Class": "es",
-        "#": "10",
-        "Driver": "Jeff Idell",
-        "Car Model": "2016 Subaru BRZ",
-        "Car Color": "Blue",
-        "Total": "74.111",
-        "Diff.": "+0.267",
+        "msrId": "",
+        "email": "",
+        "class": "es",
+        "carNumber": "10",
+        "driverName": "Jeff Idell",
+        "carModel": "2016 Subaru BRZ",
+        "carColor": "Blue",
+        "sponsor": "",
         "runs": {
             "Segment 1": [
                 [
@@ -2492,17 +2579,20 @@
                     "clean"
                 ]
             ]
-        }
+        },
+        "Pos.": "28",
+        "Total": "74.111",
+        "Diff.": "+0.267"
     },
     {
-        "Pos.": "29",
-        "Class": "es",
-        "#": "171",
-        "Driver": "Mila Zaizerskaya",
-        "Car Model": "2006 Mini Cooper S",
-        "Car Color": "Blue",
-        "Total": "74.489",
-        "Diff.": "+0.378",
+        "msrId": "",
+        "email": "",
+        "class": "es",
+        "carNumber": "171",
+        "driverName": "Mila Zaizerskaya",
+        "carModel": "2006 Mini Cooper S",
+        "carColor": "Blue",
+        "sponsor": "",
         "runs": {
             "Segment 1": [
                 [
@@ -2581,17 +2671,20 @@
                     "dirty"
                 ]
             ]
-        }
+        },
+        "Pos.": "29",
+        "Total": "74.489",
+        "Diff.": "+0.378"
     },
     {
-        "Pos.": "30",
-        "Class": "es",
-        "#": "214",
-        "Driver": "Brendan Stecchini",
-        "Car Model": "1982 Chevrolet Camaro",
-        "Car Color": "black",
-        "Total": "75.636",
-        "Diff.": "+1.147",
+        "msrId": "",
+        "email": "",
+        "class": "es",
+        "carNumber": "214",
+        "driverName": "Brendan Stecchini",
+        "carModel": "1982 Chevrolet Camaro",
+        "carColor": "black",
+        "sponsor": "",
         "runs": {
             "Segment 1": [
                 [
@@ -2670,17 +2763,20 @@
                     "clean"
                 ]
             ]
-        }
+        },
+        "Pos.": "30",
+        "Total": "75.636",
+        "Diff.": "+1.147"
     },
     {
-        "Pos.": "31",
-        "Class": "es",
-        "#": "77",
-        "Driver": "Max Dandridge",
-        "Car Model": "2019 Volkswagen GTI",
-        "Car Color": "",
-        "Total": "79.590",
-        "Diff.": "+3.954",
+        "msrId": "",
+        "email": "",
+        "class": "es",
+        "carNumber": "77",
+        "driverName": "Max Dandridge",
+        "carModel": "2019 Volkswagen GTI",
+        "carColor": "",
+        "sponsor": "",
         "runs": {
             "Segment 1": [
                 [
@@ -2724,17 +2820,20 @@
                     "clean"
                 ]
             ]
-        }
+        },
+        "Pos.": "31",
+        "Total": "79.590",
+        "Diff.": "+3.954"
     },
     {
-        "Pos.": "32",
-        "Class": "es",
-        "#": "83",
-        "Driver": "Bruce Stoddard",
-        "Car Model": "1994 Ford Mustang Cobra",
-        "Car Color": "Crystal White",
-        "Total": "80.183",
-        "Diff.": "+0.593",
+        "msrId": "",
+        "email": "",
+        "class": "es",
+        "carNumber": "83",
+        "driverName": "Bruce Stoddard",
+        "carModel": "1994 Ford Mustang Cobra",
+        "carColor": "Crystal White",
+        "sponsor": "",
         "runs": {
             "Segment 1": [
                 [
@@ -2813,17 +2912,20 @@
                     "clean"
                 ]
             ]
-        }
+        },
+        "Pos.": "32",
+        "Total": "80.183",
+        "Diff.": "+0.593"
     },
     {
-        "Pos.": "1T",
-        "Class": "n",
-        "#": "23",
-        "Driver": "Benjamin Derrigo",
-        "Car Model": "1994 Chevrolet Corvette",
-        "Car Color": "Blue",
-        "Total": "72.873",
-        "Diff.": "[-]0.973",
+        "msrId": "",
+        "email": "",
+        "class": "n",
+        "carNumber": "23",
+        "driverName": "Benjamin Derrigo",
+        "carModel": "1994 Chevrolet Corvette",
+        "carColor": "Blue",
+        "sponsor": "",
         "runs": {
             "Segment 1": [
                 [
@@ -2897,17 +2999,20 @@
                     "dirty"
                 ]
             ]
-        }
+        },
+        "Pos.": "1T",
+        "Total": "72.873",
+        "Diff.": "[-]0.973"
     },
     {
-        "Pos.": "2T",
-        "Class": "n",
-        "#": "36",
-        "Driver": "Tony DeVito",
-        "Car Model": "2009 Chevrolet Corvette CSR",
-        "Car Color": "Blade Silver",
-        "Total": "73.846",
-        "Diff.": "+0.973",
+        "msrId": "",
+        "email": "",
+        "class": "n",
+        "carNumber": "36",
+        "driverName": "Tony DeVito",
+        "carModel": "2009 Chevrolet Corvette CSR",
+        "carColor": "Blade Silver",
+        "sponsor": "",
         "runs": {
             "Segment 1": [
                 [
@@ -2986,17 +3091,20 @@
                     "clean"
                 ]
             ]
-        }
+        },
+        "Pos.": "2T",
+        "Total": "73.846",
+        "Diff.": "+0.973"
     },
     {
-        "Pos.": "3T",
-        "Class": "n",
-        "#": "24",
-        "Driver": "Vinh Pham",
-        "Car Model": "2022 Toyota GR86",
-        "Car Color": "",
-        "Total": "74.552",
-        "Diff.": "+0.706",
+        "msrId": "",
+        "email": "",
+        "class": "n",
+        "carNumber": "24",
+        "driverName": "Vinh Pham",
+        "carModel": "2022 Toyota GR86",
+        "carColor": "",
+        "sponsor": "",
         "runs": {
             "Segment 1": [
                 [
@@ -3080,17 +3188,20 @@
                     "clean"
                 ]
             ]
-        }
+        },
+        "Pos.": "3T",
+        "Total": "74.552",
+        "Diff.": "+0.706"
     },
     {
-        "Pos.": "4",
-        "Class": "n",
-        "#": "34",
-        "Driver": "Jamesy Jean-Michel",
-        "Car Model": "2023 Mazda Miata GT",
-        "Car Color": "Black",
-        "Total": "77.528",
-        "Diff.": "+2.976",
+        "msrId": "",
+        "email": "",
+        "class": "n",
+        "carNumber": "34",
+        "driverName": "Jamesy Jean-Michel",
+        "carModel": "2023 Mazda Miata GT",
+        "carColor": "Black",
+        "sponsor": "",
         "runs": {
             "Segment 1": [
                 [
@@ -3169,17 +3280,20 @@
                     "clean"
                 ]
             ]
-        }
+        },
+        "Pos.": "4",
+        "Total": "77.528",
+        "Diff.": "+2.976"
     },
     {
-        "Pos.": "5",
-        "Class": "n",
-        "#": "9",
-        "Driver": "Alan Cozzolino",
-        "Car Model": "2014 Chevrolet Camaro",
-        "Car Color": "White",
-        "Total": "78.406",
-        "Diff.": "+0.878",
+        "msrId": "",
+        "email": "",
+        "class": "n",
+        "carNumber": "9",
+        "driverName": "Alan Cozzolino",
+        "carModel": "2014 Chevrolet Camaro",
+        "carColor": "White",
+        "sponsor": "",
         "runs": {
             "Segment 1": [
                 [
@@ -3238,17 +3352,20 @@
                     "clean"
                 ]
             ]
-        }
+        },
+        "Pos.": "5",
+        "Total": "78.406",
+        "Diff.": "+0.878"
     },
     {
-        "Pos.": "6",
-        "Class": "n",
-        "#": "6",
-        "Driver": "Alexandru Munteanu",
-        "Car Model": "2023 Honda Accord",
-        "Car Color": "Black",
-        "Total": "79.810",
-        "Diff.": "+1.404",
+        "msrId": "",
+        "email": "",
+        "class": "n",
+        "carNumber": "6",
+        "driverName": "Alexandru Munteanu",
+        "carModel": "2023 Honda Accord",
+        "carColor": "Black",
+        "sponsor": "",
         "runs": {
             "Segment 1": [
                 [
@@ -3322,17 +3439,20 @@
                     "dirty"
                 ]
             ]
-        }
+        },
+        "Pos.": "6",
+        "Total": "79.810",
+        "Diff.": "+1.404"
     },
     {
-        "Pos.": "7",
-        "Class": "n",
-        "#": "14",
-        "Driver": "Sean Shiloshvili",
-        "Car Model": "2002 Porsche 911",
-        "Car Color": "Grey",
-        "Total": "80.414",
-        "Diff.": "+0.604",
+        "msrId": "",
+        "email": "",
+        "class": "n",
+        "carNumber": "14",
+        "driverName": "Sean Shiloshvili",
+        "carModel": "2002 Porsche 911",
+        "carColor": "Grey",
+        "sponsor": "",
         "runs": {
             "Segment 1": [
                 [
@@ -3356,17 +3476,20 @@
                     "dirty"
                 ]
             ]
-        }
+        },
+        "Pos.": "7",
+        "Total": "80.414",
+        "Diff.": "+0.604"
     },
     {
-        "Pos.": "8",
-        "Class": "n",
-        "#": "26",
-        "Driver": "Nate Muyuela",
-        "Car Model": "2012 Infiniti G37x",
-        "Car Color": "Black",
-        "Total": "85.919",
-        "Diff.": "+5.505",
+        "msrId": "",
+        "email": "",
+        "class": "n",
+        "carNumber": "26",
+        "driverName": "Nate Muyuela",
+        "carModel": "2012 Infiniti G37x",
+        "carColor": "Black",
+        "sponsor": "",
         "runs": {
             "Segment 1": [
                 [
@@ -3420,17 +3543,20 @@
                     "dnf"
                 ]
             ]
-        }
+        },
+        "Pos.": "8",
+        "Total": "85.919",
+        "Diff.": "+5.505"
     },
     {
-        "Pos.": "1T",
-        "Class": "cst",
-        "#": "20",
-        "Driver": "Chris St. Mary",
-        "Car Model": "2016 Chevrolet Corvette",
-        "Car Color": "Blue",
-        "Total": "67.044",
-        "Diff.": "[-]2.934",
+        "msrId": "",
+        "email": "",
+        "class": "cst",
+        "carNumber": "20",
+        "driverName": "Chris St. Mary",
+        "carModel": "2016 Chevrolet Corvette",
+        "carColor": "Blue",
+        "sponsor": "",
         "runs": {
             "Segment 1": [
                 [
@@ -3494,17 +3620,20 @@
                     "clean"
                 ]
             ]
-        }
+        },
+        "Pos.": "1T",
+        "Total": "67.044",
+        "Diff.": "[-]2.934"
     },
     {
-        "Pos.": "2T",
-        "Class": "cst",
-        "#": "12",
-        "Driver": "George DiGregorio",
-        "Car Model": "1998 Chevrolet Corvette",
-        "Car Color": "Silver",
-        "Total": "69.978",
-        "Diff.": "+2.934",
+        "msrId": "",
+        "email": "",
+        "class": "cst",
+        "carNumber": "12",
+        "driverName": "George DiGregorio",
+        "carModel": "1998 Chevrolet Corvette",
+        "carColor": "Silver",
+        "sponsor": "",
         "runs": {
             "Segment 1": [
                 [
@@ -3583,17 +3712,20 @@
                     "clean"
                 ]
             ]
-        }
+        },
+        "Pos.": "2T",
+        "Total": "69.978",
+        "Diff.": "+2.934"
     },
     {
-        "Pos.": "3",
-        "Class": "cst",
-        "#": "120",
-        "Driver": "Heather Ciribassi",
-        "Car Model": "2016 Chevrolet Corvette",
-        "Car Color": "Blue",
-        "Total": "70.733",
-        "Diff.": "+0.755",
+        "msrId": "",
+        "email": "",
+        "class": "cst",
+        "carNumber": "120",
+        "driverName": "Heather Ciribassi",
+        "carModel": "2016 Chevrolet Corvette",
+        "carColor": "Blue",
+        "sponsor": "",
         "runs": {
             "Segment 1": [
                 [
@@ -3657,17 +3789,20 @@
                     "clean"
                 ]
             ]
-        }
+        },
+        "Pos.": "3",
+        "Total": "70.733",
+        "Diff.": "+0.755"
     },
     {
-        "Pos.": "4",
-        "Class": "cst",
-        "#": "53",
-        "Driver": "Rocco Derrigo",
-        "Car Model": "2021 Chevrolet Corvette",
-        "Car Color": "Orange",
-        "Total": "72.090",
-        "Diff.": "+1.357",
+        "msrId": "",
+        "email": "",
+        "class": "cst",
+        "carNumber": "53",
+        "driverName": "Rocco Derrigo",
+        "carModel": "2021 Chevrolet Corvette",
+        "carColor": "Orange",
+        "sponsor": "",
         "runs": {
             "Segment 1": [
                 [
@@ -3741,17 +3876,20 @@
                     "clean"
                 ]
             ]
-        }
+        },
+        "Pos.": "4",
+        "Total": "72.090",
+        "Diff.": "+1.357"
     },
     {
-        "Pos.": "5",
-        "Class": "cst",
-        "#": "85",
-        "Driver": "Caleb Cook",
-        "Car Model": "1985 Chevrolet Corvette",
-        "Car Color": "Blue",
-        "Total": "75.118",
-        "Diff.": "+3.028",
+        "msrId": "",
+        "email": "",
+        "class": "cst",
+        "carNumber": "85",
+        "driverName": "Caleb Cook",
+        "carModel": "1985 Chevrolet Corvette",
+        "carColor": "Blue",
+        "sponsor": "",
         "runs": {
             "Segment 1": [
                 [
@@ -3830,17 +3968,20 @@
                     "clean"
                 ]
             ]
-        }
+        },
+        "Pos.": "5",
+        "Total": "75.118",
+        "Diff.": "+3.028"
     },
     {
-        "Pos.": "6",
-        "Class": "cst",
-        "#": "3",
-        "Driver": "Donald Basque",
-        "Car Model": "2009 Chevrolet Corvette",
-        "Car Color": "Silver",
-        "Total": "83.747",
-        "Diff.": "+8.629",
+        "msrId": "",
+        "email": "",
+        "class": "cst",
+        "carNumber": "3",
+        "driverName": "Donald Basque",
+        "carModel": "2009 Chevrolet Corvette",
+        "carColor": "Silver",
+        "sponsor": "",
         "runs": {
             "Segment 1": [
                 [
@@ -3904,6 +4045,9 @@
                     "clean"
                 ]
             ]
-        }
+        },
+        "Pos.": "6",
+        "Total": "83.747",
+        "Diff.": "+8.629"
     }
 ]

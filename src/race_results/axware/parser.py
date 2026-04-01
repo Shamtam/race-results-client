@@ -13,6 +13,44 @@ _logger = logging.getLogger(__name__)
 _re_time = re.compile(r"^\s*(?P<raw_time>\d+\.\d+)(\+(?P<penalty>.+?))?\s*$")
 
 
+def normalize_axware_entry(
+    axware_raw_data: list[dict[str, Any]],
+) -> list[dict[str, Any]]:
+    """Normalize native AxWare result column names"""
+    base_entry = {
+        "msrId": "",
+        "email": "",
+        "class": "",
+        "carNumber": "",
+        "driverName": "",
+        "carModel": "",
+        "carColor": "",
+        "sponsor": "",
+        "runs": [],
+    }
+
+    _axware_to_submit_map = {
+        "Unique ID": "msrId",
+        "Email #1": "email",
+        "Class": "class",
+        "#": "carNumber",
+        "Driver": "driverName",
+        "Car Model": "carModel",
+        "Car Color": "carColor",
+        "Sponsor": "sponsor",
+    }
+
+    out_data = [
+        dict(
+            base_entry,
+            **{_axware_to_submit_map.get(k, k): v for k, v in entry.items()},
+        )
+        for entry in axware_raw_data
+    ]
+
+    return out_data
+
+
 def parse_time(raw_value: str | None) -> Tuple[float, int, str] | None:
     try:
         if raw_value is not None and (match := _re_time.match(raw_value)):
@@ -131,7 +169,11 @@ def parse_axware_live_results(fpath: Path) -> list[dict[str, Any]]:
             else:
 
                 # in multiday-files, terminate previous day results when encountering next day row
-                if "Day" in entry and entry["Day"] and entry["Day"] not in current_entry["runs"]:
+                if (
+                    "Day" in entry
+                    and entry["Day"]
+                    and entry["Day"] not in current_entry["runs"]
+                ):
                     current_runs = []
                     current_entry["runs"][entry["Day"]] = current_runs
 
@@ -154,7 +196,7 @@ def parse_axware_live_results(fpath: Path) -> list[dict[str, Any]]:
         current_entry["runs"][last_segment] = current_runs
         results.append(current_entry)
 
-    return results
+    return normalize_axware_entry(results)
 
 
 if __name__ == "__main__":

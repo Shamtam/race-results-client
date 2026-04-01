@@ -1,14 +1,13 @@
 [
     {
-        "Pos.": "1T",
-        "Class": "ss",
-        "#": "2",
-        "Driver": "aoeue ueou",
-        "Car Model": "aou",
-        "Car Color": "oaeu",
-        "Total": "61.153 /  51.123",
-        "Day": "D1",
-        "Diff.": "[-]35.501",
+        "msrId": "",
+        "email": "",
+        "class": "ss",
+        "carNumber": "2",
+        "driverName": "aoeue ueou",
+        "carModel": "aou",
+        "carColor": "oaeu",
+        "sponsor": "",
         "runs": {
             "D1": [
                 [
@@ -54,18 +53,21 @@
                     "clean"
                 ]
             ]
-        }
+        },
+        "Pos.": "1T",
+        "Total": "61.153 /  51.123",
+        "Day": "D1",
+        "Diff.": "[-]35.501"
     },
     {
-        "Pos.": "2",
-        "Class": "ss",
-        "#": "1",
-        "Driver": "aoeu2 ueoa",
-        "Car Model": "aoeu22",
-        "Car Color": "oeuoeu",
-        "Total": "96.654 /  80.802",
-        "Day": "D1",
-        "Diff.": "+35.501",
+        "msrId": "",
+        "email": "",
+        "class": "ss",
+        "carNumber": "1",
+        "driverName": "aoeu2 ueoa",
+        "carModel": "aoeu22",
+        "carColor": "oeuoeu",
+        "sponsor": "",
         "runs": {
             "D1": [
                 [
@@ -111,18 +113,21 @@
                     "clean"
                 ]
             ]
-        }
+        },
+        "Pos.": "2",
+        "Total": "96.654 /  80.802",
+        "Day": "D1",
+        "Diff.": "+35.501"
     },
     {
-        "Pos.": "1",
-        "Class": "ds",
-        "#": "3",
-        "Driver": "aoeueoe ueouue",
-        "Car Model": "aouoe",
-        "Car Color": "oaeu",
-        "Total": "26.543 /  21.526",
-        "Day": "D1",
-        "Diff.": "-",
+        "msrId": "",
+        "email": "",
+        "class": "ds",
+        "carNumber": "3",
+        "driverName": "aoeueoe ueouue",
+        "carModel": "aouoe",
+        "carColor": "oaeu",
+        "sponsor": "",
         "runs": {
             "D1": [
                 [
@@ -168,18 +173,21 @@
                     "clean"
                 ]
             ]
-        }
+        },
+        "Pos.": "1",
+        "Total": "26.543 /  21.526",
+        "Day": "D1",
+        "Diff.": "-"
     },
     {
-        "Pos.": "1",
-        "Class": "gs",
-        "#": "123",
-        "Driver": "aoeueoeoea ueouueao",
-        "Car Model": "aouoeaoeu",
-        "Car Color": "oaeu",
-        "Total": "67.063 /  53.248",
-        "Day": "D1",
-        "Diff.": "-",
+        "msrId": "",
+        "email": "",
+        "class": "gs",
+        "carNumber": "123",
+        "driverName": "aoeueoeoea ueouueao",
+        "carModel": "aouoeaoeu",
+        "carColor": "oaeu",
+        "sponsor": "",
         "runs": {
             "D1": [
                 [
@@ -225,6 +233,10 @@
                     "clean"
                 ]
             ]
-        }
+        },
+        "Pos.": "1",
+        "Total": "67.063 /  53.248",
+        "Day": "D1",
+        "Diff.": "-"
     }
 ]

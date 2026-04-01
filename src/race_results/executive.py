@@ -27,40 +27,6 @@ class ResultsFileWatcher(QThread):
 
         self.state = {}
 
-    def sanitize_data(self, input_data: list[dict[str, Any]]) -> list[dict[str, Any]]:
-        base_entry = {
-            "msrId": "",
-            "email": "",
-            "class": "",
-            "carNumber": "",
-            "driverName": "",
-            "carModel": "",
-            "carColor": "",
-            "sponsor": "",
-            "runs": [],
-        }
-
-        _axware_to_submit_map = {
-            "Unique ID": "msrId",
-            "Email #1": "email",
-            "Class": "class",
-            "#": "carNumber",
-            "Driver": "driverName",
-            "Car Model": "carModel",
-            "Car Color": "carColor",
-            "Sponsor": "sponsor",
-        }
-
-        out_data = [
-            dict(
-                base_entry,
-                **{_axware_to_submit_map.get(k, k): v for k, v in entry.items()},
-            )
-            for entry in input_data
-        ]
-
-        return out_data
-
     def get_host(self):
         return self.settings.Host if self.settings.Host else default_host
 
@@ -214,9 +180,6 @@ class ResultsFileWatcher(QThread):
             try:
                 self.log_message.emit(DEBUG, f"Parsing results file at {fpath}")
                 results = parse_axware_live_results(fpath)
-
-                self.log_message.emit(DEBUG, "Sanitizing results")
-                results = self.sanitize_data(results)
 
                 if self.upload_results(results, close=self.close_event_flag):
                     self.log_message.emit(
