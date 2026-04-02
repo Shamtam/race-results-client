@@ -1,0 +1,8164 @@
+[
+    {
+        "msrId": "221070",
+        "email": "",
+        "class": "es",
+        "carNumber": "91",
+        "driverName": "Ryan Field",
+        "carModel": "2004 Mazda LFX RX8",
+        "carColor": "",
+        "sponsor": "",
+        "runs": {
+            "Segment 1": [
+                [
+                    68.846,
+                    0,
+                    "dnf"
+                ],
+                [
+                    64.218,
+                    0,
+                    "clean"
+                ],
+                [
+                    63.652,
+                    0,
+                    "clean"
+                ],
+                [
+                    63.627,
+                    2,
+                    "dirty"
+                ],
+                [
+                    63.654,
+                    0,
+                    "clean"
+                ],
+                [
+                    63.591,
+                    0,
+                    "dnf"
+                ],
+                [
+                    63.771,
+                    0,
+                    "clean"
+                ],
+                [
+                    63.783,
+                    1,
+                    "dirty"
+                ],
+                [
+                    63.035,
+                    0,
+                    "clean"
+                ]
+            ]
+        },
+        "Pos.": "1T",
+        "Total": "63.035 / 49.797",
+        "Diff.": "[-]1.421"
+    },
+    {
+        "msrId": "413869",
+        "email": "",
+        "class": "es",
+        "carNumber": "20",
+        "driverName": "Evan LeBlanc",
+        "carModel": "2015 Scion FR-S",
+        "carColor": "Blue",
+        "sponsor": "",
+        "runs": {
+            "Segment 1": [
+                [
+                    66.606,
+                    0,
+                    "clean"
+                ],
+                [
+                    65.008,
+                    0,
+                    "clean"
+                ],
+                [
+                    64.494,
+                    2,
+                    "dirty"
+                ],
+                [
+                    64.762,
+                    0,
+                    "clean"
+                ],
+                [
+                    64.807,
+                    0,
+                    "clean"
+                ],
+                [
+                    64.456,
+                    0,
+                    "clean"
+                ],
+                [
+                    66.067,
+                    0,
+                    "clean"
+                ],
+                [
+                    64.575,
+                    0,
+                    "clean"
+                ],
+                [
+                    65.354,
+                    2,
+                    "dirty"
+                ]
+            ]
+        },
+        "Pos.": "2T",
+        "Total": "64.456 / 50.920",
+        "Diff.": "+1.421"
+    },
+    {
+        "msrId": "120524",
+        "email": "",
+        "class": "es",
+        "carNumber": "241",
+        "driverName": "Mark Dudek",
+        "carModel": "2024 Toyota GR Supra",
+        "carColor": "Portimao Blue",
+        "sponsor": "",
+        "runs": {
+            "Segment 1": [
+                [
+                    66.473,
+                    1,
+                    "dirty"
+                ],
+                [
+                    65.461,
+                    0,
+                    "clean"
+                ],
+                [
+                    65.844,
+                    0,
+                    "clean"
+                ],
+                [
+                    65.82,
+                    0,
+                    "clean"
+                ],
+                [
+                    65.682,
+                    1,
+                    "dirty"
+                ],
+                [
+                    65.372,
+                    0,
+                    "clean"
+                ],
+                [
+                    65.829,
+                    1,
+                    "dirty"
+                ],
+                [
+                    64.967,
+                    1,
+                    "dirty"
+                ]
+            ]
+        },
+        "Pos.": "3T",
+        "Total": "65.372 / 51.643",
+        "Diff.": "+0.916"
+    },
+    {
+        "msrId": "210364",
+        "email": "",
+        "class": "es",
+        "carNumber": "731",
+        "driverName": "Justin Chen",
+        "carModel": "2006 Honda S2000",
+        "carColor": "Yellow",
+        "sponsor": "",
+        "runs": {
+            "Segment 1": [
+                [
+                    69.846,
+                    0,
+                    "clean"
+                ],
+                [
+                    67.647,
+                    0,
+                    "clean"
+                ],
+                [
+                    66.291,
+                    0,
+                    "clean"
+                ],
+                [
+                    66.704,
+                    0,
+                    "clean"
+                ],
+                [
+                    67.228,
+                    1,
+                    "dirty"
+                ],
+                [
+                    66.543,
+                    1,
+                    "dirty"
+                ],
+                [
+                    67.8,
+                    0,
+                    "clean"
+                ],
+                [
+                    66.977,
+                    1,
+                    "dirty"
+                ],
+                [
+                    65.902,
+                    0,
+                    "clean"
+                ]
+            ]
+        },
+        "Pos.": "4T",
+        "Total": "65.902 / 52.062",
+        "Diff.": "+0.530"
+    },
+    {
+        "msrId": "594256",
+        "email": "",
+        "class": "es",
+        "carNumber": "701",
+        "driverName": "Charlie Sinkler",
+        "carModel": "2023 Tesla S",
+        "carColor": "Gray",
+        "sponsor": "",
+        "runs": {
+            "Segment 1": [
+                [
+                    68.248,
+                    0,
+                    "clean"
+                ],
+                [
+                    67.646,
+                    0,
+                    "clean"
+                ],
+                [
+                    67.68,
+                    0,
+                    "clean"
+                ],
+                [
+                    66.704,
+                    1,
+                    "dirty"
+                ],
+                [
+                    66.747,
+                    0,
+                    "clean"
+                ],
+                [
+                    66.154,
+                    0,
+                    "clean"
+                ],
+                [
+                    65.756,
+                    1,
+                    "dirty"
+                ],
+                [
+                    65.921,
+                    2,
+                    "dirty"
+                ]
+            ]
+        },
+        "Pos.": "5T",
+        "Total": "66.154 / 52.261",
+        "Diff.": "+0.252"
+    },
+    {
+        "msrId": "534604",
+        "email": "",
+        "class": "es",
+        "carNumber": "9",
+        "driverName": "Daniel Hong",
+        "carModel": "2024 Porsche 911 GTS",
+        "carColor": "Ice Grey",
+        "sponsor": "",
+        "runs": {
+            "Segment 1": [
+                [
+                    70.849,
+                    1,
+                    "dirty"
+                ],
+                [
+                    72.141,
+                    0,
+                    "clean"
+                ],
+                [
+                    68.942,
+                    1,
+                    "dirty"
+                ],
+                [
+                    68.822,
+                    1,
+                    "dirty"
+                ],
+                [
+                    69.194,
+                    0,
+                    "clean"
+                ],
+                [
+                    69.307,
+                    0,
+                    "clean"
+                ],
+                [
+                    68.346,
+                    2,
+                    "dirty"
+                ],
+                [
+                    68.371,
+                    0,
+                    "clean"
+                ],
+                [
+                    66.671,
+                    0,
+                    "clean"
+                ]
+            ]
+        },
+        "Pos.": "6T",
+        "Total": "66.671 / 52.670",
+        "Diff.": "+0.517"
+    },
+    {
+        "msrId": "2365335",
+        "email": "",
+        "class": "es",
+        "carNumber": "140",
+        "driverName": "Matthew Alsante",
+        "carModel": "2023 Subaru BRZ",
+        "carColor": "Blue",
+        "sponsor": "",
+        "runs": {
+            "Segment 1": [
+                [
+                    72.707,
+                    0,
+                    "dnf"
+                ],
+                [
+                    71.069,
+                    0,
+                    "clean"
+                ],
+                [
+                    70.365,
+                    0,
+                    "clean"
+                ],
+                [
+                    69.65,
+                    0,
+                    "clean"
+                ],
+                [
+                    69.224,
+                    0,
+                    "clean"
+                ],
+                [
+                    67.856,
+                    0,
+                    "clean"
+                ],
+                [
+                    67.694,
+                    0,
+                    "clean"
+                ],
+                [
+                    67.022,
+                    0,
+                    "clean"
+                ],
+                [
+                    66.753,
+                    1,
+                    "dirty"
+                ]
+            ]
+        },
+        "Pos.": "7",
+        "Total": "67.022 / 52.947",
+        "Diff.": "+0.351"
+    },
+    {
+        "msrId": "236441",
+        "email": "",
+        "class": "es",
+        "carNumber": "190",
+        "driverName": "Chris St. Mary",
+        "carModel": "2016 Chevrolet Corvette",
+        "carColor": "Blue",
+        "sponsor": "",
+        "runs": {
+            "Segment 1": [
+                [
+                    70.613,
+                    0,
+                    "clean"
+                ],
+                [
+                    69.105,
+                    0,
+                    "clean"
+                ],
+                [
+                    68.716,
+                    1,
+                    "dirty"
+                ],
+                [
+                    67.703,
+                    0,
+                    "clean"
+                ],
+                [
+                    68.926,
+                    0,
+                    "clean"
+                ],
+                [
+                    68.119,
+                    1,
+                    "dirty"
+                ],
+                [
+                    67.912,
+                    0,
+                    "clean"
+                ],
+                [
+                    67.492,
+                    0,
+                    "clean"
+                ],
+                [
+                    68.041,
+                    2,
+                    "dirty"
+                ]
+            ]
+        },
+        "Pos.": "8",
+        "Total": "67.492 / 53.318",
+        "Diff.": "+0.470"
+    },
+    {
+        "msrId": "170287",
+        "email": "",
+        "class": "es",
+        "carNumber": "81",
+        "driverName": "Josh Brockman",
+        "carModel": "2007 Honda S2000",
+        "carColor": "Blue",
+        "sponsor": "",
+        "runs": {
+            "Segment 1": [
+                [
+                    70.45,
+                    0,
+                    "clean"
+                ],
+                [
+                    68.812,
+                    0,
+                    "clean"
+                ],
+                [
+                    68.082,
+                    0,
+                    "clean"
+                ],
+                [
+                    74.482,
+                    1,
+                    "dirty"
+                ],
+                [
+                    67.835,
+                    3,
+                    "dirty"
+                ],
+                [
+                    68.295,
+                    1,
+                    "dirty"
+                ],
+                [
+                    67.571,
+                    0,
+                    "clean"
+                ],
+                [
+                    67.575,
+                    2,
+                    "dirty"
+                ],
+                [
+                    67.452,
+                    3,
+                    "dirty"
+                ]
+            ]
+        },
+        "Pos.": "9",
+        "Total": "67.571 / 53.381",
+        "Diff.": "+0.079"
+    },
+    {
+        "msrId": "2329886",
+        "email": "",
+        "class": "es",
+        "carNumber": "200",
+        "driverName": "Ryan Casillo",
+        "carModel": "2024 BMW M2",
+        "carColor": "Black",
+        "sponsor": "",
+        "runs": {
+            "Segment 1": [
+                [
+                    70.871,
+                    0,
+                    "clean"
+                ],
+                [
+                    69.24,
+                    0,
+                    "clean"
+                ],
+                [
+                    68.945,
+                    0,
+                    "clean"
+                ],
+                [
+                    68.894,
+                    0,
+                    "clean"
+                ],
+                [
+                    68.082,
+                    1,
+                    "dirty"
+                ],
+                [
+                    67.161,
+                    2,
+                    "dirty"
+                ],
+                [
+                    67.846,
+                    1,
+                    "dirty"
+                ],
+                [
+                    67.763,
+                    0,
+                    "clean"
+                ],
+                [
+                    68.751,
+                    1,
+                    "dirty"
+                ]
+            ]
+        },
+        "Pos.": "10",
+        "Total": "67.763 / 53.532",
+        "Diff.": "+0.192"
+    },
+    {
+        "msrId": "514179",
+        "email": "",
+        "class": "es",
+        "carNumber": "156",
+        "driverName": "Charles Comeau",
+        "carModel": "2025 Porsche Cayman GTS 4.0",
+        "carColor": "Ruby Star Neo",
+        "sponsor": "",
+        "runs": {
+            "Segment 1": [
+                [
+                    69.896,
+                    0,
+                    "clean"
+                ],
+                [
+                    68.709,
+                    0,
+                    "clean"
+                ],
+                [
+                    68.218,
+                    0,
+                    "clean"
+                ],
+                [
+                    68.059,
+                    0,
+                    "clean"
+                ],
+                [
+                    68.526,
+                    0,
+                    "clean"
+                ],
+                [
+                    68.777,
+                    0,
+                    "clean"
+                ],
+                [
+                    68.917,
+                    1,
+                    "dirty"
+                ],
+                [
+                    68.86,
+                    0,
+                    "clean"
+                ],
+                [
+                    68.195,
+                    0,
+                    "clean"
+                ]
+            ]
+        },
+        "Pos.": "11",
+        "Total": "68.059 / 53.766",
+        "Diff.": "+0.296"
+    },
+    {
+        "msrId": "641770",
+        "email": "",
+        "class": "es",
+        "carNumber": "119",
+        "driverName": "Fouad Al-Rijleh",
+        "carModel": "2016 Volkswagen Golf R",
+        "carColor": "White",
+        "sponsor": "",
+        "runs": {
+            "Segment 1": [
+                [
+                    70.946,
+                    0,
+                    "dnf"
+                ],
+                [
+                    68.907,
+                    0,
+                    "dirty"
+                ],
+                [
+                    67.763,
+                    1,
+                    "dirty"
+                ],
+                [
+                    67.919,
+                    1,
+                    "dirty"
+                ],
+                [
+                    68.335,
+                    1,
+                    "dirty"
+                ],
+                [
+                    69.406,
+                    0,
+                    "clean"
+                ],
+                [
+                    68.944,
+                    0,
+                    "clean"
+                ],
+                [
+                    69.286,
+                    0,
+                    "clean"
+                ],
+                [
+                    68.303,
+                    0,
+                    "clean"
+                ]
+            ]
+        },
+        "Pos.": "12",
+        "Total": "68.303 / 53.959",
+        "Diff.": "+0.244"
+    },
+    {
+        "msrId": "621702",
+        "email": "",
+        "class": "es",
+        "carNumber": "166",
+        "driverName": "Krishna Harpanahalli",
+        "carModel": "2021 Porsche Cayman gt4",
+        "carColor": "Gentian Blue",
+        "sponsor": "",
+        "runs": {
+            "Segment 1": [
+                [
+                    69.37,
+                    0,
+                    "clean"
+                ],
+                [
+                    69.018,
+                    0,
+                    "clean"
+                ],
+                [
+                    74.75,
+                    1,
+                    "dirty"
+                ],
+                [
+                    68.947,
+                    0,
+                    "clean"
+                ],
+                [
+                    75.534,
+                    0,
+                    "clean"
+                ],
+                [
+                    69.181,
+                    3,
+                    "dirty"
+                ],
+                [
+                    78.354,
+                    2,
+                    "dirty"
+                ],
+                [
+                    67.614,
+                    2,
+                    "dirty"
+                ],
+                [
+                    68.364,
+                    0,
+                    "clean"
+                ]
+            ]
+        },
+        "Pos.": "13",
+        "Total": "68.364 / 54.007",
+        "Diff.": "+0.061"
+    },
+    {
+        "msrId": "1340348",
+        "email": "",
+        "class": "es",
+        "carNumber": "3",
+        "driverName": "Jake Hellman",
+        "carModel": "2013 Scion FR-S",
+        "carColor": "Black",
+        "sponsor": "",
+        "runs": {
+            "Segment 1": [
+                [
+                    70.712,
+                    2,
+                    "dirty"
+                ],
+                [
+                    69.541,
+                    0,
+                    "clean"
+                ],
+                [
+                    69.264,
+                    0,
+                    "clean"
+                ],
+                [
+                    68.52,
+                    0,
+                    "clean"
+                ],
+                [
+                    73.628,
+                    0,
+                    "clean"
+                ],
+                [
+                    69.608,
+                    1,
+                    "dirty"
+                ]
+            ]
+        },
+        "Pos.": "14",
+        "Total": "68.520 / 54.130",
+        "Diff.": "+0.156"
+    },
+    {
+        "msrId": "973248",
+        "email": "",
+        "class": "es",
+        "carNumber": "192",
+        "driverName": "Heather Ciribassi",
+        "carModel": "2016 Chevrolet Corvette",
+        "carColor": "Blue",
+        "sponsor": "",
+        "runs": {
+            "Segment 1": [
+                [
+                    71.17,
+                    1,
+                    "dirty"
+                ],
+                [
+                    71.288,
+                    1,
+                    "dirty"
+                ],
+                [
+                    70.255,
+                    0,
+                    "clean"
+                ],
+                [
+                    72.152,
+                    0,
+                    "clean"
+                ],
+                [
+                    69.296,
+                    0,
+                    "clean"
+                ],
+                [
+                    70.934,
+                    0,
+                    "clean"
+                ],
+                [
+                    69.363,
+                    0,
+                    "clean"
+                ],
+                [
+                    68.869,
+                    0,
+                    "clean"
+                ],
+                [
+                    68.875,
+                    1,
+                    "dirty"
+                ]
+            ]
+        },
+        "Pos.": "15",
+        "Total": "68.869 / 54.406",
+        "Diff.": "+0.349"
+    },
+    {
+        "msrId": "361462",
+        "email": "",
+        "class": "es",
+        "carNumber": "716",
+        "driverName": "David Ferragamo",
+        "carModel": "2022 Toyota GR86",
+        "carColor": "Blue",
+        "sponsor": "",
+        "runs": {
+            "Segment 1": [
+                [
+                    81.241,
+                    0,
+                    "dnf"
+                ],
+                [
+                    70.01,
+                    0,
+                    "clean"
+                ],
+                [
+                    69.149,
+                    0,
+                    "clean"
+                ],
+                [
+                    69.194,
+                    0,
+                    "clean"
+                ],
+                [
+                    69.991,
+                    0,
+                    "clean"
+                ],
+                [
+                    69.715,
+                    0,
+                    "clean"
+                ],
+                [
+                    67.874,
+                    0,
+                    "dnf"
+                ],
+                [
+                    69.663,
+                    1,
+                    "dirty"
+                ],
+                [
+                    68.947,
+                    0,
+                    "clean"
+                ]
+            ]
+        },
+        "Pos.": "16",
+        "Total": "68.947 / 54.468",
+        "Diff.": "+0.078"
+    },
+    {
+        "msrId": "642971",
+        "email": "",
+        "class": "es",
+        "carNumber": "627",
+        "driverName": "Will Middlecoat",
+        "carModel": "2023 Alfa Romeo Giulia Quadrifoglio",
+        "carColor": "Blue",
+        "sponsor": "",
+        "runs": {
+            "Segment 1": [
+                [
+                    70.654,
+                    0,
+                    "clean"
+                ],
+                [
+                    70.591,
+                    1,
+                    "dirty"
+                ],
+                [
+                    69.169,
+                    0,
+                    "clean"
+                ],
+                [
+                    70.083,
+                    0,
+                    "clean"
+                ],
+                [
+                    70.064,
+                    0,
+                    "clean"
+                ],
+                [
+                    69.996,
+                    0,
+                    "clean"
+                ],
+                [
+                    70.03,
+                    1,
+                    "dirty"
+                ],
+                [
+                    70.029,
+                    2,
+                    "dirty"
+                ],
+                [
+                    69.88,
+                    1,
+                    "dirty"
+                ]
+            ]
+        },
+        "Pos.": "17",
+        "Total": "69.169 / 54.643",
+        "Diff.": "+0.222"
+    },
+    {
+        "msrId": "572854",
+        "email": "",
+        "class": "es",
+        "carNumber": "37",
+        "driverName": "Sammy Loji",
+        "carModel": "2001 Lexus Is300",
+        "carColor": "Gray",
+        "sponsor": "",
+        "runs": {
+            "Segment 1": [
+                [
+                    71.817,
+                    2,
+                    "dirty"
+                ],
+                [
+                    70.62,
+                    0,
+                    "clean"
+                ],
+                [
+                    69.766,
+                    1,
+                    "dirty"
+                ],
+                [
+                    69.435,
+                    0,
+                    "clean"
+                ],
+                [
+                    73.634,
+                    0,
+                    "clean"
+                ],
+                [
+                    71.332,
+                    1,
+                    "dirty"
+                ],
+                [
+                    69.727,
+                    2,
+                    "dirty"
+                ],
+                [
+                    71.496,
+                    0,
+                    "dnf"
+                ],
+                [
+                    70.578,
+                    1,
+                    "dirty"
+                ]
+            ]
+        },
+        "Pos.": "18",
+        "Total": "69.435 / 54.853",
+        "Diff.": "+0.266"
+    },
+    {
+        "msrId": "320040",
+        "email": "",
+        "class": "es",
+        "carNumber": "198",
+        "driverName": "Joseph Hayes",
+        "carModel": "2006 Ford Mustang",
+        "carColor": "Tungsten Grey",
+        "sponsor": "",
+        "runs": {
+            "Segment 1": [
+                [
+                    72.311,
+                    0,
+                    "clean"
+                ],
+                [
+                    70.817,
+                    0,
+                    "clean"
+                ],
+                [
+                    71.439,
+                    1,
+                    "dirty"
+                ],
+                [
+                    69.766,
+                    0,
+                    "clean"
+                ],
+                [
+                    71.816,
+                    0,
+                    "clean"
+                ],
+                [
+                    72.28,
+                    0,
+                    "clean"
+                ],
+                [
+                    69.938,
+                    0,
+                    "clean"
+                ],
+                [
+                    73.552,
+                    1,
+                    "dirty"
+                ],
+                [
+                    70.038,
+                    0,
+                    "clean"
+                ]
+            ]
+        },
+        "Pos.": "19",
+        "Total": "69.766 / 55.115",
+        "Diff.": "+0.331"
+    },
+    {
+        "msrId": "1597356",
+        "email": "",
+        "class": "es",
+        "carNumber": "38",
+        "driverName": "Erik Shing",
+        "carModel": "2005 Honda S2000",
+        "carColor": "Rio Yellow",
+        "sponsor": "",
+        "runs": {
+            "Segment 1": [
+                [
+                    72.887,
+                    3,
+                    "dirty"
+                ],
+                [
+                    72.611,
+                    1,
+                    "dirty"
+                ],
+                [
+                    69.688,
+                    3,
+                    "dirty"
+                ],
+                [
+                    71.149,
+                    0,
+                    "clean"
+                ],
+                [
+                    71.481,
+                    3,
+                    "dirty"
+                ],
+                [
+                    70.077,
+                    0,
+                    "clean"
+                ]
+            ]
+        },
+        "Pos.": "20",
+        "Total": "70.077 / 55.360",
+        "Diff.": "+0.311"
+    },
+    {
+        "msrId": "116000",
+        "email": "",
+        "class": "es",
+        "carNumber": "67",
+        "driverName": "Ralph Zajac",
+        "carModel": "2013 BMW M3",
+        "carColor": "Gray",
+        "sponsor": "",
+        "runs": {
+            "Segment 1": [
+                [
+                    72.709,
+                    0,
+                    "clean"
+                ],
+                [
+                    70.71,
+                    0,
+                    "clean"
+                ],
+                [
+                    71.368,
+                    1,
+                    "dirty"
+                ],
+                [
+                    70.504,
+                    0,
+                    "clean"
+                ],
+                [
+                    71.496,
+                    0,
+                    "clean"
+                ],
+                [
+                    70.607,
+                    0,
+                    "clean"
+                ],
+                [
+                    70.244,
+                    1,
+                    "dirty"
+                ],
+                [
+                    71.384,
+                    0,
+                    "clean"
+                ],
+                [
+                    70.188,
+                    0,
+                    "clean"
+                ]
+            ]
+        },
+        "Pos.": "21",
+        "Total": "70.188 / 55.448",
+        "Diff.": "+0.111"
+    },
+    {
+        "msrId": "328585",
+        "email": "",
+        "class": "es",
+        "carNumber": "552",
+        "driverName": "Igor Romashko",
+        "carModel": "2013 Ariel Atom",
+        "carColor": "blue",
+        "sponsor": "",
+        "runs": {
+            "Segment 1": [
+                [
+                    73.39,
+                    1,
+                    "dirty"
+                ],
+                [
+                    72.615,
+                    0,
+                    "clean"
+                ],
+                [
+                    70.586,
+                    0,
+                    "clean"
+                ]
+            ]
+        },
+        "Pos.": "22",
+        "Total": "70.586 / 55.762",
+        "Diff.": "+0.398"
+    },
+    {
+        "msrId": "681674",
+        "email": "",
+        "class": "es",
+        "carNumber": "808",
+        "driverName": "Gabriel Solano",
+        "carModel": "2000 Honda s2000",
+        "carColor": "white",
+        "sponsor": "",
+        "runs": {
+            "Segment 1": [
+                [
+                    77.995,
+                    1,
+                    "dirty"
+                ],
+                [
+                    96.214,
+                    0,
+                    "dnf"
+                ],
+                [
+                    72.472,
+                    0,
+                    "dnf"
+                ],
+                [
+                    72.61,
+                    1,
+                    "dirty"
+                ],
+                [
+                    71.212,
+                    0,
+                    "dnf"
+                ],
+                [
+                    70.576,
+                    1,
+                    "dirty"
+                ],
+                [
+                    70.667,
+                    0,
+                    "clean"
+                ],
+                [
+                    70.064,
+                    1,
+                    "dirty"
+                ],
+                [
+                    69.34,
+                    1,
+                    "dirty"
+                ]
+            ]
+        },
+        "Pos.": "23",
+        "Total": "70.667 / 55.826",
+        "Diff.": "+0.081"
+    },
+    {
+        "msrId": "1348916",
+        "email": "",
+        "class": "es",
+        "carNumber": "222",
+        "driverName": "Karim Loji",
+        "carModel": "2023 Toyota GR86",
+        "carColor": "grey",
+        "sponsor": "",
+        "runs": {
+            "Segment 1": [
+                [
+                    73.077,
+                    0,
+                    "clean"
+                ],
+                [
+                    71.887,
+                    1,
+                    "dirty"
+                ],
+                [
+                    71.181,
+                    0,
+                    "clean"
+                ],
+                [
+                    70.755,
+                    0,
+                    "clean"
+                ],
+                [
+                    71.634,
+                    0,
+                    "clean"
+                ],
+                [
+                    73.197,
+                    1,
+                    "dirty"
+                ],
+                [
+                    72.168,
+                    1,
+                    "dirty"
+                ],
+                [
+                    71.086,
+                    0,
+                    "clean"
+                ],
+                [
+                    72.821,
+                    0,
+                    "clean"
+                ]
+            ]
+        },
+        "Pos.": "24",
+        "Total": "70.755 / 55.896",
+        "Diff.": "+0.088"
+    },
+    {
+        "msrId": "2051257",
+        "email": "",
+        "class": "es",
+        "carNumber": "5",
+        "driverName": "Cuan Fraser",
+        "carModel": "2023 Toyota GR86",
+        "carColor": "Gray",
+        "sponsor": "",
+        "runs": {
+            "Segment 1": [
+                [
+                    77.035,
+                    0,
+                    "clean"
+                ],
+                [
+                    75.684,
+                    0,
+                    "clean"
+                ],
+                [
+                    73.392,
+                    0,
+                    "clean"
+                ],
+                [
+                    71.292,
+                    0,
+                    "clean"
+                ],
+                [
+                    72.686,
+                    0,
+                    "dnf"
+                ],
+                [
+                    71.319,
+                    0,
+                    "clean"
+                ],
+                [
+                    73.12,
+                    1,
+                    "dirty"
+                ],
+                [
+                    72.114,
+                    0,
+                    "clean"
+                ],
+                [
+                    70.792,
+                    0,
+                    "clean"
+                ]
+            ]
+        },
+        "Pos.": "25",
+        "Total": "70.792 / 55.925",
+        "Diff.": "+0.037"
+    },
+    {
+        "msrId": "521940",
+        "email": "",
+        "class": "es",
+        "carNumber": "149",
+        "driverName": "Isaac Hayes",
+        "carModel": "2006 Ford Mustang",
+        "carColor": "Tungsten Grey",
+        "sponsor": "",
+        "runs": {
+            "Segment 1": [
+                [
+                    73.402,
+                    0,
+                    "clean"
+                ],
+                [
+                    72.427,
+                    0,
+                    "clean"
+                ],
+                [
+                    71.29,
+                    0,
+                    "clean"
+                ],
+                [
+                    72.65,
+                    1,
+                    "dirty"
+                ],
+                [
+                    71.663,
+                    0,
+                    "clean"
+                ],
+                [
+                    71.475,
+                    1,
+                    "dirty"
+                ],
+                [
+                    71.167,
+                    0,
+                    "clean"
+                ],
+                [
+                    70.83,
+                    0,
+                    "clean"
+                ]
+            ]
+        },
+        "Pos.": "26",
+        "Total": "70.830 / 55.955",
+        "Diff.": "+0.038"
+    },
+    {
+        "msrId": "343951",
+        "email": "",
+        "class": "es",
+        "carNumber": "117",
+        "driverName": "Kyle Padelford",
+        "carModel": "1997 Mazda Miata",
+        "carColor": "Green",
+        "sponsor": "",
+        "runs": {
+            "Segment 1": [
+                [
+                    78.71,
+                    0,
+                    "dnf"
+                ],
+                [
+                    74.696,
+                    0,
+                    "clean"
+                ],
+                [
+                    73.1,
+                    0,
+                    "clean"
+                ],
+                [
+                    71.026,
+                    0,
+                    "clean"
+                ],
+                [
+                    71.523,
+                    0,
+                    "clean"
+                ],
+                [
+                    72.561,
+                    0,
+                    "clean"
+                ],
+                [
+                    71.417,
+                    0,
+                    "clean"
+                ],
+                [
+                    71.108,
+                    0,
+                    "clean"
+                ],
+                [
+                    71.646,
+                    0,
+                    "clean"
+                ]
+            ]
+        },
+        "Pos.": "27",
+        "Total": "71.026 / 56.110",
+        "Diff.": "+0.196"
+    },
+    {
+        "msrId": "2421887",
+        "email": "",
+        "class": "es",
+        "carNumber": "70",
+        "driverName": "Matthew Hartman",
+        "carModel": "2017 Audi R8 we have at home",
+        "carColor": "Blue",
+        "sponsor": "",
+        "runs": {
+            "Segment 1": [
+                [
+                    72.025,
+                    0,
+                    "clean"
+                ],
+                [
+                    72.597,
+                    0,
+                    "clean"
+                ],
+                [
+                    73.217,
+                    1,
+                    "dirty"
+                ],
+                [
+                    72.085,
+                    2,
+                    "dirty"
+                ],
+                [
+                    72.967,
+                    0,
+                    "clean"
+                ],
+                [
+                    71.821,
+                    0,
+                    "clean"
+                ],
+                [
+                    72.096,
+                    1,
+                    "dirty"
+                ],
+                [
+                    71.527,
+                    0,
+                    "clean"
+                ],
+                [
+                    72.155,
+                    0,
+                    "clean"
+                ]
+            ]
+        },
+        "Pos.": "28",
+        "Total": "71.527 / 56.506",
+        "Diff.": "+0.501"
+    },
+    {
+        "msrId": "2269527",
+        "email": "",
+        "class": "es",
+        "carNumber": "41",
+        "driverName": "Noah Scott",
+        "carModel": "2023 Toyota gr86",
+        "carColor": "black",
+        "sponsor": "",
+        "runs": {
+            "Segment 1": [
+                [
+                    74.417,
+                    1,
+                    "dirty"
+                ],
+                [
+                    74.35,
+                    0,
+                    "clean"
+                ],
+                [
+                    72.07,
+                    0,
+                    "dnf"
+                ],
+                [
+                    73.097,
+                    0,
+                    "clean"
+                ],
+                [
+                    71.924,
+                    2,
+                    "dirty"
+                ],
+                [
+                    73.425,
+                    0,
+                    "clean"
+                ],
+                [
+                    71.55,
+                    0,
+                    "clean"
+                ],
+                [
+                    71.646,
+                    0,
+                    "clean"
+                ],
+                [
+                    71.913,
+                    0,
+                    "clean"
+                ]
+            ]
+        },
+        "Pos.": "29",
+        "Total": "71.550 / 56.524",
+        "Diff.": "+0.023"
+    },
+    {
+        "msrId": "252961",
+        "email": "",
+        "class": "es",
+        "carNumber": "811",
+        "driverName": "Gleb Zverinskiy",
+        "carModel": "2024 Tesla Model 3",
+        "carColor": "DogeBag Silver",
+        "sponsor": "",
+        "runs": {
+            "Segment 1": [
+                [
+                    73.988,
+                    0,
+                    "clean"
+                ],
+                [
+                    73.786,
+                    1,
+                    "dirty"
+                ],
+                [
+                    73.264,
+                    0,
+                    "clean"
+                ],
+                [
+                    72.116,
+                    1,
+                    "dirty"
+                ],
+                [
+                    72.161,
+                    0,
+                    "clean"
+                ],
+                [
+                    72.527,
+                    1,
+                    "dirty"
+                ],
+                [
+                    72.032,
+                    0,
+                    "clean"
+                ],
+                [
+                    72.599,
+                    1,
+                    "dirty"
+                ],
+                [
+                    71.853,
+                    0,
+                    "clean"
+                ]
+            ]
+        },
+        "Pos.": "30",
+        "Total": "71.853 / 56.763",
+        "Diff.": "+0.303"
+    },
+    {
+        "msrId": "1803495",
+        "email": "",
+        "class": "es",
+        "carNumber": "19",
+        "driverName": "Michael Medici",
+        "carModel": "2000 Porsche Boxster",
+        "carColor": "silver",
+        "sponsor": "",
+        "runs": {
+            "Segment 1": [
+                [
+                    74.802,
+                    0,
+                    "clean"
+                ],
+                [
+                    75.049,
+                    0,
+                    "dnf"
+                ],
+                [
+                    75.305,
+                    0,
+                    "clean"
+                ],
+                [
+                    74.031,
+                    0,
+                    "clean"
+                ],
+                [
+                    73.92,
+                    0,
+                    "clean"
+                ],
+                [
+                    72.7,
+                    0,
+                    "clean"
+                ],
+                [
+                    72.267,
+                    0,
+                    "clean"
+                ],
+                [
+                    71.944,
+                    0,
+                    "clean"
+                ]
+            ]
+        },
+        "Pos.": "31",
+        "Total": "71.944 / 56.835",
+        "Diff.": "+0.091"
+    },
+    {
+        "msrId": "2008981",
+        "email": "",
+        "class": "es",
+        "carNumber": "45",
+        "driverName": "Jim Paton",
+        "carModel": "2023 Toyota GR86",
+        "carColor": "Blue",
+        "sponsor": "",
+        "runs": {
+            "Segment 1": [
+                [
+                    76.247,
+                    0,
+                    "clean"
+                ],
+                [
+                    79.613,
+                    0,
+                    "clean"
+                ],
+                [
+                    73.655,
+                    0,
+                    "clean"
+                ],
+                [
+                    74.142,
+                    1,
+                    "dirty"
+                ],
+                [
+                    73.719,
+                    0,
+                    "clean"
+                ],
+                [
+                    76.553,
+                    2,
+                    "dirty"
+                ],
+                [
+                    72.601,
+                    0,
+                    "clean"
+                ],
+                [
+                    76.982,
+                    0,
+                    "clean"
+                ],
+                [
+                    71.984,
+                    0,
+                    "clean"
+                ]
+            ]
+        },
+        "Pos.": "32",
+        "Total": "71.984 / 56.867",
+        "Diff.": "+0.040"
+    },
+    {
+        "msrId": "347915",
+        "email": "",
+        "class": "es",
+        "carNumber": "277",
+        "driverName": "Gerald Papenhausen",
+        "carModel": "2000 Mazda Miata",
+        "carColor": "Green",
+        "sponsor": "",
+        "runs": {
+            "Segment 1": [
+                [
+                    75.377,
+                    0,
+                    "clean"
+                ],
+                [
+                    73.518,
+                    0,
+                    "clean"
+                ],
+                [
+                    81.618,
+                    2,
+                    "dirty"
+                ],
+                [
+                    73.752,
+                    0,
+                    "clean"
+                ],
+                [
+                    73.447,
+                    0,
+                    "clean"
+                ],
+                [
+                    73.328,
+                    0,
+                    "clean"
+                ],
+                [
+                    73.144,
+                    0,
+                    "clean"
+                ],
+                [
+                    72.993,
+                    2,
+                    "dirty"
+                ]
+            ]
+        },
+        "Pos.": "33",
+        "Total": "73.144 / 57.783",
+        "Diff.": "+1.160"
+    },
+    {
+        "msrId": "447679",
+        "email": "",
+        "class": "es",
+        "carNumber": "141",
+        "driverName": "Lazz Mckenzie",
+        "carModel": "1988 Toyota MR2",
+        "carColor": "Blue",
+        "sponsor": "",
+        "runs": {
+            "Segment 1": [
+                [
+                    86.798,
+                    0,
+                    "dnf"
+                ],
+                [
+                    80.849,
+                    0,
+                    "clean"
+                ],
+                [
+                    79.075,
+                    0,
+                    "clean"
+                ],
+                [
+                    78.52,
+                    0,
+                    "clean"
+                ],
+                [
+                    79.758,
+                    0,
+                    "dnf"
+                ],
+                [
+                    78.0,
+                    0,
+                    "clean"
+                ],
+                [
+                    78.523,
+                    0,
+                    "clean"
+                ],
+                [
+                    78.146,
+                    0,
+                    "clean"
+                ],
+                [
+                    79.978,
+                    0,
+                    "clean"
+                ]
+            ]
+        },
+        "Pos.": "34",
+        "Total": "78.000 / 61.620",
+        "Diff.": "+4.856"
+    },
+    {
+        "msrId": "569591",
+        "email": "",
+        "class": "es",
+        "carNumber": "10",
+        "driverName": "John Boucher",
+        "carModel": "2003 Nissan 350z",
+        "carColor": "blue",
+        "sponsor": "",
+        "runs": {
+            "Segment 1": []
+        },
+        "Pos.": "35",
+        "Total": "dns /",
+        "Diff.": ""
+    },
+    {
+        "msrId": "255859",
+        "email": "",
+        "class": "es",
+        "carNumber": "27",
+        "driverName": "Chris Mangano",
+        "carModel": "Porsche Boxsta",
+        "carColor": "White",
+        "sponsor": "",
+        "runs": {
+            "Segment 1": []
+        },
+        "Pos.": "36",
+        "Total": "dns /",
+        "Diff.": ""
+    },
+    {
+        "msrId": "492467",
+        "email": "",
+        "class": "es",
+        "carNumber": "309",
+        "driverName": "Nathan Alvord",
+        "carModel": "2024 Acura Integra",
+        "carColor": "White",
+        "sponsor": "",
+        "runs": {
+            "Segment 1": []
+        },
+        "Pos.": "37",
+        "Total": "dns /",
+        "Diff.": ""
+    },
+    {
+        "msrId": "119913",
+        "email": "",
+        "class": "es",
+        "carNumber": "311",
+        "driverName": "Lev Tabenkin",
+        "carModel": "1996 Porsche 993",
+        "carColor": "Midnight Blue",
+        "sponsor": "",
+        "runs": {
+            "Segment 1": []
+        },
+        "Pos.": "38",
+        "Total": "dns /",
+        "Diff.": ""
+    },
+    {
+        "msrId": "467461",
+        "email": "",
+        "class": "es",
+        "carNumber": "970",
+        "driverName": "Ian Lin",
+        "carModel": "1997 LARPmachine",
+        "carColor": "",
+        "sponsor": "",
+        "runs": {
+            "Segment 1": []
+        },
+        "Pos.": "39",
+        "Total": "dns /",
+        "Diff.": ""
+    },
+    {
+        "msrId": "153219",
+        "email": "",
+        "class": "hardosst",
+        "carNumber": "157",
+        "driverName": "Grant Reeve",
+        "carModel": "2003 Corvette Z06",
+        "carColor": "Black",
+        "sponsor": "",
+        "runs": {
+            "Segment 1": [
+                [
+                    66.699,
+                    0,
+                    "clean"
+                ],
+                [
+                    64.414,
+                    0,
+                    "clean"
+                ],
+                [
+                    65.088,
+                    1,
+                    "dirty"
+                ],
+                [
+                    63.845,
+                    0,
+                    "dnf"
+                ],
+                [
+                    63.919,
+                    0,
+                    "clean"
+                ],
+                [
+                    66.753,
+                    0,
+                    "clean"
+                ],
+                [
+                    64.298,
+                    1,
+                    "dirty"
+                ]
+            ]
+        },
+        "Pos.": "1T",
+        "Total": "53.500 / 63.919",
+        "Diff.": "[-]0.234"
+    },
+    {
+        "msrId": "461886",
+        "email": "",
+        "class": "hardoast",
+        "carNumber": "471",
+        "driverName": "Brad Fiore",
+        "carModel": "2017 Mazda Miata",
+        "carColor": "White",
+        "sponsor": "",
+        "runs": {
+            "Segment 1": [
+                [
+                    64.541,
+                    1,
+                    "dirty"
+                ],
+                [
+                    64.435,
+                    0,
+                    "clean"
+                ],
+                [
+                    65.062,
+                    5,
+                    "dirty"
+                ],
+                [
+                    64.941,
+                    0,
+                    "clean"
+                ],
+                [
+                    64.43,
+                    0,
+                    "clean"
+                ],
+                [
+                    63.788,
+                    1,
+                    "dirty"
+                ],
+                [
+                    65.946,
+                    0,
+                    "dnf"
+                ],
+                [
+                    63.683,
+                    3,
+                    "dirty"
+                ],
+                [
+                    64.165,
+                    1,
+                    "dirty"
+                ]
+            ]
+        },
+        "Pos.": "2T",
+        "Total": "53.734 / 64.430",
+        "Diff.": "+0.234"
+    },
+    {
+        "msrId": "284120",
+        "email": "",
+        "class": "hardoxa",
+        "carNumber": "11",
+        "driverName": "Jeff Bakken",
+        "carModel": "2019 Why is this here",
+        "carColor": "Orange",
+        "sponsor": "",
+        "runs": {
+            "Segment 1": [
+                [
+                    65.64,
+                    3,
+                    "dirty"
+                ],
+                [
+                    64.025,
+                    2,
+                    "dirty"
+                ],
+                [
+                    64.201,
+                    0,
+                    "clean"
+                ],
+                [
+                    64.02,
+                    0,
+                    "clean"
+                ],
+                [
+                    63.576,
+                    3,
+                    "dirty"
+                ],
+                [
+                    62.863,
+                    7,
+                    "dirty"
+                ],
+                [
+                    62.973,
+                    3,
+                    "dirty"
+                ],
+                [
+                    63.444,
+                    1,
+                    "dirty"
+                ],
+                [
+                    63.716,
+                    0,
+                    "clean"
+                ]
+            ]
+        },
+        "Pos.": "3T",
+        "Total": "53.903 / 63.716",
+        "Diff.": "+0.169"
+    },
+    {
+        "msrId": "227891",
+        "email": "",
+        "class": "hardocamc",
+        "carNumber": "274",
+        "driverName": "Dana Nicgorski",
+        "carModel": "2018 Ford Potato GT",
+        "carColor": "Blue",
+        "sponsor": "",
+        "runs": {
+            "Segment 1": [
+                [
+                    67.142,
+                    0,
+                    "clean"
+                ],
+                [
+                    66.749,
+                    0,
+                    "clean"
+                ],
+                [
+                    65.869,
+                    0,
+                    "clean"
+                ],
+                [
+                    65.317,
+                    1,
+                    "dirty"
+                ],
+                [
+                    66.153,
+                    1,
+                    "dirty"
+                ],
+                [
+                    65.402,
+                    0,
+                    "clean"
+                ],
+                [
+                    65.759,
+                    3,
+                    "dirty"
+                ],
+                [
+                    66.195,
+                    1,
+                    "dirty"
+                ],
+                [
+                    65.405,
+                    2,
+                    "dirty"
+                ]
+            ]
+        },
+        "Pos.": "4T",
+        "Total": "53.956 / 65.402",
+        "Diff.": "+0.053"
+    },
+    {
+        "msrId": "396586",
+        "email": "",
+        "class": "hardocst",
+        "carNumber": "169",
+        "driverName": "Nick Varjabedian",
+        "carModel": "2010 Mazda Mx-5",
+        "carColor": "Black",
+        "sponsor": "",
+        "runs": {
+            "Segment 1": [
+                [
+                    72.641,
+                    0,
+                    "clean"
+                ],
+                [
+                    65.553,
+                    2,
+                    "dirty"
+                ],
+                [
+                    65.762,
+                    3,
+                    "dirty"
+                ],
+                [
+                    65.119,
+                    1,
+                    "dirty"
+                ],
+                [
+                    65.511,
+                    2,
+                    "dirty"
+                ],
+                [
+                    65.77,
+                    0,
+                    "clean"
+                ],
+                [
+                    65.394,
+                    1,
+                    "dirty"
+                ],
+                [
+                    65.134,
+                    0,
+                    "clean"
+                ],
+                [
+                    65.513,
+                    0,
+                    "clean"
+                ]
+            ]
+        },
+        "Pos.": "5T",
+        "Total": "54.061 / 65.134",
+        "Diff.": "+0.105"
+    },
+    {
+        "msrId": "704839",
+        "email": "",
+        "class": "hardoest",
+        "carNumber": "79",
+        "driverName": "Eric Scholz",
+        "carModel": "1992 Mazda Miata",
+        "carColor": "No Soul Red",
+        "sponsor": "",
+        "runs": {
+            "Segment 1": [
+                [
+                    68.795,
+                    0,
+                    "clean"
+                ],
+                [
+                    67.824,
+                    0,
+                    "dnf"
+                ],
+                [
+                    67.7,
+                    1,
+                    "dirty"
+                ],
+                [
+                    66.898,
+                    0,
+                    "clean"
+                ],
+                [
+                    67.147,
+                    0,
+                    "clean"
+                ],
+                [
+                    66.632,
+                    0,
+                    "clean"
+                ],
+                [
+                    67.026,
+                    1,
+                    "dirty"
+                ],
+                [
+                    66.518,
+                    0,
+                    "clean"
+                ],
+                [
+                    66.404,
+                    0,
+                    "clean"
+                ]
+            ]
+        },
+        "Pos.": "6T",
+        "Total": "54.119 / 66.404",
+        "Diff.": "+0.058"
+    },
+    {
+        "msrId": "326651",
+        "email": "",
+        "class": "hardosst",
+        "carNumber": "189",
+        "driverName": "Mark Ponusky",
+        "carModel": "2002 Chevrolet Corvette Z06",
+        "carColor": "Black",
+        "sponsor": "",
+        "runs": {
+            "Segment 1": [
+                [
+                    66.702,
+                    2,
+                    "dirty"
+                ],
+                [
+                    66.298,
+                    1,
+                    "dirty"
+                ],
+                [
+                    66.034,
+                    0,
+                    "clean"
+                ],
+                [
+                    76.107,
+                    0,
+                    "dnf"
+                ],
+                [
+                    65.539,
+                    0,
+                    "clean"
+                ],
+                [
+                    65.137,
+                    0,
+                    "clean"
+                ],
+                [
+                    65.058,
+                    0,
+                    "clean"
+                ],
+                [
+                    64.672,
+                    0,
+                    "clean"
+                ],
+                [
+                    64.821,
+                    0,
+                    "clean"
+                ]
+            ]
+        },
+        "Pos.": "7",
+        "Total": "54.130 / 64.672",
+        "Diff.": "+0.011"
+    },
+    {
+        "msrId": "329812",
+        "email": "",
+        "class": "hardocst",
+        "carNumber": "194",
+        "driverName": "Brandon Dryer",
+        "carModel": "2004 Honda S2000",
+        "carColor": "Silverstone",
+        "sponsor": "",
+        "runs": {
+            "Segment 1": [
+                [
+                    65.937,
+                    0,
+                    "clean"
+                ],
+                [
+                    65.599,
+                    0,
+                    "dirty"
+                ],
+                [
+                    66.052,
+                    0,
+                    "dnf"
+                ],
+                [
+                    66.614,
+                    1,
+                    "dirty"
+                ],
+                [
+                    69.445,
+                    0,
+                    "clean"
+                ],
+                [
+                    65.28,
+                    0,
+                    "clean"
+                ],
+                [
+                    65.73,
+                    0,
+                    "clean"
+                ],
+                [
+                    66.027,
+                    0,
+                    "clean"
+                ],
+                [
+                    72.918,
+                    0,
+                    "clean"
+                ]
+            ]
+        },
+        "Pos.": "8",
+        "Total": "54.182 / 65.280",
+        "Diff.": "+0.052"
+    },
+    {
+        "msrId": "1770224",
+        "email": "",
+        "class": "hardodst",
+        "carNumber": "8",
+        "driverName": "Ryan Paradis",
+        "carModel": "2006 \u24c2\ufe0f\ud83c\udd70\ufe0f\ud83c\uddff\ud83c\udde9\ud83d\udd3a \u00ae\ufe0f\ud83d\ude2e\u2628\ud83c\udde6R\ud83c\uddfe",
+        "carColor": "Broken Carbon",
+        "sponsor": "",
+        "runs": {
+            "Segment 1": [
+                [
+                    70.933,
+                    1,
+                    "dirty"
+                ],
+                [
+                    68.286,
+                    1,
+                    "dirty"
+                ],
+                [
+                    67.144,
+                    0,
+                    "clean"
+                ],
+                [
+                    66.85,
+                    0,
+                    "clean"
+                ],
+                [
+                    68.178,
+                    0,
+                    "clean"
+                ],
+                [
+                    66.605,
+                    0,
+                    "clean"
+                ],
+                [
+                    67.249,
+                    2,
+                    "dirty"
+                ],
+                [
+                    67.668,
+                    1,
+                    "dirty"
+                ],
+                [
+                    66.38,
+                    1,
+                    "dirty"
+                ]
+            ]
+        },
+        "Pos.": "9",
+        "Total": "54.482 / 66.605",
+        "Diff.": "+0.300"
+    },
+    {
+        "msrId": "615124",
+        "email": "",
+        "class": "hardoas",
+        "carNumber": "711",
+        "driverName": "Jonathan Bond",
+        "carModel": "2018 Porsche 718 Cayman GTS",
+        "carColor": "Chalk Grey",
+        "sponsor": "",
+        "runs": {
+            "Segment 1": [
+                [
+                    68.657,
+                    0,
+                    "clean"
+                ],
+                [
+                    67.683,
+                    0,
+                    "clean"
+                ],
+                [
+                    66.454,
+                    0,
+                    "clean"
+                ],
+                [
+                    66.146,
+                    0,
+                    "clean"
+                ],
+                [
+                    66.557,
+                    0,
+                    "clean"
+                ],
+                [
+                    67.454,
+                    0,
+                    "dnf"
+                ],
+                [
+                    66.465,
+                    0,
+                    "clean"
+                ],
+                [
+                    65.444,
+                    1,
+                    "dirty"
+                ],
+                [
+                    66.094,
+                    0,
+                    "clean"
+                ]
+            ]
+        },
+        "Pos.": "10",
+        "Total": "54.593 / 66.094",
+        "Diff.": "+0.111"
+    },
+    {
+        "msrId": "256920",
+        "email": "",
+        "class": "hardoxb",
+        "carNumber": "109",
+        "driverName": "Robert Bouchard",
+        "carModel": "2013 Mazda Snailboat",
+        "carColor": "",
+        "sponsor": "",
+        "runs": {
+            "Segment 1": [
+                [
+                    65.231,
+                    0,
+                    "clean"
+                ],
+                [
+                    64.428,
+                    0,
+                    "clean"
+                ],
+                [
+                    65.038,
+                    1,
+                    "dirty"
+                ],
+                [
+                    64.87,
+                    1,
+                    "dirty"
+                ],
+                [
+                    64.956,
+                    0,
+                    "clean"
+                ],
+                [
+                    65.168,
+                    2,
+                    "dirty"
+                ],
+                [
+                    65.471,
+                    0,
+                    "clean"
+                ],
+                [
+                    64.418,
+                    1,
+                    "dirty"
+                ],
+                [
+                    65.326,
+                    0,
+                    "clean"
+                ]
+            ]
+        },
+        "Pos.": "11",
+        "Total": "54.634 / 64.428",
+        "Diff.": "+0.041"
+    },
+    {
+        "msrId": "1351420",
+        "email": "",
+        "class": "hardoxa",
+        "carNumber": "625",
+        "driverName": "Dan Oates",
+        "carModel": "2021 Power Wheels Barbie Jeep Wrangler GT",
+        "carColor": "Red",
+        "sponsor": "",
+        "runs": {
+            "Segment 1": [
+                [
+                    65.777,
+                    1,
+                    "dirty"
+                ],
+                [
+                    65.496,
+                    1,
+                    "dirty"
+                ],
+                [
+                    66.222,
+                    4,
+                    "dirty"
+                ],
+                [
+                    65.335,
+                    0,
+                    "clean"
+                ],
+                [
+                    65.279,
+                    0,
+                    "clean"
+                ],
+                [
+                    64.581,
+                    1,
+                    "dirty"
+                ],
+                [
+                    64.661,
+                    0,
+                    "clean"
+                ],
+                [
+                    64.795,
+                    0,
+                    "dnf"
+                ],
+                [
+                    65.372,
+                    1,
+                    "dirty"
+                ]
+            ]
+        },
+        "Pos.": "12",
+        "Total": "54.703 / 64.661",
+        "Diff.": "+0.069"
+    },
+    {
+        "msrId": "1295166",
+        "email": "",
+        "class": "hardodst",
+        "carNumber": "286",
+        "driverName": "James Fiske",
+        "carModel": "2015 Subaru Brz Series.Blue",
+        "carColor": "Blue",
+        "sponsor": "",
+        "runs": {
+            "Segment 1": [
+                [
+                    67.735,
+                    0,
+                    "clean"
+                ],
+                [
+                    67.684,
+                    1,
+                    "dirty"
+                ],
+                [
+                    68.252,
+                    0,
+                    "clean"
+                ],
+                [
+                    68.145,
+                    0,
+                    "clean"
+                ],
+                [
+                    67.608,
+                    0,
+                    "clean"
+                ],
+                [
+                    66.682,
+                    1,
+                    "dirty"
+                ],
+                [
+                    67.518,
+                    0,
+                    "clean"
+                ],
+                [
+                    66.877,
+                    0,
+                    "clean"
+                ],
+                [
+                    67.081,
+                    2,
+                    "dirty"
+                ]
+            ]
+        },
+        "Pos.": "13",
+        "Total": "54.705 / 66.877",
+        "Diff.": "+0.002"
+    },
+    {
+        "msrId": "658586",
+        "email": "",
+        "class": "hardocst",
+        "carNumber": "118",
+        "driverName": "Kyle Murray",
+        "carModel": "2022 Toyota GR86",
+        "carColor": "Pavement Grey",
+        "sponsor": "",
+        "runs": {
+            "Segment 1": [
+                [
+                    67.61,
+                    0,
+                    "dnf"
+                ],
+                [
+                    66.745,
+                    0,
+                    "clean"
+                ],
+                [
+                    66.388,
+                    2,
+                    "dirty"
+                ],
+                [
+                    66.006,
+                    0,
+                    "clean"
+                ]
+            ]
+        },
+        "Pos.": "14",
+        "Total": "54.785 / 66.006",
+        "Diff.": "+0.080"
+    },
+    {
+        "msrId": "173489",
+        "email": "",
+        "class": "hardoss",
+        "carNumber": "135",
+        "driverName": "Rachel Baker",
+        "carModel": "2022 Porsche GT4",
+        "carColor": "Frozen Berry",
+        "sponsor": "",
+        "runs": {
+            "Segment 1": [
+                [
+                    66.343,
+                    1,
+                    "dirty"
+                ],
+                [
+                    66.501,
+                    0,
+                    "clean"
+                ],
+                [
+                    65.783,
+                    0,
+                    "clean"
+                ],
+                [
+                    66.042,
+                    1,
+                    "dirty"
+                ],
+                [
+                    65.334,
+                    4,
+                    "dirty"
+                ],
+                [
+                    64.883,
+                    4,
+                    "dirty"
+                ],
+                [
+                    65.838,
+                    0,
+                    "clean"
+                ],
+                [
+                    65.971,
+                    0,
+                    "clean"
+                ],
+                [
+                    66.146,
+                    0,
+                    "clean"
+                ]
+            ]
+        },
+        "Pos.": "15",
+        "Total": "54.994 / 65.783",
+        "Diff.": "+0.209"
+    },
+    {
+        "msrId": "1449005",
+        "email": "",
+        "class": "hardocst",
+        "carNumber": "177",
+        "driverName": "Tomas Angaramo",
+        "carModel": "2023 Subaru 86",
+        "carColor": "Grey",
+        "sponsor": "",
+        "runs": {
+            "Segment 1": [
+                [
+                    69.257,
+                    0,
+                    "clean"
+                ],
+                [
+                    66.793,
+                    0,
+                    "clean"
+                ],
+                [
+                    67.178,
+                    0,
+                    "clean"
+                ],
+                [
+                    67.884,
+                    0,
+                    "clean"
+                ],
+                [
+                    66.698,
+                    2,
+                    "dirty"
+                ],
+                [
+                    66.553,
+                    1,
+                    "dirty"
+                ],
+                [
+                    67.224,
+                    0,
+                    "clean"
+                ],
+                [
+                    66.46,
+                    1,
+                    "dirty"
+                ],
+                [
+                    66.492,
+                    0,
+                    "clean"
+                ]
+            ]
+        },
+        "Pos.": "16",
+        "Total": "55.188 / 66.492",
+        "Diff.": "+0.194"
+    },
+    {
+        "msrId": "471148",
+        "email": "",
+        "class": "hardosst",
+        "carNumber": "21",
+        "driverName": "Chris Lindquist",
+        "carModel": "2023 Toyota GR Supra",
+        "carColor": "White",
+        "sponsor": "",
+        "runs": {
+            "Segment 1": [
+                [
+                    66.773,
+                    0,
+                    "clean"
+                ],
+                [
+                    66.372,
+                    1,
+                    "dirty"
+                ],
+                [
+                    66.71,
+                    2,
+                    "dirty"
+                ],
+                [
+                    66.362,
+                    2,
+                    "dirty"
+                ],
+                [
+                    67.748,
+                    2,
+                    "dirty"
+                ],
+                [
+                    66.505,
+                    3,
+                    "dirty"
+                ],
+                [
+                    65.667,
+                    2,
+                    "dirty"
+                ],
+                [
+                    66.79,
+                    1,
+                    "dirty"
+                ],
+                [
+                    66.449,
+                    0,
+                    "clean"
+                ]
+            ]
+        },
+        "Pos.": "17",
+        "Total": "55.617 / 66.449",
+        "Diff.": "+0.429"
+    },
+    {
+        "msrId": "2521725",
+        "email": "",
+        "class": "hardods",
+        "carNumber": "78",
+        "driverName": "Jeffrey Cheng",
+        "carModel": "2024 Toyota GR86",
+        "carColor": "Neptune Blue",
+        "sponsor": "",
+        "runs": {
+            "Segment 1": [
+                [
+                    75.042,
+                    0,
+                    "clean"
+                ],
+                [
+                    71.997,
+                    1,
+                    "dirty"
+                ],
+                [
+                    70.619,
+                    0,
+                    "clean"
+                ],
+                [
+                    69.042,
+                    1,
+                    "dirty"
+                ],
+                [
+                    69.362,
+                    0,
+                    "clean"
+                ],
+                [
+                    72.679,
+                    1,
+                    "dirty"
+                ],
+                [
+                    68.958,
+                    0,
+                    "clean"
+                ],
+                [
+                    68.971,
+                    0,
+                    "clean"
+                ],
+                [
+                    68.822,
+                    0,
+                    "clean"
+                ]
+            ]
+        },
+        "Pos.": "18",
+        "Total": "55.814 / 68.822",
+        "Diff.": "+0.197"
+    },
+    {
+        "msrId": "",
+        "email": "",
+        "class": "hardoxb",
+        "carNumber": "101",
+        "driverName": "Andrew Hiro",
+        "carModel": "",
+        "carColor": "",
+        "sponsor": "",
+        "runs": {
+            "Segment 1": [
+                [
+                    71.062,
+                    0,
+                    "dnf"
+                ],
+                [
+                    69.268,
+                    0,
+                    "clean"
+                ],
+                [
+                    67.447,
+                    0,
+                    "clean"
+                ],
+                [
+                    67.637,
+                    0,
+                    "clean"
+                ],
+                [
+                    66.359,
+                    0,
+                    "clean"
+                ],
+                [
+                    65.95,
+                    0,
+                    "clean"
+                ],
+                [
+                    66.149,
+                    1,
+                    "dirty"
+                ],
+                [
+                    66.301,
+                    0,
+                    "clean"
+                ],
+                [
+                    65.657,
+                    2,
+                    "dirty"
+                ]
+            ]
+        },
+        "Pos.": "19",
+        "Total": "55.925 / 65.950",
+        "Diff.": "+0.111"
+    },
+    {
+        "msrId": "239648",
+        "email": "",
+        "class": "hardoast",
+        "carNumber": "106",
+        "driverName": "Cory Murphy",
+        "carModel": "2020 Mazda Miata",
+        "carColor": "",
+        "sponsor": "",
+        "runs": {
+            "Segment 1": [
+                [
+                    67.357,
+                    3,
+                    "dirty"
+                ],
+                [
+                    65.938,
+                    1,
+                    "dirty"
+                ],
+                [
+                    71.782,
+                    0,
+                    "dnf"
+                ],
+                [
+                    65.713,
+                    2,
+                    "dirty"
+                ],
+                [
+                    65.013,
+                    3,
+                    "dirty"
+                ]
+            ]
+        },
+        "Pos.": "20",
+        "Total": "56.660 / 67.938",
+        "Diff.": "+0.735"
+    },
+    {
+        "msrId": "2705374",
+        "email": "",
+        "class": "hardocs",
+        "carNumber": "152",
+        "driverName": "Ian McHugh",
+        "carModel": "2020 Mazda Miata",
+        "carColor": "Gray",
+        "sponsor": "",
+        "runs": {
+            "Segment 1": [
+                [
+                    74.647,
+                    0,
+                    "clean"
+                ],
+                [
+                    71.788,
+                    0,
+                    "clean"
+                ],
+                [
+                    70.524,
+                    0,
+                    "clean"
+                ],
+                [
+                    71.506,
+                    0,
+                    "clean"
+                ],
+                [
+                    70.361,
+                    0,
+                    "clean"
+                ],
+                [
+                    69.62,
+                    1,
+                    "dirty"
+                ],
+                [
+                    70.887,
+                    0,
+                    "dnf"
+                ],
+                [
+                    69.695,
+                    0,
+                    "clean"
+                ],
+                [
+                    69.469,
+                    1,
+                    "dirty"
+                ]
+            ]
+        },
+        "Pos.": "21",
+        "Total": "56.662 / 69.695",
+        "Diff.": "+0.002"
+    },
+    {
+        "msrId": "693695",
+        "email": "",
+        "class": "hardods",
+        "carNumber": "49",
+        "driverName": "Shawn Pan",
+        "carModel": "2023 Toyota BRZ",
+        "carColor": "Blue",
+        "sponsor": "",
+        "runs": {
+            "Segment 1": [
+                [
+                    73.117,
+                    1,
+                    "dirty"
+                ],
+                [
+                    69.98,
+                    1,
+                    "dirty"
+                ],
+                [
+                    70.186,
+                    0,
+                    "clean"
+                ],
+                [
+                    70.068,
+                    0,
+                    "clean"
+                ],
+                [
+                    70.766,
+                    0,
+                    "dnf"
+                ],
+                [
+                    70.775,
+                    0,
+                    "dnf"
+                ],
+                [
+                    70.652,
+                    1,
+                    "dirty"
+                ],
+                [
+                    70.849,
+                    0,
+                    "clean"
+                ],
+                [
+                    72.226,
+                    0,
+                    "clean"
+                ]
+            ]
+        },
+        "Pos.": "22",
+        "Total": "56.825 / 70.068",
+        "Diff.": "+0.163"
+    },
+    {
+        "msrId": "458280",
+        "email": "",
+        "class": "hardogst",
+        "carNumber": "90",
+        "driverName": "Tristan Carlson",
+        "carModel": "2023 Subaru WRX",
+        "carColor": "White",
+        "sponsor": "",
+        "runs": {
+            "Segment 1": [
+                [
+                    78.617,
+                    0,
+                    "clean"
+                ],
+                [
+                    71.687,
+                    0,
+                    "clean"
+                ],
+                [
+                    71.584,
+                    0,
+                    "clean"
+                ],
+                [
+                    71.869,
+                    1,
+                    "dirty"
+                ],
+                [
+                    70.927,
+                    0,
+                    "clean"
+                ],
+                [
+                    70.659,
+                    1,
+                    "dirty"
+                ],
+                [
+                    70.351,
+                    0,
+                    "clean"
+                ],
+                [
+                    70.526,
+                    1,
+                    "dirty"
+                ],
+                [
+                    70.113,
+                    1,
+                    "dirty"
+                ]
+            ]
+        },
+        "Pos.": "23",
+        "Total": "56.984 / 70.351",
+        "Diff.": "+0.159"
+    },
+    {
+        "msrId": "412539",
+        "email": "",
+        "class": "hardods",
+        "carNumber": "13",
+        "driverName": "Shamit Som",
+        "carModel": "2001 Chevrolet Corvette",
+        "carColor": "Bowling Green",
+        "sponsor": "",
+        "runs": {
+            "Segment 1": [
+                [
+                    70.616,
+                    0,
+                    "clean"
+                ],
+                [
+                    72.26,
+                    4,
+                    "dirty"
+                ],
+                [
+                    71.379,
+                    1,
+                    "dirty"
+                ],
+                [
+                    70.757,
+                    1,
+                    "dirty"
+                ],
+                [
+                    72.104,
+                    2,
+                    "dirty"
+                ],
+                [
+                    71.85,
+                    4,
+                    "dirty"
+                ],
+                [
+                    70.678,
+                    2,
+                    "dirty"
+                ],
+                [
+                    71.829,
+                    0,
+                    "clean"
+                ],
+                [
+                    70.781,
+                    0,
+                    "clean"
+                ]
+            ]
+        },
+        "Pos.": "24",
+        "Total": "57.269 / 70.616",
+        "Diff.": "+0.285"
+    },
+    {
+        "msrId": "691002",
+        "email": "",
+        "class": "hardoxa",
+        "carNumber": "906",
+        "driverName": "Luke Liu",
+        "carModel": "2002 Ultimate Understeering Machine",
+        "carColor": "",
+        "sponsor": "",
+        "runs": {
+            "Segment 1": [
+                [
+                    70.041,
+                    0,
+                    "clean"
+                ],
+                [
+                    76.949,
+                    0,
+                    "dnf"
+                ],
+                [
+                    69.793,
+                    0,
+                    "clean"
+                ],
+                [
+                    69.372,
+                    1,
+                    "dirty"
+                ],
+                [
+                    69.823,
+                    0,
+                    "clean"
+                ],
+                [
+                    69.027,
+                    0,
+                    "clean"
+                ],
+                [
+                    69.28,
+                    0,
+                    "clean"
+                ],
+                [
+                    68.213,
+                    0,
+                    "clean"
+                ],
+                [
+                    67.998,
+                    1,
+                    "dirty"
+                ]
+            ]
+        },
+        "Pos.": "25",
+        "Total": "57.708 / 68.213",
+        "Diff.": "+0.439"
+    },
+    {
+        "msrId": "1314768",
+        "email": "",
+        "class": "hardoxa",
+        "carNumber": "94",
+        "driverName": "Ryan Nikolich",
+        "carModel": "2019 Subaru WRX",
+        "carColor": "White",
+        "sponsor": "",
+        "runs": {
+            "Segment 1": [
+                [
+                    72.188,
+                    2,
+                    "dirty"
+                ],
+                [
+                    68.189,
+                    1,
+                    "dirty"
+                ],
+                [
+                    68.4,
+                    1,
+                    "dirty"
+                ],
+                [
+                    67.295,
+                    1,
+                    "dirty"
+                ],
+                [
+                    68.659,
+                    1,
+                    "dirty"
+                ],
+                [
+                    69.496,
+                    0,
+                    "clean"
+                ],
+                [
+                    68.466,
+                    1,
+                    "dirty"
+                ],
+                [
+                    67.614,
+                    1,
+                    "dirty"
+                ],
+                [
+                    68.249,
+                    0,
+                    "clean"
+                ]
+            ]
+        },
+        "Pos.": "26",
+        "Total": "57.738 / 68.249",
+        "Diff.": "+0.030"
+    },
+    {
+        "msrId": "536376",
+        "email": "",
+        "class": "hardods",
+        "carNumber": "71",
+        "driverName": "Theresa Doyon",
+        "carModel": "2020 Mazda Miata",
+        "carColor": "Red",
+        "sponsor": "",
+        "runs": {
+            "Segment 1": [
+                [
+                    73.411,
+                    3,
+                    "dirty"
+                ],
+                [
+                    72.482,
+                    3,
+                    "dirty"
+                ],
+                [
+                    73.382,
+                    0,
+                    "clean"
+                ],
+                [
+                    72.528,
+                    1,
+                    "dirty"
+                ],
+                [
+                    72.8,
+                    0,
+                    "clean"
+                ],
+                [
+                    72.499,
+                    0,
+                    "clean"
+                ],
+                [
+                    75.729,
+                    1,
+                    "dirty"
+                ],
+                [
+                    73.696,
+                    0,
+                    "clean"
+                ],
+                [
+                    72.535,
+                    4,
+                    "dirty"
+                ]
+            ]
+        },
+        "Pos.": "27",
+        "Total": "58.796 / 72.499",
+        "Diff.": "+1.058"
+    },
+    {
+        "msrId": "2513543",
+        "email": "",
+        "class": "hardocams",
+        "carNumber": "171",
+        "driverName": "Michael Reiser",
+        "carModel": "2003 Chevrolet Corvette",
+        "carColor": "Black",
+        "sponsor": "",
+        "runs": {
+            "Segment 1": [
+                [
+                    73.792,
+                    0,
+                    "clean"
+                ],
+                [
+                    70.692,
+                    2,
+                    "dirty"
+                ],
+                [
+                    71.084,
+                    2,
+                    "dirty"
+                ],
+                [
+                    71.462,
+                    1,
+                    "dirty"
+                ],
+                [
+                    72.245,
+                    1,
+                    "dirty"
+                ],
+                [
+                    73.091,
+                    1,
+                    "dirty"
+                ],
+                [
+                    71.825,
+                    0,
+                    "clean"
+                ],
+                [
+                    72.052,
+                    0,
+                    "clean"
+                ],
+                [
+                    70.818,
+                    1,
+                    "dirty"
+                ]
+            ]
+        },
+        "Pos.": "28",
+        "Total": "60.620 / 71.825",
+        "Diff.": "+1.824"
+    },
+    {
+        "msrId": "2923646",
+        "email": "",
+        "class": "n",
+        "carNumber": "184",
+        "driverName": "Abdullah Kamal",
+        "carModel": "2024 Ford Mustang GT",
+        "carColor": "Black",
+        "sponsor": "",
+        "runs": {
+            "Segment 1": [
+                [
+                    99.985,
+                    0,
+                    "dnf"
+                ],
+                [
+                    99.213,
+                    0,
+                    "dnf"
+                ],
+                [
+                    108.192,
+                    1,
+                    "dirty"
+                ],
+                [
+                    92.693,
+                    0,
+                    "dnf"
+                ],
+                [
+                    88.944,
+                    0,
+                    "clean"
+                ],
+                [
+                    77.048,
+                    0,
+                    "clean"
+                ],
+                [
+                    83.669,
+                    3,
+                    "dirty"
+                ],
+                [
+                    63.893,
+                    2,
+                    "dirty"
+                ]
+            ]
+        },
+        "Pos.": "1T",
+        "Total": "67.893 / 67.893",
+        "Diff.": "[-]1.284"
+    },
+    {
+        "msrId": "2923900",
+        "email": "",
+        "class": "n",
+        "carNumber": "622",
+        "driverName": "Anshul Mehra",
+        "carModel": "2025 Porsche Boxster",
+        "carColor": "Blue",
+        "sponsor": "",
+        "runs": {
+            "Segment 1": [
+                [
+                    103.371,
+                    0,
+                    "clean"
+                ],
+                [
+                    94.85,
+                    0,
+                    "clean"
+                ],
+                [
+                    92.873,
+                    0,
+                    "clean"
+                ],
+                [
+                    92.826,
+                    0,
+                    "clean"
+                ],
+                [
+                    82.567,
+                    0,
+                    "clean"
+                ],
+                [
+                    91.884,
+                    0,
+                    "clean"
+                ],
+                [
+                    84.844,
+                    0,
+                    "clean"
+                ],
+                [
+                    67.177,
+                    1,
+                    "dirty"
+                ],
+                [
+                    87.94,
+                    0,
+                    "clean"
+                ],
+                [
+                    87.2,
+                    0,
+                    "clean"
+                ],
+                [
+                    84.528,
+                    0,
+                    "clean"
+                ]
+            ]
+        },
+        "Pos.": "2T",
+        "Total": "69.177 / 69.177",
+        "Diff.": "+1.284"
+    },
+    {
+        "msrId": "661238",
+        "email": "",
+        "class": "n",
+        "carNumber": "97",
+        "driverName": "Vikrant Rao",
+        "carModel": "2004 Chevrolet Corvette",
+        "carColor": "Silver",
+        "sponsor": "",
+        "runs": {
+            "Segment 1": [
+                [
+                    81.893,
+                    1,
+                    "dirty"
+                ],
+                [
+                    76.989,
+                    0,
+                    "clean"
+                ],
+                [
+                    81.93,
+                    0,
+                    "clean"
+                ],
+                [
+                    75.911,
+                    0,
+                    "clean"
+                ],
+                [
+                    73.383,
+                    0,
+                    "clean"
+                ],
+                [
+                    73.198,
+                    0,
+                    "clean"
+                ],
+                [
+                    75.651,
+                    0,
+                    "clean"
+                ],
+                [
+                    70.987,
+                    0,
+                    "clean"
+                ]
+            ]
+        },
+        "Pos.": "3T",
+        "Total": "70.987 / 70.987",
+        "Diff.": "+1.810"
+    },
+    {
+        "msrId": "1854965",
+        "email": "",
+        "class": "n",
+        "carNumber": "232",
+        "driverName": "Dan Fresh",
+        "carModel": "2021 Mazda miata",
+        "carColor": "gray",
+        "sponsor": "",
+        "runs": {
+            "Segment 1": [
+                [
+                    81.14,
+                    0,
+                    "clean"
+                ],
+                [
+                    74.026,
+                    1,
+                    "dirty"
+                ],
+                [
+                    71.519,
+                    0,
+                    "clean"
+                ],
+                [
+                    71.391,
+                    1,
+                    "dirty"
+                ],
+                [
+                    71.529,
+                    1,
+                    "dirty"
+                ],
+                [
+                    71.307,
+                    0,
+                    "clean"
+                ],
+                [
+                    71.033,
+                    2,
+                    "dirty"
+                ],
+                [
+                    70.991,
+                    0,
+                    "clean"
+                ]
+            ]
+        },
+        "Pos.": "4T",
+        "Total": "70.991 / 70.991",
+        "Diff.": "+0.004"
+    },
+    {
+        "msrId": "2768557",
+        "email": "",
+        "class": "n",
+        "carNumber": "159",
+        "driverName": "Scott Bleiweiss",
+        "carModel": "2012 Mazda Miata",
+        "carColor": "Silver",
+        "sponsor": "",
+        "runs": {
+            "Segment 1": [
+                [
+                    76.291,
+                    0,
+                    "clean"
+                ],
+                [
+                    75.566,
+                    0,
+                    "clean"
+                ],
+                [
+                    72.671,
+                    0,
+                    "clean"
+                ],
+                [
+                    73.546,
+                    0,
+                    "clean"
+                ],
+                [
+                    73.002,
+                    0,
+                    "clean"
+                ],
+                [
+                    73.291,
+                    0,
+                    "clean"
+                ],
+                [
+                    77.02,
+                    0,
+                    "clean"
+                ],
+                [
+                    73.515,
+                    0,
+                    "clean"
+                ],
+                [
+                    73.147,
+                    1,
+                    "dirty"
+                ]
+            ]
+        },
+        "Pos.": "5T",
+        "Total": "72.671 / 72.671",
+        "Diff.": "+1.680"
+    },
+    {
+        "msrId": "2092557",
+        "email": "",
+        "class": "n",
+        "carNumber": "131",
+        "driverName": "Brendan Almeida",
+        "carModel": "1995 Mazda Miata Mx-5 M-Edition",
+        "carColor": "Merlot Mica",
+        "sponsor": "",
+        "runs": {
+            "Segment 1": [
+                [
+                    87.678,
+                    1,
+                    "dirty"
+                ],
+                [
+                    77.667,
+                    3,
+                    "dirty"
+                ],
+                [
+                    76.431,
+                    0,
+                    "dnf"
+                ],
+                [
+                    80.385,
+                    1,
+                    "dirty"
+                ],
+                [
+                    76.464,
+                    0,
+                    "clean"
+                ],
+                [
+                    76.021,
+                    0,
+                    "clean"
+                ],
+                [
+                    74.774,
+                    1,
+                    "dirty"
+                ],
+                [
+                    76.161,
+                    0,
+                    "clean"
+                ],
+                [
+                    74.086,
+                    0,
+                    "clean"
+                ]
+            ]
+        },
+        "Pos.": "6T",
+        "Total": "74.086 / 74.086",
+        "Diff.": "+1.415"
+    },
+    {
+        "msrId": "1365562",
+        "email": "",
+        "class": "n",
+        "carNumber": "42",
+        "driverName": "Rashid Abdo",
+        "carModel": "Toyota Gr Corolla",
+        "carColor": "",
+        "sponsor": "",
+        "runs": {
+            "Segment 1": [
+                [
+                    78.131,
+                    1,
+                    "dirty"
+                ],
+                [
+                    77.172,
+                    2,
+                    "dirty"
+                ],
+                [
+                    76.706,
+                    1,
+                    "dirty"
+                ],
+                [
+                    77.244,
+                    0,
+                    "clean"
+                ],
+                [
+                    75.791,
+                    0,
+                    "clean"
+                ],
+                [
+                    76.707,
+                    0,
+                    "clean"
+                ],
+                [
+                    75.158,
+                    1,
+                    "dirty"
+                ],
+                [
+                    85.564,
+                    0,
+                    "clean"
+                ],
+                [
+                    77.436,
+                    0,
+                    "clean"
+                ],
+                [
+                    77.166,
+                    2,
+                    "dirty"
+                ]
+            ]
+        },
+        "Pos.": "7",
+        "Total": "75.791 / 75.791",
+        "Diff.": "+1.705"
+    },
+    {
+        "msrId": "1067251",
+        "email": "",
+        "class": "n",
+        "carNumber": "83",
+        "driverName": "Ziad Younis",
+        "carModel": "2001 Porsche Boxster S",
+        "carColor": "Black",
+        "sponsor": "",
+        "runs": {
+            "Segment 1": [
+                [
+                    82.033,
+                    1,
+                    "dirty"
+                ],
+                [
+                    76.669,
+                    1,
+                    "dirty"
+                ],
+                [
+                    77.191,
+                    0,
+                    "clean"
+                ],
+                [
+                    83.815,
+                    0,
+                    "clean"
+                ],
+                [
+                    76.766,
+                    0,
+                    "clean"
+                ],
+                [
+                    75.452,
+                    1,
+                    "dirty"
+                ],
+                [
+                    77.123,
+                    0,
+                    "clean"
+                ],
+                [
+                    76.643,
+                    0,
+                    "clean"
+                ],
+                [
+                    76.048,
+                    0,
+                    "clean"
+                ]
+            ]
+        },
+        "Pos.": "8",
+        "Total": "76.048 / 76.048",
+        "Diff.": "+0.257"
+    },
+    {
+        "msrId": "1980953",
+        "email": "",
+        "class": "n",
+        "carNumber": "29",
+        "driverName": "William E Roman",
+        "carModel": "2022 Subaru WRX",
+        "carColor": "Blue",
+        "sponsor": "",
+        "runs": {
+            "Segment 1": [
+                [
+                    79.877,
+                    2,
+                    "dirty"
+                ],
+                [
+                    78.88,
+                    0,
+                    "clean"
+                ],
+                [
+                    79.472,
+                    0,
+                    "clean"
+                ],
+                [
+                    77.856,
+                    0,
+                    "clean"
+                ],
+                [
+                    76.077,
+                    0,
+                    "clean"
+                ],
+                [
+                    77.454,
+                    0,
+                    "clean"
+                ],
+                [
+                    77.359,
+                    0,
+                    "clean"
+                ],
+                [
+                    75.408,
+                    2,
+                    "dirty"
+                ],
+                [
+                    76.088,
+                    0,
+                    "clean"
+                ]
+            ]
+        },
+        "Pos.": "9",
+        "Total": "76.077 / 76.077",
+        "Diff.": "+0.029"
+    },
+    {
+        "msrId": "2864129",
+        "email": "",
+        "class": "n",
+        "carNumber": "144",
+        "driverName": "Tom Leone",
+        "carModel": "2021 Honda Civic Hatchback",
+        "carColor": "White",
+        "sponsor": "",
+        "runs": {
+            "Segment 1": [
+                [
+                    88.445,
+                    0,
+                    "clean"
+                ],
+                [
+                    80.007,
+                    0,
+                    "clean"
+                ],
+                [
+                    79.396,
+                    0,
+                    "clean"
+                ],
+                [
+                    79.148,
+                    0,
+                    "clean"
+                ],
+                [
+                    77.528,
+                    0,
+                    "clean"
+                ],
+                [
+                    77.059,
+                    0,
+                    "clean"
+                ],
+                [
+                    78.803,
+                    1,
+                    "dirty"
+                ],
+                [
+                    75.781,
+                    1,
+                    "dirty"
+                ],
+                [
+                    76.17,
+                    0,
+                    "clean"
+                ]
+            ]
+        },
+        "Pos.": "10",
+        "Total": "76.170 / 76.170",
+        "Diff.": "+0.093"
+    },
+    {
+        "msrId": "2882058",
+        "email": "",
+        "class": "n",
+        "carNumber": "203",
+        "driverName": "Charles Higgins",
+        "carModel": "2023 Toyota 86",
+        "carColor": "Pavement Grey",
+        "sponsor": "",
+        "runs": {
+            "Segment 1": [
+                [
+                    87.665,
+                    0,
+                    "clean"
+                ],
+                [
+                    83.326,
+                    0,
+                    "dnf"
+                ],
+                [
+                    80.764,
+                    0,
+                    "dnf"
+                ],
+                [
+                    82.36,
+                    0,
+                    "clean"
+                ],
+                [
+                    76.691,
+                    0,
+                    "clean"
+                ],
+                [
+                    77.932,
+                    0,
+                    "dnf"
+                ],
+                [
+                    78.668,
+                    0,
+                    "dnf"
+                ],
+                [
+                    75.93,
+                    1,
+                    "dirty"
+                ],
+                [
+                    77.565,
+                    0,
+                    "clean"
+                ]
+            ]
+        },
+        "Pos.": "11",
+        "Total": "76.691 / 76.691",
+        "Diff.": "+0.521"
+    },
+    {
+        "msrId": "2668105",
+        "email": "",
+        "class": "n",
+        "carNumber": "17",
+        "driverName": "Dave Wilcox",
+        "carModel": "2019 Chevrolet Corvette",
+        "carColor": "Long Beach Red",
+        "sponsor": "",
+        "runs": {
+            "Segment 1": [
+                [
+                    80.607,
+                    0,
+                    "clean"
+                ],
+                [
+                    79.148,
+                    0,
+                    "clean"
+                ],
+                [
+                    78.409,
+                    0,
+                    "clean"
+                ],
+                [
+                    77.489,
+                    0,
+                    "clean"
+                ],
+                [
+                    77.798,
+                    0,
+                    "clean"
+                ],
+                [
+                    76.42,
+                    1,
+                    "dirty"
+                ],
+                [
+                    76.694,
+                    0,
+                    "clean"
+                ],
+                [
+                    76.835,
+                    0,
+                    "clean"
+                ],
+                [
+                    75.551,
+                    1,
+                    "dirty"
+                ]
+            ]
+        },
+        "Pos.": "12",
+        "Total": "76.694 / 76.694",
+        "Diff.": "+0.003"
+    },
+    {
+        "msrId": "1920487",
+        "email": "",
+        "class": "n",
+        "carNumber": "125",
+        "driverName": "Aaron Marcotte",
+        "carModel": "2009 Mazda Mx5",
+        "carColor": "Red",
+        "sponsor": "",
+        "runs": {
+            "Segment 1": [
+                [
+                    80.333,
+                    0,
+                    "dnf"
+                ],
+                [
+                    75.807,
+                    0,
+                    "dnf"
+                ],
+                [
+                    77.114,
+                    0,
+                    "clean"
+                ],
+                [
+                    74.282,
+                    0,
+                    "dnf"
+                ],
+                [
+                    77.654,
+                    0,
+                    "dnf"
+                ],
+                [
+                    76.87,
+                    0,
+                    "clean"
+                ],
+                [
+                    76.773,
+                    0,
+                    "clean"
+                ],
+                [
+                    78.363,
+                    0,
+                    "clean"
+                ],
+                [
+                    78.086,
+                    0,
+                    "dnf"
+                ]
+            ]
+        },
+        "Pos.": "13",
+        "Total": "76.773 / 76.773",
+        "Diff.": "+0.079"
+    },
+    {
+        "msrId": "2923542",
+        "email": "",
+        "class": "n",
+        "carNumber": "515",
+        "driverName": "Andrew Gubanov",
+        "carModel": "2013 Volkswagen GTI",
+        "carColor": "Gray",
+        "sponsor": "",
+        "runs": {
+            "Segment 1": [
+                [
+                    97.906,
+                    0,
+                    "clean"
+                ],
+                [
+                    83.75,
+                    0,
+                    "clean"
+                ],
+                [
+                    79.992,
+                    0,
+                    "clean"
+                ],
+                [
+                    80.296,
+                    0,
+                    "clean"
+                ],
+                [
+                    81.061,
+                    0,
+                    "clean"
+                ],
+                [
+                    77.276,
+                    0,
+                    "clean"
+                ],
+                [
+                    76.855,
+                    0,
+                    "clean"
+                ],
+                [
+                    77.875,
+                    0,
+                    "dnf"
+                ],
+                [
+                    77.763,
+                    0,
+                    "clean"
+                ]
+            ]
+        },
+        "Pos.": "14",
+        "Total": "76.855 / 76.855",
+        "Diff.": "+0.082"
+    },
+    {
+        "msrId": "416185",
+        "email": "",
+        "class": "n",
+        "carNumber": "898",
+        "driverName": "Corey Lelievre",
+        "carModel": "1979 Mercury Zephyr",
+        "carColor": "Yellow",
+        "sponsor": "",
+        "runs": {
+            "Segment 1": [
+                [
+                    86.119,
+                    0,
+                    "clean"
+                ],
+                [
+                    85.326,
+                    0,
+                    "clean"
+                ],
+                [
+                    78.82,
+                    0,
+                    "clean"
+                ],
+                [
+                    76.969,
+                    0,
+                    "clean"
+                ]
+            ]
+        },
+        "Pos.": "15",
+        "Total": "76.969 / 76.969",
+        "Diff.": "+0.114"
+    },
+    {
+        "msrId": "998304",
+        "email": "",
+        "class": "n",
+        "carNumber": "340",
+        "driverName": "Eyad Nasser",
+        "carModel": "2025 BMW M340 XDrive",
+        "carColor": "Gray",
+        "sponsor": "",
+        "runs": {
+            "Segment 1": [
+                [
+                    82.01,
+                    0,
+                    "clean"
+                ],
+                [
+                    79.538,
+                    0,
+                    "clean"
+                ],
+                [
+                    79.252,
+                    0,
+                    "clean"
+                ],
+                [
+                    79.233,
+                    0,
+                    "clean"
+                ],
+                [
+                    81.89,
+                    0,
+                    "dnf"
+                ],
+                [
+                    79.32,
+                    0,
+                    "clean"
+                ],
+                [
+                    77.824,
+                    0,
+                    "clean"
+                ],
+                [
+                    78.093,
+                    2,
+                    "dirty"
+                ],
+                [
+                    76.988,
+                    0,
+                    "clean"
+                ],
+                [
+                    77.267,
+                    0,
+                    "clean"
+                ]
+            ]
+        },
+        "Pos.": "16",
+        "Total": "76.988 / 76.988",
+        "Diff.": "+0.019"
+    },
+    {
+        "msrId": "293109",
+        "email": "",
+        "class": "n",
+        "carNumber": "390",
+        "driverName": "Luke French",
+        "carModel": "2008 BMW M3",
+        "carColor": "Silver",
+        "sponsor": "",
+        "runs": {
+            "Segment 1": [
+                [
+                    97.785,
+                    0,
+                    "clean"
+                ],
+                [
+                    91.409,
+                    0,
+                    "clean"
+                ],
+                [
+                    85.884,
+                    1,
+                    "dirty"
+                ],
+                [
+                    83.523,
+                    0,
+                    "clean"
+                ],
+                [
+                    83.465,
+                    0,
+                    "dnf"
+                ],
+                [
+                    81.028,
+                    0,
+                    "clean"
+                ],
+                [
+                    79.524,
+                    0,
+                    "clean"
+                ],
+                [
+                    77.247,
+                    0,
+                    "clean"
+                ]
+            ]
+        },
+        "Pos.": "17",
+        "Total": "77.247 / 77.247",
+        "Diff.": "+0.259"
+    },
+    {
+        "msrId": "2106622",
+        "email": "",
+        "class": "n",
+        "carNumber": "500",
+        "driverName": "Advik Mittal",
+        "carModel": "2013 BMW 128i",
+        "carColor": "Grey",
+        "sponsor": "",
+        "runs": {
+            "Segment 1": [
+                [
+                    86.253,
+                    0,
+                    "clean"
+                ],
+                [
+                    81.204,
+                    0,
+                    "clean"
+                ],
+                [
+                    80.578,
+                    0,
+                    "dnf"
+                ],
+                [
+                    82.886,
+                    0,
+                    "dnf"
+                ],
+                [
+                    78.14,
+                    0,
+                    "dnf"
+                ],
+                [
+                    78.238,
+                    0,
+                    "clean"
+                ],
+                [
+                    77.552,
+                    0,
+                    "clean"
+                ],
+                [
+                    80.684,
+                    2,
+                    "dirty"
+                ]
+            ]
+        },
+        "Pos.": "18",
+        "Total": "77.552 / 77.552",
+        "Diff.": "+0.305"
+    },
+    {
+        "msrId": "2867709",
+        "email": "",
+        "class": "n",
+        "carNumber": "227",
+        "driverName": "Jafar Jabasini",
+        "carModel": "1996 Mazda Miata",
+        "carColor": "Black",
+        "sponsor": "",
+        "runs": {
+            "Segment 1": [
+                [
+                    85.101,
+                    0,
+                    "dnf"
+                ],
+                [
+                    90.251,
+                    0,
+                    "dnf"
+                ],
+                [
+                    98.088,
+                    0,
+                    "clean"
+                ],
+                [
+                    80.291,
+                    0,
+                    "clean"
+                ],
+                [
+                    86.564,
+                    0,
+                    "clean"
+                ],
+                [
+                    81.297,
+                    0,
+                    "clean"
+                ],
+                [
+                    86.891,
+                    0,
+                    "clean"
+                ],
+                [
+                    79.298,
+                    1,
+                    "dirty"
+                ],
+                [
+                    75.957,
+                    1,
+                    "dirty"
+                ]
+            ]
+        },
+        "Pos.": "19",
+        "Total": "77.957 / 77.957",
+        "Diff.": "+0.405"
+    },
+    {
+        "msrId": "2805724",
+        "email": "",
+        "class": "n",
+        "carNumber": "139",
+        "driverName": "Jon Scott",
+        "carModel": "2024 Subaru Brz ts",
+        "carColor": "White",
+        "sponsor": "",
+        "runs": {
+            "Segment 1": [
+                [
+                    83.126,
+                    0,
+                    "clean"
+                ],
+                [
+                    81.441,
+                    0,
+                    "clean"
+                ],
+                [
+                    79.705,
+                    0,
+                    "clean"
+                ],
+                [
+                    79.1,
+                    0,
+                    "clean"
+                ],
+                [
+                    79.823,
+                    0,
+                    "clean"
+                ],
+                [
+                    78.827,
+                    0,
+                    "clean"
+                ],
+                [
+                    78.92,
+                    0,
+                    "clean"
+                ],
+                [
+                    84.486,
+                    0,
+                    "dnf"
+                ],
+                [
+                    78.516,
+                    0,
+                    "clean"
+                ],
+                [
+                    77.412,
+                    0,
+                    "dnf"
+                ]
+            ]
+        },
+        "Pos.": "20",
+        "Total": "78.516 / 78.516",
+        "Diff.": "+0.559"
+    },
+    {
+        "msrId": "746595",
+        "email": "",
+        "class": "n",
+        "carNumber": "901",
+        "driverName": "Ilyas Nazarov",
+        "carModel": "2007 Honda S2000",
+        "carColor": "Rio Yellow",
+        "sponsor": "",
+        "runs": {
+            "Segment 1": [
+                [
+                    84.618,
+                    0,
+                    "clean"
+                ],
+                [
+                    85.171,
+                    0,
+                    "clean"
+                ],
+                [
+                    92.612,
+                    0,
+                    "clean"
+                ],
+                [
+                    82.841,
+                    0,
+                    "clean"
+                ],
+                [
+                    83.089,
+                    0,
+                    "clean"
+                ],
+                [
+                    78.834,
+                    0,
+                    "clean"
+                ],
+                [
+                    80.563,
+                    1,
+                    "dirty"
+                ],
+                [
+                    78.425,
+                    2,
+                    "dirty"
+                ],
+                [
+                    999.999,
+                    0,
+                    "dnf"
+                ]
+            ]
+        },
+        "Pos.": "21",
+        "Total": "78.834 / 78.834",
+        "Diff.": "+0.318"
+    },
+    {
+        "msrId": "1407355",
+        "email": "",
+        "class": "n",
+        "carNumber": "519",
+        "driverName": "Yuxin Chen",
+        "carModel": "2003 Honda S2000",
+        "carColor": "RED",
+        "sponsor": "",
+        "runs": {
+            "Segment 1": [
+                [
+                    85.634,
+                    0,
+                    "clean"
+                ],
+                [
+                    90.07,
+                    0,
+                    "dnf"
+                ],
+                [
+                    81.781,
+                    0,
+                    "clean"
+                ],
+                [
+                    79.74,
+                    0,
+                    "clean"
+                ],
+                [
+                    87.451,
+                    0,
+                    "clean"
+                ],
+                [
+                    82.163,
+                    0,
+                    "clean"
+                ],
+                [
+                    81.544,
+                    0,
+                    "clean"
+                ],
+                [
+                    80.87,
+                    0,
+                    "clean"
+                ],
+                [
+                    80.527,
+                    0,
+                    "clean"
+                ]
+            ]
+        },
+        "Pos.": "22",
+        "Total": "79.740 / 79.740",
+        "Diff.": "+0.906"
+    },
+    {
+        "msrId": "2782898",
+        "email": "",
+        "class": "n",
+        "carNumber": "15",
+        "driverName": "Yousef Chalabi",
+        "carModel": "2015 Scion Tc",
+        "carColor": "Blue",
+        "sponsor": "",
+        "runs": {
+            "Segment 1": [
+                [
+                    81.262,
+                    0,
+                    "clean"
+                ],
+                [
+                    81.974,
+                    1,
+                    "dirty"
+                ],
+                [
+                    89.776,
+                    0,
+                    "dnf"
+                ],
+                [
+                    79.936,
+                    0,
+                    "clean"
+                ],
+                [
+                    91.028,
+                    1,
+                    "dirty"
+                ],
+                [
+                    80.857,
+                    0,
+                    "clean"
+                ],
+                [
+                    80.47,
+                    0,
+                    "clean"
+                ],
+                [
+                    80.616,
+                    0,
+                    "clean"
+                ],
+                [
+                    80.458,
+                    0,
+                    "clean"
+                ]
+            ]
+        },
+        "Pos.": "23",
+        "Total": "79.936 / 79.936",
+        "Diff.": "+0.196"
+    },
+    {
+        "msrId": "2795325",
+        "email": "",
+        "class": "n",
+        "carNumber": "305",
+        "driverName": "Brad Hartwick",
+        "carModel": "1986 Chevrolet Camaro",
+        "carColor": "Maroon",
+        "sponsor": "",
+        "runs": {
+            "Segment 1": [
+                [
+                    86.239,
+                    0,
+                    "clean"
+                ],
+                [
+                    83.065,
+                    0,
+                    "clean"
+                ],
+                [
+                    79.039,
+                    1,
+                    "dirty"
+                ],
+                [
+                    79.321,
+                    3,
+                    "dirty"
+                ],
+                [
+                    78.46,
+                    3,
+                    "dirty"
+                ],
+                [
+                    100.554,
+                    0,
+                    "dnf"
+                ],
+                [
+                    80.665,
+                    1,
+                    "dirty"
+                ],
+                [
+                    98.885,
+                    0,
+                    "clean"
+                ]
+            ]
+        },
+        "Pos.": "24",
+        "Total": "81.039 / 81.039",
+        "Diff.": "+1.103"
+    },
+    {
+        "msrId": "2338426",
+        "email": "",
+        "class": "n",
+        "carNumber": "440",
+        "driverName": "Daniel Charlebois",
+        "carModel": "1979 Chevrolet Corvette",
+        "carColor": "White",
+        "sponsor": "",
+        "runs": {
+            "Segment 1": [
+                [
+                    85.499,
+                    1,
+                    "dirty"
+                ],
+                [
+                    82.421,
+                    1,
+                    "dirty"
+                ],
+                [
+                    85.007,
+                    0,
+                    "clean"
+                ],
+                [
+                    84.354,
+                    1,
+                    "dirty"
+                ],
+                [
+                    79.995,
+                    1,
+                    "dirty"
+                ],
+                [
+                    80.021,
+                    0,
+                    "dnf"
+                ],
+                [
+                    84.273,
+                    1,
+                    "dirty"
+                ],
+                [
+                    81.113,
+                    0,
+                    "clean"
+                ]
+            ]
+        },
+        "Pos.": "25",
+        "Total": "81.113 / 81.113",
+        "Diff.": "+0.074"
+    },
+    {
+        "msrId": "409784",
+        "email": "",
+        "class": "n",
+        "carNumber": "911",
+        "driverName": "Sean Dusoe",
+        "carModel": "2020 Mazda Mx-5",
+        "carColor": "White",
+        "sponsor": "",
+        "runs": {
+            "Segment 1": [
+                [
+                    92.149,
+                    0,
+                    "clean"
+                ],
+                [
+                    88.238,
+                    0,
+                    "clean"
+                ],
+                [
+                    85.208,
+                    0,
+                    "clean"
+                ],
+                [
+                    86.053,
+                    0,
+                    "clean"
+                ],
+                [
+                    84.892,
+                    0,
+                    "clean"
+                ],
+                [
+                    93.158,
+                    0,
+                    "clean"
+                ],
+                [
+                    84.319,
+                    0,
+                    "clean"
+                ],
+                [
+                    82.708,
+                    0,
+                    "clean"
+                ],
+                [
+                    90.65,
+                    0,
+                    "clean"
+                ]
+            ]
+        },
+        "Pos.": "26",
+        "Total": "82.708 / 82.708",
+        "Diff.": "+1.595"
+    },
+    {
+        "msrId": "2781411",
+        "email": "",
+        "class": "n",
+        "carNumber": "414",
+        "driverName": "John Cotnam",
+        "carModel": "2004 BMW Z4",
+        "carColor": "Silver",
+        "sponsor": "",
+        "runs": {
+            "Segment 1": [
+                [
+                    91.519,
+                    0,
+                    "clean"
+                ],
+                [
+                    86.287,
+                    0,
+                    "clean"
+                ],
+                [
+                    87.364,
+                    0,
+                    "dnf"
+                ],
+                [
+                    93.76,
+                    0,
+                    "dnf"
+                ],
+                [
+                    84.192,
+                    0,
+                    "dnf"
+                ],
+                [
+                    86.574,
+                    0,
+                    "clean"
+                ],
+                [
+                    86.068,
+                    0,
+                    "clean"
+                ],
+                [
+                    84.225,
+                    0,
+                    "clean"
+                ],
+                [
+                    84.058,
+                    0,
+                    "clean"
+                ]
+            ]
+        },
+        "Pos.": "27",
+        "Total": "84.058 / 84.058",
+        "Diff.": "+1.350"
+    },
+    {
+        "msrId": "2649448",
+        "email": "",
+        "class": "n",
+        "carNumber": "50",
+        "driverName": "Michelle McCarthy",
+        "carModel": "2017 BMW M2",
+        "carColor": "Long Beach Blue",
+        "sponsor": "",
+        "runs": {
+            "Segment 1": [
+                [
+                    105.531,
+                    0,
+                    "clean"
+                ],
+                [
+                    90.694,
+                    0,
+                    "clean"
+                ],
+                [
+                    84.755,
+                    0,
+                    "clean"
+                ],
+                [
+                    87.915,
+                    0,
+                    "clean"
+                ],
+                [
+                    87.39,
+                    0,
+                    "clean"
+                ],
+                [
+                    85.854,
+                    0,
+                    "clean"
+                ],
+                [
+                    83.076,
+                    0,
+                    "dnf"
+                ],
+                [
+                    85.281,
+                    0,
+                    "clean"
+                ],
+                [
+                    85.235,
+                    0,
+                    "clean"
+                ]
+            ]
+        },
+        "Pos.": "28",
+        "Total": "84.755 / 84.755",
+        "Diff.": "+0.697"
+    },
+    {
+        "msrId": "2107995",
+        "email": "",
+        "class": "n",
+        "carNumber": "207",
+        "driverName": "Denis Khodachuk",
+        "carModel": "2022 Volkswagen Golf GTI",
+        "carColor": "Blue",
+        "sponsor": "",
+        "runs": {
+            "Segment 1": [
+                [
+                    108.031,
+                    0,
+                    "dnf"
+                ],
+                [
+                    97.341,
+                    0,
+                    "clean"
+                ],
+                [
+                    92.305,
+                    0,
+                    "clean"
+                ],
+                [
+                    91.108,
+                    0,
+                    "clean"
+                ],
+                [
+                    92.353,
+                    0,
+                    "clean"
+                ],
+                [
+                    87.307,
+                    0,
+                    "clean"
+                ],
+                [
+                    85.883,
+                    0,
+                    "clean"
+                ],
+                [
+                    83.986,
+                    0,
+                    "dnf"
+                ]
+            ]
+        },
+        "Pos.": "29",
+        "Total": "85.883 / 85.883",
+        "Diff.": "+1.128"
+    },
+    {
+        "msrId": "2612994",
+        "email": "",
+        "class": "n",
+        "carNumber": "128",
+        "driverName": "Jeffrey Anderson",
+        "carModel": "2016 Mazda MX-5 Miata",
+        "carColor": "Grey",
+        "sponsor": "",
+        "runs": {
+            "Segment 1": [
+                [
+                    98.643,
+                    0,
+                    "dnf"
+                ],
+                [
+                    88.924,
+                    0,
+                    "clean"
+                ],
+                [
+                    85.146,
+                    1,
+                    "dirty"
+                ],
+                [
+                    91.305,
+                    0,
+                    "clean"
+                ],
+                [
+                    91.253,
+                    0,
+                    "clean"
+                ],
+                [
+                    87.683,
+                    0,
+                    "clean"
+                ],
+                [
+                    92.351,
+                    0,
+                    "clean"
+                ],
+                [
+                    89.605,
+                    0,
+                    "clean"
+                ],
+                [
+                    89.493,
+                    0,
+                    "clean"
+                ]
+            ]
+        },
+        "Pos.": "30",
+        "Total": "87.146 / 87.146",
+        "Diff.": "+1.263"
+    },
+    {
+        "msrId": "2923899",
+        "email": "",
+        "class": "n",
+        "carNumber": "551",
+        "driverName": "Anton Zalutsky",
+        "carModel": "Ariel Atom",
+        "carColor": "",
+        "sponsor": "",
+        "runs": {
+            "Segment 1": [
+                [
+                    999.999,
+                    0,
+                    "clean"
+                ]
+            ]
+        },
+        "Pos.": "31",
+        "Total": "999.999 / 999.999",
+        "Diff.": "+912.853"
+    },
+    {
+        "msrId": "2603225",
+        "email": "",
+        "class": "n",
+        "carNumber": "59",
+        "driverName": "ReBecca Savard",
+        "carModel": "Subaru Brz",
+        "carColor": "White",
+        "sponsor": "",
+        "runs": {
+            "Segment 1": []
+        },
+        "Pos.": "32",
+        "Total": "dns /",
+        "Diff.": ""
+    },
+    {
+        "msrId": "2826134",
+        "email": "",
+        "class": "n",
+        "carNumber": "145",
+        "driverName": "Saeed Mezian",
+        "carModel": "2025 Lexus Is350 F Sport",
+        "carColor": "Silver",
+        "sponsor": "",
+        "runs": {
+            "Segment 1": []
+        },
+        "Pos.": "33",
+        "Total": "dns /",
+        "Diff.": ""
+    },
+    {
+        "msrId": "2691151",
+        "email": "",
+        "class": "n",
+        "carNumber": "696",
+        "driverName": "Jeremiah St george",
+        "carModel": "2009 Nissan 370z",
+        "carColor": "Blue",
+        "sponsor": "",
+        "runs": {
+            "Segment 1": []
+        },
+        "Pos.": "34",
+        "Total": "dns /",
+        "Diff.": ""
+    },
+    {
+        "msrId": "2526088",
+        "email": "",
+        "class": "int",
+        "carNumber": "724",
+        "driverName": "Angelo Andres",
+        "carModel": "2012 BMW 128i",
+        "carColor": "Black",
+        "sponsor": "",
+        "runs": {
+            "Segment 1": [
+                [
+                    73.551,
+                    0,
+                    "clean"
+                ],
+                [
+                    77.469,
+                    1,
+                    "dirty"
+                ],
+                [
+                    71.291,
+                    1,
+                    "dirty"
+                ],
+                [
+                    71.863,
+                    0,
+                    "clean"
+                ],
+                [
+                    73.213,
+                    1,
+                    "dirty"
+                ],
+                [
+                    71.435,
+                    0,
+                    "clean"
+                ],
+                [
+                    71.479,
+                    0,
+                    "clean"
+                ],
+                [
+                    71.297,
+                    0,
+                    "clean"
+                ],
+                [
+                    69.97,
+                    0,
+                    "clean"
+                ]
+            ]
+        },
+        "Pos.": "1T",
+        "Total": "69.970 / 69.970",
+        "Diff.": "[-]0.153"
+    },
+    {
+        "msrId": "1471365",
+        "email": "",
+        "class": "int",
+        "carNumber": "221",
+        "driverName": "Adam Nasser",
+        "carModel": "1992 Mazda Miata Mx-5",
+        "carColor": "Yellow",
+        "sponsor": "",
+        "runs": {
+            "Segment 1": [
+                [
+                    77.809,
+                    0,
+                    "clean"
+                ],
+                [
+                    75.875,
+                    0,
+                    "clean"
+                ],
+                [
+                    76.816,
+                    0,
+                    "clean"
+                ],
+                [
+                    73.202,
+                    0,
+                    "clean"
+                ],
+                [
+                    73.191,
+                    0,
+                    "clean"
+                ],
+                [
+                    76.628,
+                    1,
+                    "dirty"
+                ],
+                [
+                    71.718,
+                    0,
+                    "clean"
+                ],
+                [
+                    70.784,
+                    0,
+                    "clean"
+                ],
+                [
+                    70.123,
+                    0,
+                    "clean"
+                ]
+            ]
+        },
+        "Pos.": "2T",
+        "Total": "70.123 / 70.123",
+        "Diff.": "+0.153"
+    },
+    {
+        "msrId": "1865878",
+        "email": "",
+        "class": "int",
+        "carNumber": "397",
+        "driverName": "Yu-Chi Cheng",
+        "carModel": "2025 Toyota GR86",
+        "carColor": "Silver",
+        "sponsor": "",
+        "runs": {
+            "Segment 1": [
+                [
+                    73.917,
+                    0,
+                    "clean"
+                ],
+                [
+                    71.842,
+                    2,
+                    "dirty"
+                ],
+                [
+                    71.888,
+                    1,
+                    "dirty"
+                ],
+                [
+                    70.956,
+                    1,
+                    "dirty"
+                ],
+                [
+                    79.891,
+                    0,
+                    "clean"
+                ],
+                [
+                    71.942,
+                    2,
+                    "dirty"
+                ],
+                [
+                    71.486,
+                    0,
+                    "clean"
+                ],
+                [
+                    71.171,
+                    0,
+                    "clean"
+                ],
+                [
+                    70.716,
+                    0,
+                    "clean"
+                ]
+            ]
+        },
+        "Pos.": "3T",
+        "Total": "70.716 / 70.716",
+        "Diff.": "+0.593"
+    },
+    {
+        "msrId": "2697652",
+        "email": "",
+        "class": "int",
+        "carNumber": "952",
+        "driverName": "Emmett Nguyen",
+        "carModel": "2020 Mazda MX5",
+        "carColor": "Gray",
+        "sponsor": "",
+        "runs": {
+            "Segment 1": [
+                [
+                    77.69,
+                    0,
+                    "dnf"
+                ],
+                [
+                    74.732,
+                    0,
+                    "clean"
+                ],
+                [
+                    73.053,
+                    0,
+                    "clean"
+                ],
+                [
+                    84.273,
+                    0,
+                    "dnf"
+                ],
+                [
+                    71.838,
+                    0,
+                    "clean"
+                ],
+                [
+                    71.443,
+                    0,
+                    "clean"
+                ],
+                [
+                    72.359,
+                    0,
+                    "clean"
+                ],
+                [
+                    71.439,
+                    0,
+                    "clean"
+                ],
+                [
+                    70.99,
+                    0,
+                    "clean"
+                ]
+            ]
+        },
+        "Pos.": "4T",
+        "Total": "70.990 / 70.990",
+        "Diff.": "+0.274"
+    },
+    {
+        "msrId": "372738",
+        "email": "",
+        "class": "int",
+        "carNumber": "429",
+        "driverName": "Robert Dandaraw",
+        "carModel": "1998 BMW M3",
+        "carColor": "Blue",
+        "sponsor": "",
+        "runs": {
+            "Segment 1": [
+                [
+                    74.277,
+                    0,
+                    "clean"
+                ],
+                [
+                    73.393,
+                    0,
+                    "clean"
+                ],
+                [
+                    73.015,
+                    0,
+                    "clean"
+                ],
+                [
+                    71.829,
+                    1,
+                    "dirty"
+                ],
+                [
+                    72.032,
+                    0,
+                    "clean"
+                ],
+                [
+                    73.142,
+                    0,
+                    "clean"
+                ],
+                [
+                    72.186,
+                    0,
+                    "clean"
+                ],
+                [
+                    72.192,
+                    0,
+                    "clean"
+                ],
+                [
+                    71.795,
+                    0,
+                    "clean"
+                ]
+            ]
+        },
+        "Pos.": "5T",
+        "Total": "71.795 / 71.795",
+        "Diff.": "+0.805"
+    },
+    {
+        "msrId": "2516236",
+        "email": "",
+        "class": "int",
+        "carNumber": "137",
+        "driverName": "Matthew Lore",
+        "carModel": "2022 BMW m240i xdrive",
+        "carColor": "red",
+        "sponsor": "",
+        "runs": {
+            "Segment 1": [
+                [
+                    73.028,
+                    0,
+                    "clean"
+                ],
+                [
+                    72.227,
+                    1,
+                    "dirty"
+                ],
+                [
+                    72.265,
+                    1,
+                    "dirty"
+                ],
+                [
+                    74.254,
+                    0,
+                    "clean"
+                ],
+                [
+                    72.154,
+                    0,
+                    "dnf"
+                ],
+                [
+                    72.967,
+                    0,
+                    "clean"
+                ],
+                [
+                    72.886,
+                    0,
+                    "clean"
+                ],
+                [
+                    71.978,
+                    0,
+                    "clean"
+                ],
+                [
+                    73.177,
+                    2,
+                    "dirty"
+                ]
+            ]
+        },
+        "Pos.": "6T",
+        "Total": "71.978 / 71.978",
+        "Diff.": "+0.183"
+    },
+    {
+        "msrId": "1233708",
+        "email": "",
+        "class": "int",
+        "carNumber": "92",
+        "driverName": "Sumanth Ganta",
+        "carModel": "Corvette",
+        "carColor": "Blue",
+        "sponsor": "",
+        "runs": {
+            "Segment 1": [
+                [
+                    83.07,
+                    1,
+                    "dirty"
+                ],
+                [
+                    76.881,
+                    2,
+                    "dirty"
+                ],
+                [
+                    75.999,
+                    0,
+                    "clean"
+                ],
+                [
+                    76.505,
+                    2,
+                    "dirty"
+                ],
+                [
+                    119.182,
+                    0,
+                    "clean"
+                ],
+                [
+                    75.696,
+                    0,
+                    "clean"
+                ],
+                [
+                    80.175,
+                    0,
+                    "dnf"
+                ],
+                [
+                    75.185,
+                    0,
+                    "clean"
+                ],
+                [
+                    72.068,
+                    0,
+                    "clean"
+                ],
+                [
+                    78.185,
+                    1,
+                    "dirty"
+                ]
+            ]
+        },
+        "Pos.": "7",
+        "Total": "72.068 / 72.068",
+        "Diff.": "+0.090"
+    },
+    {
+        "msrId": "2682186",
+        "email": "",
+        "class": "int",
+        "carNumber": "860",
+        "driverName": "Sam Wu",
+        "carModel": "2024 Toyota GR86",
+        "carColor": "Blue",
+        "sponsor": "",
+        "runs": {
+            "Segment 1": [
+                [
+                    74.518,
+                    0,
+                    "dnf"
+                ],
+                [
+                    73.527,
+                    0,
+                    "clean"
+                ],
+                [
+                    74.897,
+                    0,
+                    "clean"
+                ],
+                [
+                    73.104,
+                    0,
+                    "clean"
+                ],
+                [
+                    72.456,
+                    0,
+                    "clean"
+                ],
+                [
+                    72.938,
+                    0,
+                    "clean"
+                ],
+                [
+                    73.012,
+                    0,
+                    "clean"
+                ],
+                [
+                    72.563,
+                    1,
+                    "dirty"
+                ],
+                [
+                    72.521,
+                    0,
+                    "clean"
+                ]
+            ]
+        },
+        "Pos.": "8",
+        "Total": "72.456 / 72.456",
+        "Diff.": "+0.388"
+    },
+    {
+        "msrId": "1867936",
+        "email": "",
+        "class": "int",
+        "carNumber": "85",
+        "driverName": "Carlos Disla",
+        "carModel": "1997 Subaru Legacy GT-B",
+        "carColor": "White",
+        "sponsor": "",
+        "runs": {
+            "Segment 1": [
+                [
+                    75.072,
+                    0,
+                    "dnf"
+                ],
+                [
+                    74.697,
+                    0,
+                    "dnf"
+                ],
+                [
+                    73.701,
+                    0,
+                    "clean"
+                ],
+                [
+                    73.379,
+                    0,
+                    "clean"
+                ],
+                [
+                    73.512,
+                    0,
+                    "clean"
+                ],
+                [
+                    74.594,
+                    2,
+                    "dirty"
+                ],
+                [
+                    74.252,
+                    3,
+                    "dirty"
+                ],
+                [
+                    72.825,
+                    1,
+                    "dirty"
+                ],
+                [
+                    72.563,
+                    0,
+                    "clean"
+                ]
+            ]
+        },
+        "Pos.": "9",
+        "Total": "72.563 / 72.563",
+        "Diff.": "+0.107"
+    },
+    {
+        "msrId": "1770172",
+        "email": "",
+        "class": "int",
+        "carNumber": "370",
+        "driverName": "Benjamin Borselli",
+        "carModel": "2015 Subaru BRZ",
+        "carColor": "Silver",
+        "sponsor": "",
+        "runs": {
+            "Segment 1": [
+                [
+                    76.34,
+                    2,
+                    "dirty"
+                ],
+                [
+                    75.361,
+                    1,
+                    "dirty"
+                ],
+                [
+                    74.662,
+                    0,
+                    "clean"
+                ],
+                [
+                    74.313,
+                    1,
+                    "dirty"
+                ],
+                [
+                    74.655,
+                    0,
+                    "clean"
+                ],
+                [
+                    74.837,
+                    0,
+                    "clean"
+                ],
+                [
+                    73.264,
+                    0,
+                    "clean"
+                ],
+                [
+                    73.013,
+                    0,
+                    "clean"
+                ],
+                [
+                    73.805,
+                    0,
+                    "clean"
+                ]
+            ]
+        },
+        "Pos.": "10",
+        "Total": "73.013 / 73.013",
+        "Diff.": "+0.450"
+    },
+    {
+        "msrId": "2483704",
+        "email": "",
+        "class": "int",
+        "carNumber": "7",
+        "driverName": "Bryce Weisberger",
+        "carModel": "1997 Mazda Miata",
+        "carColor": "",
+        "sponsor": "",
+        "runs": {
+            "Segment 1": [
+                [
+                    86.96,
+                    0,
+                    "clean"
+                ],
+                [
+                    77.488,
+                    0,
+                    "clean"
+                ],
+                [
+                    75.294,
+                    0,
+                    "clean"
+                ],
+                [
+                    75.406,
+                    0,
+                    "clean"
+                ],
+                [
+                    77.759,
+                    0,
+                    "clean"
+                ],
+                [
+                    76.094,
+                    0,
+                    "clean"
+                ],
+                [
+                    75.2,
+                    0,
+                    "clean"
+                ],
+                [
+                    73.591,
+                    0,
+                    "clean"
+                ],
+                [
+                    75.881,
+                    0,
+                    "dnf"
+                ]
+            ]
+        },
+        "Pos.": "11",
+        "Total": "73.591 / 73.591",
+        "Diff.": "+0.578"
+    },
+    {
+        "msrId": "2128904",
+        "email": "",
+        "class": "int",
+        "carNumber": "43",
+        "driverName": "Christopher Alfonso",
+        "carModel": "2024 Tesla 3",
+        "carColor": "Red",
+        "sponsor": "",
+        "runs": {
+            "Segment 1": [
+                [
+                    74.569,
+                    0,
+                    "dnf"
+                ],
+                [
+                    73.171,
+                    0,
+                    "dnf"
+                ],
+                [
+                    78.042,
+                    0,
+                    "dnf"
+                ],
+                [
+                    77.192,
+                    0,
+                    "clean"
+                ],
+                [
+                    78.689,
+                    0,
+                    "clean"
+                ],
+                [
+                    76.065,
+                    1,
+                    "dirty"
+                ],
+                [
+                    75.557,
+                    0,
+                    "clean"
+                ],
+                [
+                    75.695,
+                    0,
+                    "dnf"
+                ],
+                [
+                    74.291,
+                    0,
+                    "clean"
+                ]
+            ]
+        },
+        "Pos.": "12",
+        "Total": "74.291 / 74.291",
+        "Diff.": "+0.700"
+    },
+    {
+        "msrId": "115462",
+        "email": "",
+        "class": "int",
+        "carNumber": "840",
+        "driverName": "David Baker",
+        "carModel": "1997 BMW 328is",
+        "carColor": "Eye hurt yellow",
+        "sponsor": "",
+        "runs": {
+            "Segment 1": [
+                [
+                    77.534,
+                    1,
+                    "dirty"
+                ],
+                [
+                    76.223,
+                    1,
+                    "dirty"
+                ],
+                [
+                    75.724,
+                    0,
+                    "clean"
+                ],
+                [
+                    75.317,
+                    0,
+                    "clean"
+                ],
+                [
+                    74.661,
+                    0,
+                    "clean"
+                ],
+                [
+                    75.337,
+                    0,
+                    "clean"
+                ],
+                [
+                    75.043,
+                    0,
+                    "clean"
+                ],
+                [
+                    75.661,
+                    0,
+                    "clean"
+                ]
+            ]
+        },
+        "Pos.": "13",
+        "Total": "74.661 / 74.661",
+        "Diff.": "+0.370"
+    },
+    {
+        "msrId": "2690907",
+        "email": "",
+        "class": "int",
+        "carNumber": "289",
+        "driverName": "Tim Fiore",
+        "carModel": "2024 Mazda Miata",
+        "carColor": "White",
+        "sponsor": "",
+        "runs": {
+            "Segment 1": [
+                [
+                    78.005,
+                    2,
+                    "dirty"
+                ],
+                [
+                    76.683,
+                    0,
+                    "clean"
+                ],
+                [
+                    76.793,
+                    0,
+                    "clean"
+                ],
+                [
+                    78.032,
+                    2,
+                    "dirty"
+                ],
+                [
+                    75.902,
+                    0,
+                    "dnf"
+                ],
+                [
+                    76.694,
+                    0,
+                    "clean"
+                ],
+                [
+                    76.456,
+                    1,
+                    "dirty"
+                ],
+                [
+                    76.18,
+                    0,
+                    "clean"
+                ],
+                [
+                    74.871,
+                    0,
+                    "clean"
+                ]
+            ]
+        },
+        "Pos.": "14",
+        "Total": "74.871 / 74.871",
+        "Diff.": "+0.210"
+    },
+    {
+        "msrId": "2467803",
+        "email": "",
+        "class": "int",
+        "carNumber": "84",
+        "driverName": "Ahmed Kamal",
+        "carModel": "2024 Ford Mustang GT",
+        "carColor": "Black",
+        "sponsor": "",
+        "runs": {
+            "Segment 1": [
+                [
+                    78.936,
+                    0,
+                    "clean"
+                ],
+                [
+                    78.788,
+                    0,
+                    "clean"
+                ],
+                [
+                    78.475,
+                    0,
+                    "clean"
+                ],
+                [
+                    78.202,
+                    0,
+                    "dnf"
+                ],
+                [
+                    78.225,
+                    0,
+                    "clean"
+                ],
+                [
+                    83.463,
+                    1,
+                    "dirty"
+                ],
+                [
+                    76.552,
+                    0,
+                    "dnf"
+                ],
+                [
+                    75.385,
+                    0,
+                    "dnf"
+                ],
+                [
+                    75.308,
+                    0,
+                    "clean"
+                ]
+            ]
+        },
+        "Pos.": "15",
+        "Total": "75.308 / 75.308",
+        "Diff.": "+0.437"
+    },
+    {
+        "msrId": "2363072",
+        "email": "",
+        "class": "int",
+        "carNumber": "35",
+        "driverName": "Cameron Nobile",
+        "carModel": "2017 Mini Clubman S",
+        "carColor": "Maroon",
+        "sponsor": "",
+        "runs": {
+            "Segment 1": [
+                [
+                    83.259,
+                    0,
+                    "clean"
+                ],
+                [
+                    78.035,
+                    0,
+                    "clean"
+                ],
+                [
+                    76.651,
+                    0,
+                    "dnf"
+                ],
+                [
+                    78.042,
+                    0,
+                    "clean"
+                ],
+                [
+                    78.637,
+                    0,
+                    "dnf"
+                ],
+                [
+                    77.232,
+                    0,
+                    "clean"
+                ],
+                [
+                    75.576,
+                    0,
+                    "clean"
+                ],
+                [
+                    75.704,
+                    0,
+                    "clean"
+                ],
+                [
+                    77.055,
+                    0,
+                    "clean"
+                ]
+            ]
+        },
+        "Pos.": "16",
+        "Total": "75.576 / 75.576",
+        "Diff.": "+0.268"
+    },
+    {
+        "msrId": "1505080",
+        "email": "",
+        "class": "int",
+        "carNumber": "4",
+        "driverName": "Russ Snow",
+        "carModel": "2001 Mazda Miata",
+        "carColor": "Silver",
+        "sponsor": "",
+        "runs": {
+            "Segment 1": [
+                [
+                    90.515,
+                    0,
+                    "dnf"
+                ],
+                [
+                    80.298,
+                    0,
+                    "clean"
+                ],
+                [
+                    80.95,
+                    0,
+                    "clean"
+                ],
+                [
+                    80.996,
+                    0,
+                    "dnf"
+                ],
+                [
+                    79.628,
+                    0,
+                    "dnf"
+                ],
+                [
+                    80.806,
+                    0,
+                    "dnf"
+                ],
+                [
+                    82.725,
+                    0,
+                    "dnf"
+                ],
+                [
+                    79.455,
+                    0,
+                    "clean"
+                ],
+                [
+                    77.164,
+                    0,
+                    "clean"
+                ]
+            ]
+        },
+        "Pos.": "17",
+        "Total": "77.164 / 77.164",
+        "Diff.": "+1.588"
+    },
+    {
+        "msrId": "1900566",
+        "email": "",
+        "class": "int",
+        "carNumber": "53",
+        "driverName": "John Du",
+        "carModel": "2023 Toyota GR Corolla",
+        "carColor": "White",
+        "sponsor": "",
+        "runs": {
+            "Segment 1": []
+        },
+        "Pos.": "18",
+        "Total": "dns /",
+        "Diff.": ""
+    },
+    {
+        "msrId": "2078512",
+        "email": "",
+        "class": "int",
+        "carNumber": "60",
+        "driverName": "Cameron Pesente",
+        "carModel": "2023 Hyundai Elantra N",
+        "carColor": "Ceramic White",
+        "sponsor": "",
+        "runs": {
+            "Segment 1": []
+        },
+        "Pos.": "19",
+        "Total": "dns /",
+        "Diff.": ""
+    },
+    {
+        "msrId": "298463",
+        "email": "",
+        "class": "er",
+        "carNumber": "885",
+        "driverName": "Tamra Krystinik",
+        "carModel": "2000 Legrand Dragon SR1 Mk25",
+        "carColor": "Blue Camo",
+        "sponsor": "",
+        "runs": {
+            "Segment 1": [
+                [
+                    58.529,
+                    0,
+                    "clean"
+                ],
+                [
+                    57.909,
+                    0,
+                    "clean"
+                ],
+                [
+                    57.245,
+                    0,
+                    "clean"
+                ],
+                [
+                    58.55,
+                    3,
+                    "dirty"
+                ],
+                [
+                    58.709,
+                    0,
+                    "clean"
+                ],
+                [
+                    56.175,
+                    0,
+                    "clean"
+                ],
+                [
+                    55.293,
+                    0,
+                    "clean"
+                ],
+                [
+                    66.558,
+                    0,
+                    "clean"
+                ],
+                [
+                    66.367,
+                    4,
+                    "dirty"
+                ]
+            ]
+        },
+        "Pos.": "1T",
+        "Total": "55.293 / 55.293",
+        "Diff.": "[-]3.792"
+    },
+    {
+        "msrId": "298468",
+        "email": "",
+        "class": "er",
+        "carNumber": "385",
+        "driverName": "Andrew Krystinik",
+        "carModel": "2000 Legrand Dragon SR1 Mk25",
+        "carColor": "Blue Camo",
+        "sponsor": "",
+        "runs": {
+            "Segment 1": [
+                [
+                    62.725,
+                    0,
+                    "clean"
+                ],
+                [
+                    67.32,
+                    1,
+                    "dirty"
+                ],
+                [
+                    60.164,
+                    0,
+                    "clean"
+                ],
+                [
+                    59.579,
+                    0,
+                    "clean"
+                ],
+                [
+                    59.678,
+                    1,
+                    "dirty"
+                ],
+                [
+                    59.085,
+                    0,
+                    "clean"
+                ],
+                [
+                    59.014,
+                    0,
+                    "dnf"
+                ],
+                [
+                    69.621,
+                    1,
+                    "dirty"
+                ],
+                [
+                    69.024,
+                    0,
+                    "clean"
+                ]
+            ]
+        },
+        "Pos.": "2",
+        "Total": "59.085 / 59.085",
+        "Diff.": "+3.792"
+    },
+    {
+        "msrId": "1517956",
+        "email": "",
+        "class": "fwd",
+        "carNumber": "44",
+        "driverName": "Harry Chartoff",
+        "carModel": "2022 Hyundai Veloster N",
+        "carColor": "Blue",
+        "sponsor": "",
+        "runs": {
+            "Segment 1": [
+                [
+                    71.555,
+                    0,
+                    "clean"
+                ],
+                [
+                    70.486,
+                    0,
+                    "clean"
+                ],
+                [
+                    69.752,
+                    0,
+                    "clean"
+                ],
+                [
+                    69.914,
+                    2,
+                    "dirty"
+                ],
+                [
+                    70.182,
+                    1,
+                    "dirty"
+                ],
+                [
+                    69.1,
+                    0,
+                    "clean"
+                ],
+                [
+                    68.96,
+                    1,
+                    "dirty"
+                ],
+                [
+                    69.344,
+                    0,
+                    "clean"
+                ],
+                [
+                    68.844,
+                    5,
+                    "dirty"
+                ]
+            ]
+        },
+        "Pos.": "1T",
+        "Total": "69.100 / 69.100",
+        "Diff.": "[-]0.182"
+    },
+    {
+        "msrId": "1925174",
+        "email": "",
+        "class": "fwd",
+        "carNumber": "2",
+        "driverName": "Christopher King(NobleDaddy)",
+        "carModel": "1992 Honda Prelude",
+        "carColor": "Red",
+        "sponsor": "",
+        "runs": {
+            "Segment 1": [
+                [
+                    71.765,
+                    0,
+                    "clean"
+                ],
+                [
+                    71.503,
+                    2,
+                    "dirty"
+                ],
+                [
+                    69.808,
+                    0,
+                    "clean"
+                ],
+                [
+                    70.848,
+                    1,
+                    "dirty"
+                ],
+                [
+                    70.585,
+                    0,
+                    "clean"
+                ],
+                [
+                    70.194,
+                    0,
+                    "clean"
+                ],
+                [
+                    70.295,
+                    0,
+                    "clean"
+                ],
+                [
+                    69.753,
+                    0,
+                    "clean"
+                ],
+                [
+                    69.282,
+                    0,
+                    "clean"
+                ]
+            ]
+        },
+        "Pos.": "2T",
+        "Total": "69.282 / 69.282",
+        "Diff.": "+0.182"
+    },
+    {
+        "msrId": "341218",
+        "email": "",
+        "class": "fwd",
+        "carNumber": "491",
+        "driverName": "Melanie Kwong",
+        "carModel": "2012 Mini Cooper S",
+        "carColor": "Midnight Black",
+        "sponsor": "",
+        "runs": {
+            "Segment 1": [
+                [
+                    81.639,
+                    0,
+                    "clean"
+                ],
+                [
+                    72.482,
+                    0,
+                    "clean"
+                ],
+                [
+                    71.302,
+                    0,
+                    "clean"
+                ],
+                [
+                    71.495,
+                    0,
+                    "clean"
+                ],
+                [
+                    70.534,
+                    0,
+                    "clean"
+                ],
+                [
+                    71.146,
+                    0,
+                    "clean"
+                ],
+                [
+                    71.27,
+                    0,
+                    "clean"
+                ],
+                [
+                    70.094,
+                    0,
+                    "clean"
+                ]
+            ]
+        },
+        "Pos.": "3",
+        "Total": "70.094 / 70.094",
+        "Diff.": "+0.812"
+    },
+    {
+        "msrId": "206307",
+        "email": "",
+        "class": "fwd",
+        "carNumber": "180",
+        "driverName": "John Swig",
+        "carModel": "2019 Honda Civic Si",
+        "carColor": "Aegean Blue",
+        "sponsor": "",
+        "runs": {
+            "Segment 1": [
+                [
+                    71.388,
+                    0,
+                    "clean"
+                ],
+                [
+                    70.831,
+                    1,
+                    "dirty"
+                ],
+                [
+                    70.668,
+                    0,
+                    "clean"
+                ],
+                [
+                    71.404,
+                    1,
+                    "dirty"
+                ],
+                [
+                    74.063,
+                    0,
+                    "dnf"
+                ],
+                [
+                    70.318,
+                    1,
+                    "dirty"
+                ],
+                [
+                    70.405,
+                    1,
+                    "dirty"
+                ],
+                [
+                    70.034,
+                    2,
+                    "dirty"
+                ],
+                [
+                    70.076,
+                    1,
+                    "dirty"
+                ]
+            ]
+        },
+        "Pos.": "4",
+        "Total": "70.668 / 70.668",
+        "Diff.": "+0.574"
+    },
+    {
+        "msrId": "410729",
+        "email": "",
+        "class": "fwd",
+        "carNumber": "982",
+        "driverName": "Matt Anderson",
+        "carModel": "2013 Mini Cooper S Coupe",
+        "carColor": "Red",
+        "sponsor": "",
+        "runs": {
+            "Segment 1": [
+                [
+                    81.587,
+                    0,
+                    "dnf"
+                ],
+                [
+                    80.287,
+                    0,
+                    "clean"
+                ],
+                [
+                    78.523,
+                    0,
+                    "clean"
+                ],
+                [
+                    80.966,
+                    0,
+                    "clean"
+                ],
+                [
+                    79.035,
+                    0,
+                    "dnf"
+                ],
+                [
+                    79.239,
+                    0,
+                    "clean"
+                ],
+                [
+                    77.229,
+                    0,
+                    "clean"
+                ],
+                [
+                    76.493,
+                    1,
+                    "dirty"
+                ],
+                [
+                    76.557,
+                    0,
+                    "clean"
+                ]
+            ]
+        },
+        "Pos.": "5",
+        "Total": "76.557 / 76.557",
+        "Diff.": "+5.889"
+    },
+    {
+        "msrId": "601599",
+        "email": "",
+        "class": "fwd",
+        "carNumber": "983",
+        "driverName": "Brittany Blaney-Anderson",
+        "carModel": "2013 Mini Cooper S Coupe",
+        "carColor": "Red",
+        "sponsor": "",
+        "runs": {
+            "Segment 1": [
+                [
+                    93.601,
+                    0,
+                    "clean"
+                ],
+                [
+                    88.147,
+                    0,
+                    "clean"
+                ],
+                [
+                    88.897,
+                    0,
+                    "clean"
+                ],
+                [
+                    88.58,
+                    0,
+                    "dnf"
+                ],
+                [
+                    86.646,
+                    0,
+                    "clean"
+                ],
+                [
+                    105.656,
+                    0,
+                    "clean"
+                ],
+                [
+                    88.833,
+                    0,
+                    "clean"
+                ],
+                [
+                    86.463,
+                    0,
+                    "clean"
+                ],
+                [
+                    86.656,
+                    0,
+                    "clean"
+                ]
+            ]
+        },
+        "Pos.": "6",
+        "Total": "86.463 / 86.463",
+        "Diff.": "+9.906"
+    },
+    {
+        "msrId": "189241",
+        "email": "",
+        "class": "pony",
+        "carNumber": "570",
+        "driverName": "Stephanie Reeve",
+        "carModel": "2003 Chevrolet Horse",
+        "carColor": "plain",
+        "sponsor": "",
+        "runs": {
+            "Segment 1": [
+                [
+                    70.996,
+                    1,
+                    "dirty"
+                ],
+                [
+                    70.296,
+                    0,
+                    "clean"
+                ],
+                [
+                    67.899,
+                    1,
+                    "dirty"
+                ],
+                [
+                    67.947,
+                    0,
+                    "clean"
+                ],
+                [
+                    66.147,
+                    4,
+                    "dirty"
+                ],
+                [
+                    68.374,
+                    1,
+                    "dirty"
+                ],
+                [
+                    999.999,
+                    0,
+                    "dnf"
+                ]
+            ]
+        },
+        "Pos.": "1T",
+        "Total": "67.947 / 67.947",
+        "Diff.": "[-]0.322"
+    },
+    {
+        "msrId": "418823",
+        "email": "",
+        "class": "pony",
+        "carNumber": "1",
+        "driverName": "Steve Belliveau",
+        "carModel": "2017 Chevrolet Neverending story pony",
+        "carColor": "white",
+        "sponsor": "",
+        "runs": {
+            "Segment 1": [
+                [
+                    70.844,
+                    0,
+                    "clean"
+                ],
+                [
+                    69.291,
+                    1,
+                    "dirty"
+                ],
+                [
+                    68.968,
+                    0,
+                    "clean"
+                ],
+                [
+                    68.269,
+                    0,
+                    "clean"
+                ],
+                [
+                    70.241,
+                    1,
+                    "dirty"
+                ],
+                [
+                    70.154,
+                    0,
+                    "clean"
+                ],
+                [
+                    70.111,
+                    0,
+                    "clean"
+                ],
+                [
+                    68.614,
+                    0,
+                    "clean"
+                ],
+                [
+                    72.943,
+                    0,
+                    "dnf"
+                ],
+                [
+                    69.41,
+                    1,
+                    "dirty"
+                ]
+            ]
+        },
+        "Pos.": "2T",
+        "Total": "68.269 / 68.269",
+        "Diff.": "+0.322"
+    },
+    {
+        "msrId": "241710",
+        "email": "",
+        "class": "pony",
+        "carNumber": "174",
+        "driverName": "Dana Nicgorski Sr.",
+        "carModel": "2018 Ford Potato GT",
+        "carColor": "Blue",
+        "sponsor": "",
+        "runs": {
+            "Segment 1": [
+                [
+                    76.195,
+                    1,
+                    "dirty"
+                ],
+                [
+                    74.915,
+                    1,
+                    "dirty"
+                ],
+                [
+                    72.425,
+                    0,
+                    "clean"
+                ],
+                [
+                    71.529,
+                    0,
+                    "clean"
+                ],
+                [
+                    74.376,
+                    0,
+                    "clean"
+                ],
+                [
+                    73.798,
+                    0,
+                    "clean"
+                ],
+                [
+                    73.912,
+                    0,
+                    "clean"
+                ],
+                [
+                    73.728,
+                    0,
+                    "clean"
+                ],
+                [
+                    73.031,
+                    0,
+                    "clean"
+                ]
+            ]
+        },
+        "Pos.": "3T",
+        "Total": "71.529 / 71.529",
+        "Diff.": "+3.260"
+    },
+    {
+        "msrId": "1690849",
+        "email": "",
+        "class": "pony",
+        "carNumber": "23",
+        "driverName": "Audra Paradie",
+        "carModel": "Chevrolet Most of a Corvette",
+        "carColor": "",
+        "sponsor": "",
+        "runs": {
+            "Segment 1": [
+                [
+                    68.803,
+                    0,
+                    "dnf"
+                ],
+                [
+                    72.176,
+                    1,
+                    "dirty"
+                ],
+                [
+                    71.948,
+                    0,
+                    "clean"
+                ],
+                [
+                    71.911,
+                    0,
+                    "clean"
+                ],
+                [
+                    71.952,
+                    0,
+                    "clean"
+                ],
+                [
+                    71.56,
+                    5,
+                    "dirty"
+                ],
+                [
+                    72.341,
+                    3,
+                    "dirty"
+                ],
+                [
+                    72.803,
+                    1,
+                    "dirty"
+                ],
+                [
+                    72.349,
+                    2,
+                    "dirty"
+                ]
+            ]
+        },
+        "Pos.": "4T",
+        "Total": "71.911 / 71.911",
+        "Diff.": "+0.382"
+    },
+    {
+        "msrId": "419319",
+        "email": "",
+        "class": "pony",
+        "carNumber": "502",
+        "driverName": "Bill Southworth",
+        "carModel": "2014 Ford Mustang GT",
+        "carColor": "Grey",
+        "sponsor": "",
+        "runs": {
+            "Segment 1": [
+                [
+                    73.622,
+                    0,
+                    "clean"
+                ],
+                [
+                    72.744,
+                    0,
+                    "clean"
+                ],
+                [
+                    72.449,
+                    0,
+                    "clean"
+                ],
+                [
+                    73.949,
+                    0,
+                    "clean"
+                ],
+                [
+                    73.342,
+                    1,
+                    "dirty"
+                ],
+                [
+                    72.71,
+                    0,
+                    "clean"
+                ],
+                [
+                    73.402,
+                    0,
+                    "clean"
+                ],
+                [
+                    72.646,
+                    0,
+                    "clean"
+                ],
+                [
+                    73.271,
+                    0,
+                    "clean"
+                ]
+            ]
+        },
+        "Pos.": "5",
+        "Total": "72.449 / 72.449",
+        "Diff.": "+0.538"
+    },
+    {
+        "msrId": "262476",
+        "email": "",
+        "class": "pony",
+        "carNumber": "95",
+        "driverName": "Sam Kornichuk",
+        "carModel": "2011 Chevrolet Camaro",
+        "carColor": "Black",
+        "sponsor": "",
+        "runs": {
+            "Segment 1": [
+                [
+                    78.461,
+                    0,
+                    "clean"
+                ],
+                [
+                    78.898,
+                    2,
+                    "dirty"
+                ],
+                [
+                    77.518,
+                    0,
+                    "clean"
+                ],
+                [
+                    76.773,
+                    0,
+                    "clean"
+                ],
+                [
+                    78.026,
+                    1,
+                    "dirty"
+                ],
+                [
+                    76.199,
+                    0,
+                    "clean"
+                ],
+                [
+                    77.764,
+                    0,
+                    "clean"
+                ],
+                [
+                    76.161,
+                    0,
+                    "clean"
+                ],
+                [
+                    75.483,
+                    0,
+                    "clean"
+                ]
+            ]
+        },
+        "Pos.": "6",
+        "Total": "75.483 / 75.483",
+        "Diff.": "+3.034"
+    },
+    {
+        "msrId": "535388",
+        "email": "",
+        "class": "pony",
+        "carNumber": "68",
+        "driverName": "Bruce Stoddard",
+        "carModel": "1994 Ford Mustang Cobra",
+        "carColor": "Crystal White",
+        "sponsor": "",
+        "runs": {
+            "Segment 1": [
+                [
+                    87.731,
+                    0,
+                    "clean"
+                ],
+                [
+                    78.679,
+                    0,
+                    "clean"
+                ],
+                [
+                    77.754,
+                    0,
+                    "clean"
+                ],
+                [
+                    76.883,
+                    0,
+                    "clean"
+                ],
+                [
+                    81.184,
+                    0,
+                    "clean"
+                ],
+                [
+                    76.034,
+                    0,
+                    "clean"
+                ],
+                [
+                    77.049,
+                    2,
+                    "dirty"
+                ],
+                [
+                    78.077,
+                    0,
+                    "clean"
+                ],
+                [
+                    75.839,
+                    0,
+                    "clean"
+                ]
+            ]
+        },
+        "Pos.": "7",
+        "Total": "75.839 / 75.839",
+        "Diff.": "+0.356"
+    },
+    {
+        "msrId": "2756544",
+        "email": "",
+        "class": "pony",
+        "carNumber": "199",
+        "driverName": "Olivia Swenson",
+        "carModel": "1978 Chevrolet corvette",
+        "carColor": "blue",
+        "sponsor": "",
+        "runs": {
+            "Segment 1": []
+        },
+        "Pos.": "8",
+        "Total": "dns /",
+        "Diff.": ""
+    },
+    {
+        "msrId": "197022",
+        "email": "",
+        "class": "pony",
+        "carNumber": "214",
+        "driverName": "Brendan Stecchini",
+        "carModel": "1982 Chevrolet Camaro",
+        "carColor": "black",
+        "sponsor": "",
+        "runs": {
+            "Segment 1": []
+        },
+        "Pos.": "9",
+        "Total": "dns /",
+        "Diff.": ""
+    },
+    {
+        "msrId": "603241",
+        "email": "",
+        "class": "pony",
+        "carNumber": "999",
+        "driverName": "Christian Swenson",
+        "carModel": "Chevrolet Corvette",
+        "carColor": "Blue",
+        "sponsor": "",
+        "runs": {
+            "Segment 1": []
+        },
+        "Pos.": "10",
+        "Total": "dns /",
+        "Diff.": ""
+    },
+    {
+        "msrId": "507324",
+        "email": "",
+        "class": "mzst",
+        "carNumber": "6",
+        "driverName": "Pavels Danilovs",
+        "carModel": "2006 Ford Speed Boat",
+        "carColor": "",
+        "sponsor": "",
+        "runs": {
+            "Segment 1": [
+                [
+                    65.578,
+                    3,
+                    "dirty"
+                ],
+                [
+                    66.253,
+                    1,
+                    "dirty"
+                ],
+                [
+                    66.093,
+                    0,
+                    "clean"
+                ],
+                [
+                    65.174,
+                    0,
+                    "clean"
+                ],
+                [
+                    65.803,
+                    0,
+                    "clean"
+                ],
+                [
+                    65.62,
+                    0,
+                    "clean"
+                ],
+                [
+                    64.768,
+                    0,
+                    "clean"
+                ],
+                [
+                    64.52,
+                    2,
+                    "dirty"
+                ],
+                [
+                    65.405,
+                    0,
+                    "clean"
+                ]
+            ]
+        },
+        "Pos.": "1T",
+        "Total": "64.768 / 64.768",
+        "Diff.": "[-]0.945"
+    },
+    {
+        "msrId": "166326",
+        "email": "",
+        "class": "mzst",
+        "carNumber": "420",
+        "driverName": "John Frongillo",
+        "carModel": "2012 Mazda MX-5 \"The Silver Ferret\"",
+        "carColor": "Ayer Silver",
+        "sponsor": "",
+        "runs": {
+            "Segment 1": [
+                [
+                    67.632,
+                    0,
+                    "dnf"
+                ],
+                [
+                    65.756,
+                    0,
+                    "clean"
+                ],
+                [
+                    66.148,
+                    0,
+                    "clean"
+                ],
+                [
+                    65.713,
+                    0,
+                    "clean"
+                ],
+                [
+                    65.209,
+                    2,
+                    "dirty"
+                ],
+                [
+                    65.47,
+                    2,
+                    "dirty"
+                ],
+                [
+                    65.944,
+                    2,
+                    "dirty"
+                ],
+                [
+                    66.122,
+                    0,
+                    "clean"
+                ],
+                [
+                    65.818,
+                    1,
+                    "dirty"
+                ]
+            ]
+        },
+        "Pos.": "2T",
+        "Total": "65.713 / 65.713",
+        "Diff.": "+0.945"
+    },
+    {
+        "msrId": "149474",
+        "email": "",
+        "class": "mzst",
+        "carNumber": "25",
+        "driverName": "Lou Masciarelli",
+        "carModel": "2010 Mazda Miata",
+        "carColor": "Red",
+        "sponsor": "",
+        "runs": {
+            "Segment 1": [
+                [
+                    72.003,
+                    2,
+                    "dirty"
+                ],
+                [
+                    72.332,
+                    0,
+                    "clean"
+                ],
+                [
+                    70.422,
+                    0,
+                    "clean"
+                ],
+                [
+                    69.299,
+                    0,
+                    "clean"
+                ],
+                [
+                    70.401,
+                    0,
+                    "clean"
+                ],
+                [
+                    69.722,
+                    0,
+                    "clean"
+                ],
+                [
+                    69.286,
+                    0,
+                    "clean"
+                ],
+                [
+                    68.721,
+                    0,
+                    "clean"
+                ],
+                [
+                    68.506,
+                    0,
+                    "clean"
+                ]
+            ]
+        },
+        "Pos.": "3T",
+        "Total": "68.506 / 68.506",
+        "Diff.": "+2.793"
+    },
+    {
+        "msrId": "568565",
+        "email": "",
+        "class": "mzst",
+        "carNumber": "111",
+        "driverName": "Raji Loji",
+        "carModel": "1996 Mazda Miata",
+        "carColor": "Black",
+        "sponsor": "",
+        "runs": {
+            "Segment 1": [
+                [
+                    72.448,
+                    0,
+                    "dnf"
+                ],
+                [
+                    72.266,
+                    0,
+                    "clean"
+                ],
+                [
+                    71.451,
+                    0,
+                    "clean"
+                ],
+                [
+                    71.147,
+                    0,
+                    "clean"
+                ],
+                [
+                    71.549,
+                    0,
+                    "clean"
+                ],
+                [
+                    70.0,
+                    0,
+                    "clean"
+                ],
+                [
+                    70.311,
+                    1,
+                    "dirty"
+                ],
+                [
+                    71.409,
+                    1,
+                    "dirty"
+                ],
+                [
+                    71.77,
+                    0,
+                    "clean"
+                ]
+            ]
+        },
+        "Pos.": "4",
+        "Total": "70.000 / 70.000",
+        "Diff.": "+1.494"
+    },
+    {
+        "msrId": "374284",
+        "email": "",
+        "class": "mzst",
+        "carNumber": "89",
+        "driverName": "Paul DeBitetto",
+        "carModel": "2004 Mazda mazdaspeed",
+        "carColor": "red",
+        "sponsor": "",
+        "runs": {
+            "Segment 1": [
+                [
+                    74.354,
+                    1,
+                    "dirty"
+                ],
+                [
+                    72.348,
+                    1,
+                    "dirty"
+                ],
+                [
+                    73.533,
+                    3,
+                    "dirty"
+                ],
+                [
+                    70.617,
+                    1,
+                    "dirty"
+                ],
+                [
+                    71.478,
+                    1,
+                    "dirty"
+                ],
+                [
+                    70.897,
+                    0,
+                    "clean"
+                ],
+                [
+                    70.717,
+                    0,
+                    "clean"
+                ],
+                [
+                    70.285,
+                    0,
+                    "clean"
+                ],
+                [
+                    70.07,
+                    0,
+                    "clean"
+                ]
+            ]
+        },
+        "Pos.": "5",
+        "Total": "70.070 / 70.070",
+        "Diff.": "+0.070"
+    },
+    {
+        "msrId": "639324",
+        "email": "",
+        "class": "mzst",
+        "carNumber": "99",
+        "driverName": "John Plump",
+        "carModel": "2019 Mazda Miata",
+        "carColor": "Red",
+        "sponsor": "",
+        "runs": {
+            "Segment 1": [
+                [
+                    82.975,
+                    0,
+                    "dnf"
+                ],
+                [
+                    71.818,
+                    0,
+                    "clean"
+                ],
+                [
+                    72.103,
+                    0,
+                    "clean"
+                ],
+                [
+                    71.321,
+                    0,
+                    "clean"
+                ],
+                [
+                    72.775,
+                    0,
+                    "clean"
+                ],
+                [
+                    81.745,
+                    0,
+                    "dnf"
+                ],
+                [
+                    71.122,
+                    1,
+                    "dirty"
+                ],
+                [
+                    70.496,
+                    1,
+                    "dirty"
+                ],
+                [
+                    70.852,
+                    0,
+                    "clean"
+                ]
+            ]
+        },
+        "Pos.": "6",
+        "Total": "70.852 / 70.852",
+        "Diff.": "+0.782"
+    },
+    {
+        "msrId": "2316523",
+        "email": "",
+        "class": "mzst",
+        "carNumber": "96",
+        "driverName": "Jamesy Jean-Michel",
+        "carModel": "2023 Mazda Miata GT",
+        "carColor": "black",
+        "sponsor": "",
+        "runs": {
+            "Segment 1": [
+                [
+                    79.556,
+                    0,
+                    "dnf"
+                ],
+                [
+                    79.18,
+                    0,
+                    "dnf"
+                ],
+                [
+                    88.737,
+                    1,
+                    "dirty"
+                ],
+                [
+                    78.769,
+                    0,
+                    "clean"
+                ],
+                [
+                    77.52,
+                    0,
+                    "clean"
+                ],
+                [
+                    76.753,
+                    0,
+                    "clean"
+                ],
+                [
+                    84.119,
+                    2,
+                    "dirty"
+                ],
+                [
+                    75.915,
+                    0,
+                    "clean"
+                ],
+                [
+                    87.061,
+                    1,
+                    "dirty"
+                ]
+            ]
+        },
+        "Pos.": "7",
+        "Total": "75.915 / 75.915",
+        "Diff.": "+5.063"
+    }
+]
