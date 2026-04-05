@@ -179,7 +179,20 @@ class ResultsFileWatcher(QThread):
 
             try:
                 self.log_message.emit(DEBUG, f"Parsing results file at {fpath}")
-                results = parse_axware_live_results(fpath)
+
+                # explicitly warning if parsing fails
+                try:
+                    results = parse_axware_live_results(fpath)
+                except:
+                    self.log_message.emit(
+                        WARNING,
+                        f"Error parsing {fpath}, ensure file exists and contains results!"
+                    )
+                    last_modified = mtime
+                    consecutive_failures += 1
+                    if self.force_update_flag:
+                        self.force_update_flag = False
+                    continue
 
                 if self.upload_results(results, close=self.close_event_flag):
                     self.log_message.emit(
