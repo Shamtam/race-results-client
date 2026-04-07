@@ -18,9 +18,10 @@ from PySide6.QtWidgets import (
 from race_results.ui.main_window import Ui_main_window
 from race_results.config import ConfigDialog
 from race_results.console import ConsoleDialog
+from race_results.defaults import default_log_fpath
 from race_results.executive import ResultsFileWatcher
 from race_results.settings import SettingsStore
-from race_results.log import StatusBarLogHandler
+from race_results.log import FileLogHandler, StatusBarLogHandler
 
 _logger = logging.getLogger()
 _worker_logger = logging.getLogger("executive")
@@ -40,22 +41,18 @@ class MainWindow(QMainWindow):
 
         self.settings = SettingsStore()
 
-        ApiKey = self.settings.ApiKey
-        ResultsPath = str(Path(self.settings.ResultsPath).resolve())
         AutoStart = self.settings.AutoStart
         TrayStart = self.settings.TrayStart
+        LogToFile = self.settings.LogToFile
 
-        self.config_dlg = ConfigDialog(
-            self,
-            api_key=ApiKey,
-            results_fpath=ResultsPath,
-            autostart=AutoStart,
-            traystart=TrayStart,
-        )
+        self.config_dlg = ConfigDialog(self, self.settings)
 
         self.console_dlg = ConsoleDialog(self)
         _logger.addHandler(self.console_dlg.Handler)
         _logger.addHandler(StatusBarLogHandler(self.ui.statusbar))
+
+        if LogToFile:
+            _logger.addHandler(FileLogHandler(default_log_fpath))
 
         self.watch_worker = ResultsFileWatcher(self, self.settings)
 
@@ -130,14 +127,33 @@ class MainWindow(QMainWindow):
         if result != QDialog.DialogCode.Accepted:
             return
 
+        # retain hidden host setting if it exists
+        host = self.settings.value("Host", None)
+            
+        # rebuild settings store from scratch using dialog values
         self.settings.clear()
 
         self.settings.setValue("ApiKey", self.config_dlg.ApiKey)
         self.settings.setValue("ResultsPath", self.config_dlg.ResultsPath)
         self.settings.setValue("AutoStart", self.config_dlg.AutoStart)
         self.settings.setValue("TrayStart", self.config_dlg.TrayStart)
+        self.settings.setValue("LogToFile", self.config_dlg.LogToFile)
 
+        if host is not None:
+            self.settings.setValue("Host", host)
+
+        # write settings to disk
         self.settings.sync()
+
+        # update file logging if necessary
+        file_handlers = list(
+            filter(lambda x: isinstance(x, FileLogHandler), _logger.handlers)
+        )
+        if self.settings.LogToFile and not file_handlers:
+            _logger.addHandler(FileLogHandler(default_log_fpath))
+        elif not self.settings.LogToFile and file_handlers:
+            for h in file_handlers:
+                _logger.removeHandler(h)
 
     @Slot()
     def connect(self):

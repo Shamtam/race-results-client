@@ -1,6 +1,23 @@
 import logging
+from pathlib import Path
+
+from os import PathLike
 
 from PySide6.QtWidgets import QTextEdit, QStatusBar
+
+_default_formatter = logging.Formatter(
+    "%(asctime)s [%(levelname)s] {%(module)s}: %(message)s", "%H:%M:%S"
+)
+
+
+class FileLogHandler(logging.FileHandler):
+
+    def __init__(self, filename: str | PathLike[str], *args, **kwargs) -> None:
+        Path(filename).parent.mkdir(parents=True, exist_ok=True)
+        super().__init__(filename, *args, **kwargs)
+
+        self.setLevel(logging.DEBUG)
+        self.setFormatter(_default_formatter)
 
 
 class TextEditLogHandler(logging.Handler):
@@ -10,10 +27,7 @@ class TextEditLogHandler(logging.Handler):
         self.textbox = textbox
         self.textbox.document().setMaximumBlockCount(1000)
 
-        self.formatter = logging.Formatter(
-            "%(asctime)s [%(levelname)s] {%(module)s}: %(message)s", "%H:%M:%S"
-        )
-        self.setFormatter(self.formatter)
+        self.setFormatter(_default_formatter)
 
     def emit(self, record: logging.LogRecord) -> None:
 

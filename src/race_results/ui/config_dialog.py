@@ -85,7 +85,12 @@ class Ui_config_dialog(object):
         self.buttonBox.setStandardButtons(QDialogButtonBox.StandardButton.Cancel|QDialogButtonBox.StandardButton.Save)
         self.buttonBox.setCenterButtons(True)
 
-        self.formLayout.setWidget(5, QFormLayout.ItemRole.SpanningRole, self.buttonBox)
+        self.formLayout.setWidget(6, QFormLayout.ItemRole.SpanningRole, self.buttonBox)
+
+        self.cb_logfile = QCheckBox(config_dialog)
+        self.cb_logfile.setObjectName(u"cb_logfile")
+
+        self.formLayout.setWidget(5, QFormLayout.ItemRole.SpanningRole, self.cb_logfile)
 
 
         self.retranslateUi(config_dialog)
@@ -105,5 +110,6 @@ class Ui_config_dialog(object):
         self.button_resultsfile.setText("")
         self.cb_autostart.setText(QCoreApplication.translate("config_dialog", u"Connect to server on startup", None))
         self.cb_traystart.setText(QCoreApplication.translate("config_dialog", u"Minimize to tray on startup", None))
+        self.cb_logfile.setText(QCoreApplication.translate("config_dialog", u"Enable Logging to File ($HOME/.race-results-client/*.log)", None))
     # retranslateUi
 
