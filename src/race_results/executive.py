@@ -146,42 +146,43 @@ class ResultsFileWatcher(QThread):
         if not fpath.exists():
             raise FileNotFoundError()
 
+        # force update upon entry
         last_modified = datetime(
             1, 1, 1, tzinfo=timezone.utc
-        )  # force update upon entry
+        )
         consecutive_failures = 0
 
+        # begin main worker loop
         while True:
 
-            # force one final update if event closure requested
-            if self.close_event_flag:
-                self.force_update_flag = True
-
-            if consecutive_failures > max_allowed_failures:
-                self.log_message.emit(
-                    ERROR,
-                    f"{max_allowed_failures:d} consecutive upload failures, killing upload worker",
-                )
-                return
-
-            if self.isInterruptionRequested():
-                self.state = {}
-                self.log_message.emit(DEBUG, "Worker thread exiting by user request")
-                return
-
-            mtime = datetime.fromtimestamp(
-                fpath.stat().st_mtime, timezone.utc
-            ).astimezone()
-
-            # skip parsing if file has not been modified since last upload and not forcing
-            if mtime <= last_modified and not self.force_update_flag:
-                continue
-
             try:
-                self.log_message.emit(DEBUG, f"Parsing results file at {fpath}")
+                # force one final update if event closure requested
+                if self.close_event_flag:
+                    self.force_update_flag = True
 
-                # explicitly warning if parsing fails
+                if consecutive_failures > max_allowed_failures:
+                    self.log_message.emit(
+                        ERROR,
+                        f"{max_allowed_failures:d} consecutive upload failures, killing upload worker",
+                    )
+                    return
+
+                if self.isInterruptionRequested():
+                    self.state = {}
+                    self.log_message.emit(DEBUG, "Worker thread exiting by user request")
+                    return
+
+                mtime = datetime.fromtimestamp(
+                    fpath.stat().st_mtime, timezone.utc
+                ).astimezone()
+
+                # skip parsing if file has not been modified since last upload and not forcing
+                if mtime <= last_modified and not self.force_update_flag:
+                    continue
+
+                # issue specific warning if parsing fails
                 try:
+                    self.log_message.emit(DEBUG, f"Parsing results file at {fpath}")
                     results = parse_axware_live_results(fpath)
                 except:
                     self.log_message.emit(
