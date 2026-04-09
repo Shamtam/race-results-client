@@ -1,5 +1,6 @@
 <RCC>
   <qresource prefix="icons">
-    <file>RR_logo.svg</file>
+    <file>RR_logo.ico</file>
+    <file>RR_logo_connected.ico</file>
   </qresource>
 </RCC>

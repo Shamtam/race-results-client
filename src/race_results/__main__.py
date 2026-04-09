@@ -1,10 +1,8 @@
 import sys
 import logging
 
-from pathlib import Path
-
 from PySide6.QtCore import Slot, Signal, Qt
-from PySide6.QtGui import QCloseEvent, QHideEvent
+from PySide6.QtGui import QCloseEvent, QHideEvent, QIcon
 from PySide6.QtWidgets import (
     QApplication,
     QMainWindow,
@@ -38,6 +36,9 @@ class MainWindow(QMainWindow):
         self.ui.setupUi(self)
         self.setWindowFlag(Qt.WindowType.WindowMaximizeButtonHint, False)
         self.setWindowFlag(Qt.WindowType.MSWindowsFixedSizeDialogHint, True)
+
+        self.icon_normal = QIcon(":/icons/RR_logo.ico")
+        self.icon_connected = QIcon(":/icons/RR_logo_connected.ico")
 
         self.settings = SettingsStore()
 
@@ -129,7 +130,7 @@ class MainWindow(QMainWindow):
 
         # retain hidden host setting if it exists
         host = self.settings.value("Host", None)
-            
+
         # rebuild settings store from scratch using dialog values
         self.settings.clear()
 
@@ -186,6 +187,9 @@ class MainWindow(QMainWindow):
         ):
             elem.setEnabled(True)
 
+        self.setWindowIcon(self.icon_connected)
+        self.tray.setIcon(self.icon_connected)
+
         _logger.info("Service successfully started")
         self.ui.text_status.setText("Connected to server, watching live results file")
         self.notify("Connected to server")
@@ -204,6 +208,9 @@ class MainWindow(QMainWindow):
         self.ui.text_org.setText("")
         self.ui.text_event.setText("")
         self.ui.text_status.setText("Service not running.")
+
+        self.setWindowIcon(self.icon_normal)
+        self.tray.setIcon(self.icon_normal)
 
         if notify:
             self.notify("Disconnected from server")
