@@ -26,11 +26,11 @@
                 "a",
                 "-tzip",
                 "\"dist\\race-results-client_$(Get-Date -Format yyyy-MM-dd).zip\"",
-                "dist\\race-results-client\\",
+                "dist\\race-results-client\\"
             ],
             "options": {
                 "cwd": "${workspaceFolder}"
-            },
+            }
         },
         {
             "label": "distribute",
@@ -44,5 +44,15 @@
                 "archive"
             ]
         },
+        {
+            "label": "generate_ui",
+            "group": "none",
+            "type": "shell",
+            "command": "${workspaceFolder}\\.venv\\Scripts\\activate.ps1;${workspaceFolder}\\src\\race_results\\ui\\generate_ui_py.ps1",
+            "options": {
+                "cwd": "${workspaceFolder}\\src\\race_results\\ui",
+            },
+            "problemMatcher": []
+        }
     ]
 }
