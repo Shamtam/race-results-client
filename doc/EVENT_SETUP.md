@@ -23,6 +23,9 @@
 
 ## AxWare Live Results Export Setup
 
+1. In the `Setup -> Options -> Live Results` dialog, ensure that AxWare is configured to output `Live Results Report` in the `Full Results` format. Take note of the location of the results export at the bottom of the dialog, this is the file that the client will be configured to monitor (in the example screenshot, the results file is output to `C:\axware\results_live.htm`).
+![AxWare Live Results Configuration](img/AxWareLiveResultsSetup.png)
+
 1. In the `Setup -> Options -> Print Settings` dialog, press the `Press to Customize Print Templates` button
 ![AxWare Print Template Location](img/AxWarePrintTemplate.png)
 
