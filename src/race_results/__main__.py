@@ -1,8 +1,8 @@
 import sys
 import logging
 
-from PySide6.QtCore import Slot, Signal, Qt
-from PySide6.QtGui import QCloseEvent, QHideEvent, QIcon
+from PySide6.QtCore import Slot, Signal, Qt, QUrl
+from PySide6.QtGui import QCloseEvent, QHideEvent, QIcon,  QDesktopServices
 from PySide6.QtWidgets import (
     QApplication,
     QMainWindow,
@@ -16,7 +16,7 @@ from PySide6.QtWidgets import (
 from race_results.ui.main_window import Ui_main_window
 from race_results.config import ConfigDialog
 from race_results.console import ConsoleDialog
-from race_results.defaults import default_log_fpath
+from race_results.defaults import default_log_fpath, help_permalink
 from race_results.executive import ResultsFileWatcher
 from race_results.settings import SettingsStore
 from race_results.log import FileLogHandler, StatusBarLogHandler
@@ -232,6 +232,10 @@ class MainWindow(QMainWindow):
     @Slot(str)
     def notify(self, msg: str):
         self.tray.showMessage(self.windowTitle(), msg)
+
+    @Slot()
+    def show_help(self):
+        QDesktopServices.openUrl(QUrl(help_permalink))
 
     def hideEvent(self, event: QHideEvent) -> None:
         self.setVisible(False)

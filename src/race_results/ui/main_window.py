@@ -24,7 +24,7 @@ class Ui_main_window(object):
     def setupUi(self, main_window):
         if not main_window.objectName():
             main_window.setObjectName(u"main_window")
-        main_window.resize(450, 160)
+        main_window.resize(500, 160)
         sizePolicy = QSizePolicy(QSizePolicy.Policy.Fixed, QSizePolicy.Policy.Fixed)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
@@ -77,6 +77,11 @@ class Ui_main_window(object):
         icon7 = QIcon(QIcon.fromTheme(QIcon.ThemeIcon.ApplicationExit))
         self.actionQuit.setIcon(icon7)
         self.actionQuit.setMenuRole(QAction.MenuRole.QuitRole)
+        self.actionHelp = QAction(main_window)
+        self.actionHelp.setObjectName(u"actionHelp")
+        icon8 = QIcon(QIcon.fromTheme(QIcon.ThemeIcon.HelpFaq))
+        self.actionHelp.setIcon(icon8)
+        self.actionHelp.setMenuRole(QAction.MenuRole.NoRole)
         self.centralwidget = QWidget(main_window)
         self.centralwidget.setObjectName(u"centralwidget")
         self.formLayout = QFormLayout(self.centralwidget)
@@ -131,6 +136,9 @@ class Ui_main_window(object):
         self.toolBar = QToolBar(main_window)
         self.toolBar.setObjectName(u"toolBar")
         self.toolBar.setMovable(False)
+        self.toolBar.setAllowedAreas(Qt.ToolBarArea.AllToolBarAreas)
+        self.toolBar.setOrientation(Qt.Orientation.Horizontal)
+        self.toolBar.setToolButtonStyle(Qt.ToolButtonStyle.ToolButtonTextUnderIcon)
         self.toolBar.setFloatable(False)
         main_window.addToolBar(Qt.ToolBarArea.TopToolBarArea, self.toolBar)
 
@@ -140,6 +148,7 @@ class Ui_main_window(object):
         self.toolBar.addAction(self.actionCloseEvent)
         self.toolBar.addAction(self.actionConfigure)
         self.toolBar.addAction(self.actionConsole)
+        self.toolBar.addAction(self.actionHelp)
 
         self.retranslateUi(main_window)
         self.actionCloseEvent.triggered.connect(main_window.close_event)
@@ -148,6 +157,7 @@ class Ui_main_window(object):
         self.actionConnect.triggered.connect(main_window.connect)
         self.actionDisconnect.triggered.connect(main_window.disconnect)
         self.actionQuit.triggered.connect(main_window.close)
+        self.actionHelp.triggered.connect(main_window.show_help)
 
         QMetaObject.connectSlotsByName(main_window)
     # setupUi
@@ -164,6 +174,7 @@ class Ui_main_window(object):
         self.actionConsole.setText(QCoreApplication.translate("main_window", u"Console", None))
         self.actionDisconnect.setText(QCoreApplication.translate("main_window", u"Disconnect", None))
         self.actionQuit.setText(QCoreApplication.translate("main_window", u"Quit", None))
+        self.actionHelp.setText(QCoreApplication.translate("main_window", u"Help", None))
         self.label_org.setText(QCoreApplication.translate("main_window", u"Organization:", None))
         self.text_org.setText("")
         self.label_event.setText(QCoreApplication.translate("main_window", u"Event:", None))

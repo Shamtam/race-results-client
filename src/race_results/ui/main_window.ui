@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>450</width>
+    <width>500</width>
     <height>160</height>
    </rect>
   </property>
@@ -120,6 +120,15 @@
    <property name="movable">
     <bool>false</bool>
    </property>
+   <property name="allowedAreas">
+    <set>Qt::ToolBarArea::AllToolBarAreas</set>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Orientation::Horizontal</enum>
+   </property>
+   <property name="toolButtonStyle">
+    <enum>Qt::ToolButtonStyle::ToolButtonTextUnderIcon</enum>
+   </property>
    <property name="floatable">
     <bool>false</bool>
    </property>
@@ -135,6 +144,7 @@
    <addaction name="actionCloseEvent"/>
    <addaction name="actionConfigure"/>
    <addaction name="actionConsole"/>
+   <addaction name="actionHelp"/>
   </widget>
   <action name="actionForceUpdate">
    <property name="enabled">
@@ -229,6 +239,17 @@
    </property>
    <property name="menuRole">
     <enum>QAction::MenuRole::QuitRole</enum>
+   </property>
+  </action>
+  <action name="actionHelp">
+   <property name="icon">
+    <iconset theme="QIcon::ThemeIcon::HelpFaq"/>
+   </property>
+   <property name="text">
+    <string>Help</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::MenuRole::NoRole</enum>
    </property>
   </action>
  </widget>
@@ -332,6 +353,22 @@
     </hint>
    </hints>
   </connection>
+  <connection>
+   <sender>actionHelp</sender>
+   <signal>triggered()</signal>
+   <receiver>main_window</receiver>
+   <slot>show_help()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>249</x>
+     <y>79</y>
+    </hint>
+   </hints>
+  </connection>
  </connections>
  <slots>
   <slot>modify_config()</slot>
@@ -339,5 +376,6 @@
   <slot>force_update()</slot>
   <slot>close_event()</slot>
   <slot>disconnect()</slot>
+  <slot>show_help()</slot>
  </slots>
 </ui>
