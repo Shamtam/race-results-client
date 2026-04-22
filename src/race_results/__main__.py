@@ -1,25 +1,28 @@
 import sys
 import logging
 
-from PySide6.QtCore import Slot, Signal, Qt, QUrl
-from PySide6.QtGui import QCloseEvent, QHideEvent, QIcon,  QDesktopServices
+from typing import Any
+
+from PySide6.QtCore import Qt, QUrl, Signal, Slot
+from PySide6.QtGui import QCloseEvent, QDesktopServices, QHideEvent, QIcon
 from PySide6.QtWidgets import (
     QApplication,
-    QMainWindow,
     QDialog,
-    QSystemTrayIcon,
+    QInputDialog,
+    QMainWindow,
     QMenu,
     QMessageBox,
+    QSystemTrayIcon,
 )
 
 # these must be absolute imports for PyInstaller
-from race_results.ui.main_window import Ui_main_window
 from race_results.config import ConfigDialog
 from race_results.console import ConsoleDialog
 from race_results.defaults import default_log_fpath, help_permalink
 from race_results.executive import ResultsFileWatcher
-from race_results.settings import SettingsStore
 from race_results.log import FileLogHandler, StatusBarLogHandler
+from race_results.settings import SettingsStore
+from race_results.ui.main_window import Ui_main_window
 
 _logger = logging.getLogger()
 _worker_logger = logging.getLogger("executive")
@@ -29,6 +32,7 @@ class MainWindow(QMainWindow):
 
     set_force_update_flag = Signal()
     set_close_event_flag = Signal()
+    set_current_event = Signal(dict)
 
     def __init__(self):
         super().__init__()
@@ -96,6 +100,7 @@ class MainWindow(QMainWindow):
         self.watch_worker.notification.connect(self.notify)
         self.set_close_event_flag.connect(self.watch_worker.queue_event_close)
         self.set_force_update_flag.connect(self.watch_worker.queue_force_update)
+        self.set_current_event.connect(self.watch_worker.set_current_event)
         self.config_dlg.finished.connect(self.update_config)
         self.console_dlg.rejected.connect(self.ui.actionConsole.toggle)
         self.tray.activated.connect(self.process_tray)
@@ -174,10 +179,46 @@ class MainWindow(QMainWindow):
             ):
                 elem.setEnabled(False)
 
-    @Slot(str, str)
-    def connected(self, org: str, event: str):
-        self.ui.text_org.setText(org)
-        self.ui.text_event.setText(event)
+    @Slot(dict)
+    def connected(self, state: dict[str, Any]):
+
+        # latest multi-event server schema
+        if 'events' in state:
+            all_events = state['events']
+            event_names = [x['name'] for x in all_events]
+
+            # determine event and send to worker thread if necessary
+            if len(event_names) > 1:
+                name, ok = QInputDialog.getItem(
+                    self,
+                    "Event Selection",
+                    "Choose current event",
+                    event_names,
+                    0,
+                    False,
+                )
+
+                # event selected
+                if ok and name:
+                    idx = event_names.index(name)
+                    event = all_events[idx]
+                    self.set_current_event.emit(event)
+
+                # selection aborted or invalid, kill worker thread
+                else:
+                    self.disconnect()
+                    return
+                
+            # only one event, worker thread already set current event
+            else:
+                event = all_events[0]
+
+        # TODO: deprecated single-event server schema
+        else:
+            event = state['event']
+
+        self.ui.text_org.setText(state["org"]["name"])
+        self.ui.text_event.setText(event['name'])
         self.ui.actionConnect.setVisible(False)
         self.ui.actionDisconnect.setVisible(True)
 
