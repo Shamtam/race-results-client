@@ -9,7 +9,7 @@ from traceback import format_exc
 from typing import Any
 from urllib.parse import urljoin
 
-from .axware.parser import parse_axware_live_results
+from .axware.parser import parse_axware_live_results, parse_axware_heats_txt, ResultsParseError, HeatsParseError
 from .defaults import default_host, default_auth_endpoint, max_allowed_failures
 from .settings import SettingsStore
 
@@ -109,6 +109,43 @@ class ResultsFileWatcher(QThread):
 
         return r.status_code == 200
 
+    def upload_heats(self, data: dict[str, list[str]]) -> bool:
+        if not self.state:
+            raise RuntimeError("Connection to server not established, unable to upload")
+        
+        if 'run-work' not in self.state['org']['apis']:
+            self.log_message.emit(
+                WARNING,
+                "Run/Work feature not enabled on server, skipping upload of run/work heat info"
+            )
+            return False
+
+        host = self.get_host()
+        endpoint = self.state["org"]["apis"]["run-work"]
+        url = urljoin(host, endpoint)
+        api_key = self.settings.ApiKey
+        timestamp = datetime.now().astimezone().isoformat()
+
+        self.log_message.emit(
+            DEBUG, f"Uploading run/work heat information to <tt>{url}</tt> at <tt>{timestamp}</tt>"
+        )
+        headers = {
+            "rr-ingest-api-key": api_key,
+            "rr-results-ts": timestamp,
+            "Content-Type": "application/json",
+        }
+        r = requests.post(
+            url,
+            headers=headers,
+            json=data,
+        )
+
+        if r.status_code != 200:
+            msg = f"Failed to upload run/work information to server([{r.status_code:d}] {r.text})"
+            self.log_message.emit(WARNING, msg)
+
+        return r.status_code == 200
+
     @Slot()
     def queue_event_close(self):
         self.close_event_flag = True
@@ -141,15 +178,38 @@ class ResultsFileWatcher(QThread):
             self.log_message.emit(ERROR, f"State: {str(self.state)}")
             return
 
-        fpath = Path(self.settings.value("ResultsPath"))
+        # send run/work info
+        heats_fpath = Path(self.settings.value("HeatsPath"))
 
-        if not fpath.exists():
+        if not heats_fpath.exists():
+            self.log_message.emit(
+                WARNING,
+                "Run/Work Heats file path does not exist, skipping Run/Work upload",
+            )
+        elif 'run-work' in self.state['org']['apis']:
+            try:
+                self.log_message.emit(
+                    DEBUG,
+                    "Parsing heats text file"
+                )
+                heats_data = parse_axware_heats_txt(heats_fpath)
+
+                if not self.upload_heats(heats_data):
+                    self.log_message.emit(
+                        WARNING, "Unable to upload run/work heat assignments to server"
+                    )
+                    
+            except HeatsParseError as e:
+                self.log_message.emit(WARNING, str(e))
+
+        # prepare results watcher loop
+        results_fpath = Path(self.settings.value("ResultsPath"))
+
+        if not results_fpath.exists():
             raise FileNotFoundError()
 
         # force update upon entry
-        last_modified = datetime(
-            1, 1, 1, tzinfo=timezone.utc
-        )
+        last_modified = datetime(1, 1, 1, tzinfo=timezone.utc)
         consecutive_failures = 0
 
         # begin main worker loop
@@ -169,11 +229,13 @@ class ResultsFileWatcher(QThread):
 
                 if self.isInterruptionRequested():
                     self.state = {}
-                    self.log_message.emit(DEBUG, "Worker thread exiting by user request")
+                    self.log_message.emit(
+                        DEBUG, "Worker thread exiting by user request"
+                    )
                     return
 
                 mtime = datetime.fromtimestamp(
-                    fpath.stat().st_mtime, timezone.utc
+                    results_fpath.stat().st_mtime, timezone.utc
                 ).astimezone()
 
                 # skip parsing if file has not been modified since last upload and not forcing
@@ -182,12 +244,12 @@ class ResultsFileWatcher(QThread):
 
                 # issue specific warning if parsing fails
                 try:
-                    self.log_message.emit(DEBUG, f"Parsing results file at {fpath}")
-                    results = parse_axware_live_results(fpath)
+                    self.log_message.emit(DEBUG, f"Parsing results file at {results_fpath}")
+                    results = parse_axware_live_results(results_fpath)
                 except:
                     self.log_message.emit(
                         WARNING,
-                        f"Error parsing {fpath}, ensure file exists and contains results!"
+                        f"Error parsing {results_fpath}, ensure file exists and contains results!",
                     )
                     last_modified = mtime
                     consecutive_failures += 1

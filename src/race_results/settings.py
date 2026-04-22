@@ -29,6 +29,10 @@ class SettingsStore(QSettings):
         return self.get_bool_value("AutoStart")
 
     @property
+    def HeatsPath(self) -> str:
+        return self.get_str_value("HeatsPath")
+
+    @property
     def Host(self) -> str:
         return self.get_str_value("Host")
 

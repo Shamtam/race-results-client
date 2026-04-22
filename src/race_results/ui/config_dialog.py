@@ -24,13 +24,14 @@ class Ui_config_dialog(object):
     def setupUi(self, config_dialog):
         if not config_dialog.objectName():
             config_dialog.setObjectName(u"config_dialog")
-        config_dialog.resize(400, 186)
+        config_dialog.resize(500, 224)
         icon = QIcon()
         icon.addFile(u":/icons/RR_logo.ico", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
         config_dialog.setWindowIcon(icon)
         config_dialog.setModal(True)
         self.formLayout = QFormLayout(config_dialog)
         self.formLayout.setObjectName(u"formLayout")
+        self.formLayout.setLabelAlignment(Qt.AlignmentFlag.AlignRight|Qt.AlignmentFlag.AlignTrailing|Qt.AlignmentFlag.AlignVCenter)
         self.label_api = QLabel(config_dialog)
         self.label_api.setObjectName(u"label_api")
         self.label_api.setTextFormat(Qt.TextFormat.AutoText)
@@ -71,13 +72,13 @@ class Ui_config_dialog(object):
         self.cb_autostart = QCheckBox(config_dialog)
         self.cb_autostart.setObjectName(u"cb_autostart")
 
-        self.formLayout.setWidget(3, QFormLayout.ItemRole.SpanningRole, self.cb_autostart)
+        self.formLayout.setWidget(5, QFormLayout.ItemRole.SpanningRole, self.cb_autostart)
 
         self.cb_traystart = QCheckBox(config_dialog)
         self.cb_traystart.setObjectName(u"cb_traystart")
         self.cb_traystart.setAutoRepeat(False)
 
-        self.formLayout.setWidget(4, QFormLayout.ItemRole.SpanningRole, self.cb_traystart)
+        self.formLayout.setWidget(6, QFormLayout.ItemRole.SpanningRole, self.cb_traystart)
 
         self.buttonBox = QDialogButtonBox(config_dialog)
         self.buttonBox.setObjectName(u"buttonBox")
@@ -85,18 +86,43 @@ class Ui_config_dialog(object):
         self.buttonBox.setStandardButtons(QDialogButtonBox.StandardButton.Cancel|QDialogButtonBox.StandardButton.Save)
         self.buttonBox.setCenterButtons(True)
 
-        self.formLayout.setWidget(6, QFormLayout.ItemRole.SpanningRole, self.buttonBox)
+        self.formLayout.setWidget(8, QFormLayout.ItemRole.SpanningRole, self.buttonBox)
 
         self.cb_logfile = QCheckBox(config_dialog)
         self.cb_logfile.setObjectName(u"cb_logfile")
 
-        self.formLayout.setWidget(5, QFormLayout.ItemRole.SpanningRole, self.cb_logfile)
+        self.formLayout.setWidget(7, QFormLayout.ItemRole.SpanningRole, self.cb_logfile)
+
+        self.label_heatsfile = QLabel(config_dialog)
+        self.label_heatsfile.setObjectName(u"label_heatsfile")
+        font = QFont()
+        font.setBold(False)
+        self.label_heatsfile.setFont(font)
+
+        self.formLayout.setWidget(3, QFormLayout.ItemRole.LabelRole, self.label_heatsfile)
+
+        self.horizontalLayout_2 = QHBoxLayout()
+        self.horizontalLayout_2.setObjectName(u"horizontalLayout_2")
+        self.text_heatsfile = QLineEdit(config_dialog)
+        self.text_heatsfile.setObjectName(u"text_heatsfile")
+
+        self.horizontalLayout_2.addWidget(self.text_heatsfile)
+
+        self.button_heatsfile = QPushButton(config_dialog)
+        self.button_heatsfile.setObjectName(u"button_heatsfile")
+        self.button_heatsfile.setIcon(icon1)
+
+        self.horizontalLayout_2.addWidget(self.button_heatsfile)
+
+
+        self.formLayout.setLayout(3, QFormLayout.ItemRole.FieldRole, self.horizontalLayout_2)
 
 
         self.retranslateUi(config_dialog)
         self.buttonBox.accepted.connect(config_dialog.accept)
         self.buttonBox.rejected.connect(config_dialog.reject)
         self.button_resultsfile.clicked.connect(config_dialog.browse_results_file)
+        self.button_heatsfile.clicked.connect(config_dialog.browse_heats_file)
 
         QMetaObject.connectSlotsByName(config_dialog)
     # setupUi
@@ -111,5 +137,9 @@ class Ui_config_dialog(object):
         self.cb_autostart.setText(QCoreApplication.translate("config_dialog", u"Connect to server on startup", None))
         self.cb_traystart.setText(QCoreApplication.translate("config_dialog", u"Minimize to tray on startup", None))
         self.cb_logfile.setText(QCoreApplication.translate("config_dialog", u"Enable Logging to File ($HOME/.race-results-client/*.log)", None))
+        self.label_heatsfile.setText(QCoreApplication.translate("config_dialog", u"Run/Work Heats Path", None))
+        self.text_heatsfile.setInputMask("")
+        self.text_heatsfile.setPlaceholderText(QCoreApplication.translate("config_dialog", u"e.g. C:\\axware\\heats.txt", None))
+        self.button_heatsfile.setText("")
     # retranslateUi
 

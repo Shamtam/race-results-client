@@ -25,6 +25,10 @@
                 "tests/mock_data/results_live_onerow.htm",
                 "tests/mock_data/results-live_bmw.htm",
                 "tests/mock_data/results-live_multiday_multirow.htm",
+                "tests/mock_data/heats_2heats_explicit.txt",
+                "tests/mock_data/heats_2heats_implicit.txt",
+                "tests/mock_data/heats_3heats_explicit.txt",
+                "tests/mock_data/heats_3heats_implicit.txt",
             ]
         }
     ]

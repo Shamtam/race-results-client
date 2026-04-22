@@ -36,3 +36,11 @@
 1. `Save As` and `Activate` the live results template file before closing the dialog
 
 ![alt text](img/AxWarePrintTemplate2.png)
+
+## AxWare Run/Work Heat Assignment Export Setup
+
+1. Before each event, navigate to the `Setup -> Heat Assignments` dialog and use the `Print to File` button to generate a *text file* containing  the event's run/work heat assignments (**DO NOT USE THE `Print` OR `Print HTML` BUTTONS!!!**). Save this file alongside your live results file (recommended to override the default name to just `heats.txt`). This is the file that the client will be configured to check to send run/work heat assignments to the server (if the server is configured to accept it via the `Run/Work Feature Flag`)
+![AxWare Heat Assignment Menu](img/AxWareHeatAssignmentsMenu.png)  
+![AxWare Heat Assignment Dialog](img/AxWareHeatAssignmentsDialog.png)  
+![AxWare Heat Assignment Export](img/AxWareHeatAssignmentsExport.png)  
+

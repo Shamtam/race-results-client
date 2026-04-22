@@ -16,6 +16,7 @@ class ConfigDialog(QDialog):
         for val, ui_elem in (
             (settings.ApiKey, self.ui.text_api),
             (settings.ResultsPath, self.ui.text_resultsfile),
+            (settings.HeatsPath, self.ui.text_heatsfile),
         ):
             if val:
                 ui_elem.setText(val)
@@ -26,6 +27,22 @@ class ConfigDialog(QDialog):
             (settings.LogToFile, self.ui.cb_logfile),
         ):
             ui_elem.setChecked(val)
+
+    @Slot()
+    def browse_heats_file(self):
+        fpath, result = QFileDialog.getOpenFileName(
+            self,
+            "Choose AxWare Heat Assignments Text File",
+            options=(
+                QFileDialog.Option.ReadOnly
+                | QFileDialog.Option.HideNameFilterDetails
+                | QFileDialog.Option.DontUseCustomDirectoryIcons
+            ),
+            filter="AxWare Heat Assignment Text Files (*.txt)",
+        )
+
+        if fpath is not None:
+            self.ui.text_heatsfile.setText(fpath)
 
     @Slot()
     def browse_results_file(self):
@@ -50,6 +67,10 @@ class ConfigDialog(QDialog):
     @property
     def AutoStart(self) -> bool:
         return self.ui.cb_autostart.isChecked()
+
+    @property
+    def HeatsPath(self) -> str:
+        return self.ui.text_heatsfile.text()
 
     @property
     def LogToFile(self) -> bool:

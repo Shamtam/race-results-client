@@ -4,13 +4,23 @@ import re
 import logging
 import json
 
+from collections import deque
 from pathlib import Path
-from typing import Tuple, Any
+from typing import Any, Iterable, Optional, Tuple
+
 from bs4 import BeautifulSoup
 
 _logger = logging.getLogger(__name__)
 
 _re_time = re.compile(r"^\s*(?P<raw_time>\d+\.\d+)(\+(?P<penalty>.+?))?\s*$")
+
+
+class ResultsParseError(Exception):
+    pass
+
+
+class HeatsParseError(Exception):
+    pass
 
 
 def normalize_axware_entry(
@@ -51,7 +61,7 @@ def normalize_axware_entry(
     return out_data
 
 
-def parse_time(raw_value: str | None) -> Tuple[float, int, str] | None:
+def parse_time(raw_value: Optional[str]) -> Optional[Tuple[float, int, str]]:
     try:
         if raw_value is not None and (match := _re_time.match(raw_value)):
             raw_time = float(match.group("raw_time"))
@@ -78,125 +88,187 @@ def parse_time(raw_value: str | None) -> Tuple[float, int, str] | None:
 def parse_axware_live_results(fpath: Path) -> list[dict[str, Any]]:
     """Returns all results in the event"""
 
-    with open(fpath, "r", encoding="utf-8") as fp:
-        s = BeautifulSoup(fp, "html.parser")
+    try:
+        with open(fpath, "r", encoding="utf-8") as fp:
+            s = BeautifulSoup(fp, "html.parser")
 
-    # get results table
-    results_table = s.find_all("table")[-1]
+        # get results table
+        results_table = s.find_all("table")[-1]
 
-    # filter out class line rules and get header/result rows
-    filtered_rows = results_table.contents[0].find_all(lambda x: len(x.contents) > 3)
-    header_row, result_rows = filtered_rows[0], filtered_rows[1:]
+        # filter out class line rules and get header/result rows
+        filtered_rows = results_table.contents[
+            0
+        ].find_all(  # pyright: ignore[reportAttributeAccessIssue]
+            lambda x: len(x.contents) > 3
+        )
+        header_row, result_rows = filtered_rows[0], filtered_rows[1:]
 
-    # extract all headers
-    headers = [t.string.strip() for t in header_row.find_all("th")]
+        # extract all headers
+        headers = [t.string.strip() for t in header_row.find_all("th")]
 
-    # check if results file is multirow formatted
-    multirow = False
-    for header in headers:
-        if ".." in header:
-            multirow = True
-            break
+        # check if results file is multirow formatted
+        multirow = False
+        for header in headers:
+            if ".." in header:
+                multirow = True
+                break
 
-    # extract results
-    results = []
+        # extract results
+        results = []
 
-    # only used for multirow mode
-    current_entry = {}
-    current_runs = []
-    current_row = 0
+        # only used for multirow mode
+        current_entry = {}
+        current_runs = []
+        current_row = 0
 
-    for result in result_rows:
-        row_data = result.find_all("td")
-        entry = {}
-        row_runs = []
+        for result in result_rows:
+            row_data = result.find_all("td")
+            entry = {}
+            row_runs = []
 
-        # extract all information from this row
-        for header, raw_value in zip(headers, row_data):
+            # extract all information from this row
+            for header, raw_value in zip(headers, row_data):
 
-            text = raw_value.text.strip()
+                text = raw_value.text.strip()
 
-            # parse times
-            if "Run" in header:
-                value = parse_time(text)
-            elif header == "Pax Time":
-                if value := parse_time(text):
-                    value = value[0]
+                # parse times
+                if "Run" in header:
+                    value = parse_time(text)
+                elif header == "Pax Time":
+                    if value := parse_time(text):
+                        value = value[0]
 
-            # parse integers
-            elif header == "Pos":
-                value = int(text.replace("T", ""))
+                # parse integers
+                elif header == "Pos":
+                    value = int(text.replace("T", ""))
 
-            # all other values, just store raw string
+                # all other values, just store raw string
+                else:
+                    value = text
+
+                if "Run" in header:
+
+                    # when parsing multirow results files, it's possible to have a case where an entry
+                    # in a "Run" column doesn't actually correspond to an actual run. This can be
+                    # detected by checking for a "valign" attribute in the raw tag
+                    # skip appending the run value if the cell is actually just a placeholder
+                    if "valign" not in raw_value.attrs:
+                        continue
+
+                    # ignore empty runs
+                    if value is None:
+                        continue
+
+                    row_runs.append(value)
+
+                else:
+                    entry[header] = value
+
+            # multi-row and/or multi-day, (multirow mode is guaranteed for multi-day)
+            if multirow:
+                # new entry, create new dictionary
+                if row_data[0].text:
+
+                    # add previous entry to output results
+                    if current_entry:
+                        results.append(current_entry)
+
+                    current_entry = {}
+                    current_entry.update(entry)
+                    current_entry["Diff."] = None
+                    current_entry["runs"] = {entry.get("Day", "Segment 1"): row_runs}
+                    current_runs = row_runs
+                    current_row = 0
+
+                # next row for current entry, append runs to existing entry
+                else:
+
+                    # in multiday-files, terminate previous day results when encountering next day row
+                    if (
+                        "Day" in entry
+                        and entry["Day"]
+                        and entry["Day"] not in current_entry["runs"]
+                    ):
+                        current_runs = []
+                        current_entry["runs"][entry["Day"]] = current_runs
+
+                    # diff is stored in "Total" column in second row when in multirow
+                    if current_entry["Diff."] is None and current_row == 1:
+                        current_entry["Diff."] = entry["Total"]
+
+                    current_runs.extend(row_runs)
+
+                current_row += 1
+
+            # single row mode
             else:
-                value = text
+                entry["runs"] = {"D1": row_runs}  # use default 'D1' for segment name
+                results.append(entry)
 
-            if "Run" in header:
-
-                # when parsing multirow results files, it's possible to have a case where an entry
-                # in a "Run" column doesn't actually correspond to an actual run. This can be
-                # detected by checking for a "valign" attribute in the raw tag
-                # skip appending the run value if the cell is actually just a placeholder
-                if "valign" not in raw_value.attrs:
-                    continue
-
-                # ignore empty runs
-                if value is None:
-                    continue
-
-                row_runs.append(value)
-
-            else:
-                entry[header] = value
-
-        # multi-row and/or multi-day, (multirow mode is guaranteed for multi-day)
+        # append final entry to results in multirow mode
         if multirow:
-            # new entry, create new dictionary
-            if row_data[0].text:
+            last_segment = next(reversed(current_entry["runs"].keys()))
+            current_entry["runs"][last_segment] = current_runs
+            results.append(current_entry)
 
-                # add previous entry to output results
-                if current_entry:
-                    results.append(current_entry)
+        return normalize_axware_entry(results)
 
-                current_entry = {}
-                current_entry.update(entry)
-                current_entry["Diff."] = None
-                current_entry["runs"] = {entry.get("Day", "Segment 1"): row_runs}
-                current_runs = row_runs
-                current_row = 0
+    except:
+        raise ResultsParseError
 
-            # next row for current entry, append runs to existing entry
-            else:
 
-                # in multiday-files, terminate previous day results when encountering next day row
-                if (
-                    "Day" in entry
-                    and entry["Day"]
-                    and entry["Day"] not in current_entry["runs"]
-                ):
-                    current_runs = []
-                    current_entry["runs"][entry["Day"]] = current_runs
+def extract_heats_from_section(matches: Iterable[re.Match]) -> list[str]:
+    data = []
+    for m in matches:
+        heat = int(m.group("heat"))
+        data.append(
+            [
+                x.split("-")[0]
+                for x in re.split(r"[\s\n]+", m.group("classes"))
+                if len(x.split("-")) == 2
+            ]
+        )
+    return data
 
-                # diff is stored in "Total" column in second row when in multirow
-                if current_entry["Diff."] is None and current_row == 1:
-                    current_entry["Diff."] = entry["Total"]
 
-                current_runs.extend(row_runs)
+def parse_axware_heats_txt(fpath: Path) -> dict[str, list[str]]:
 
-            current_row += 1
+    with open(fpath, "r", encoding="utf-8") as fp:
+        ftext = fp.read()
 
-        # single row mode
-        else:
-            entry["runs"] = {"D1": row_runs}  # use default 'D1' for segment name
-            results.append(entry)
+    re_dividers = re.compile(r"-+\n")
+    re_heat_info = re.compile(
+        r"[\r\n][\t ]+(?P<heat>\d+)\s+(?:(?P<num_cars>\d+)\s+)?(?P<classes>(?:\s*?\w+-\d+[\t ]*\n?)+)",
+        flags=re.MULTILINE,
+    )
 
-    # append final entry to results in multirow mode
-    if multirow:
-        last_segment = next(reversed(current_entry["runs"].keys()))
-        current_entry["runs"][last_segment] = current_runs
-        results.append(current_entry)
+    sections = re_dividers.split(ftext)
 
-    return normalize_axware_entry(results)
+    if len(sections) != 4:
+        raise HeatsParseError("Invalid heats file format")
+
+    run_section = sections[2]
+    work_section = sections[3] if sections[3].strip() else None
+
+    run_heat_matches = list(re_heat_info.finditer(run_section))
+
+    # file only has run heats specified, assume work heats are rotated by one
+    # e.g. 3 heats --> run order 1-2-3, work order 3-1-2
+    if work_section is None:
+        work_heat_matches = deque(run_heat_matches)
+        work_heat_matches.rotate(-1)
+    else:
+        work_heat_matches = list(re_heat_info.finditer(work_section))
+
+        if len(run_heat_matches) != len(work_heat_matches):
+            raise HeatsParseError("Unequal number of work and run heats")
+
+    out_data = {
+        "run": extract_heats_from_section(run_heat_matches),
+        "work": extract_heats_from_section(work_heat_matches),
+    }
+
+    return out_data
 
 
 if __name__ == "__main__":
@@ -208,7 +280,13 @@ if __name__ == "__main__":
     args = argp.parse_args()
 
     for fpath in args.file:
-        results = parse_axware_live_results(fpath)
+
+        fpath: Path
+
+        if fpath.suffix == ".txt":
+            results = parse_axware_heats_txt(fpath)
+        else:
+            results = parse_axware_live_results(fpath)
 
         outpath = fpath.with_suffix(".json")
 

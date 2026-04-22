@@ -136,6 +136,7 @@ class MainWindow(QMainWindow):
 
         self.settings.setValue("ApiKey", self.config_dlg.ApiKey)
         self.settings.setValue("ResultsPath", self.config_dlg.ResultsPath)
+        self.settings.setValue("HeatsPath", self.config_dlg.HeatsPath)
         self.settings.setValue("AutoStart", self.config_dlg.AutoStart)
         self.settings.setValue("TrayStart", self.config_dlg.TrayStart)
         self.settings.setValue("LogToFile", self.config_dlg.LogToFile)

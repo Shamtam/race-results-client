@@ -1,0 +1,19 @@
+
+Event: Event 1, Sun 04-12-2026
+Heat assignments - Total Registered: 113
+
+---------------------------------------------------------------------------------------
+ Run Heat    Total Cars   Classes/Cars per Class
+---------------------------------------------------------------------------------------
+
+    1                     53
+                           ss-4  nss-1  bs-7  ds-9  nds-5  fs-2  nfs-1  gs-3
+                           ngs-3  ssc-1  est-3  gst-3  cams-2  cp-1  p-8
+
+    2                     60
+                           as-3  cs-4  ncs-3  es-1  hs-8  nhs-4  ast-2  cst-12
+                           ncst-1  dst-4  ndst-2  csp-2  ncsp-1  fsp-2  nfsp-1
+                           camc-1  xa-2  xb-1  nxb-1  evx-2  smf-1  e-2
+
+---------------------------------------------------------------------------------------
+
