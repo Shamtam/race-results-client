@@ -23,7 +23,7 @@ class ConfigDialog(QDialog):
 
         for val, ui_elem in (
             (settings.AutoStart, self.ui.cb_autostart),
-            (settings.TrayStart, self.ui.cb_traystart),
+            (settings.StartMinimized, self.ui.cb_minimize),
             (settings.LogToFile, self.ui.cb_logfile),
         ):
             ui_elem.setChecked(val)
@@ -81,5 +81,5 @@ class ConfigDialog(QDialog):
         return self.ui.text_resultsfile.text()
 
     @property
-    def TrayStart(self) -> bool:
-        return self.ui.cb_traystart.isChecked()
+    def StartMinimized(self) -> bool:
+        return self.ui.cb_minimize.isChecked()

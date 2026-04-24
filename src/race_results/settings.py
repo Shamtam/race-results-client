@@ -45,5 +45,5 @@ class SettingsStore(QSettings):
         return self.get_str_value("ResultsPath")
 
     @property
-    def TrayStart(self) -> bool:
-        return self.get_bool_value("TrayStart")
+    def StartMinimized(self) -> bool:
+        return self.get_bool_value("StartMinimized")

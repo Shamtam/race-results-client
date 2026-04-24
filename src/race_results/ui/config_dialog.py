@@ -74,11 +74,11 @@ class Ui_config_dialog(object):
 
         self.formLayout.setWidget(5, QFormLayout.ItemRole.SpanningRole, self.cb_autostart)
 
-        self.cb_traystart = QCheckBox(config_dialog)
-        self.cb_traystart.setObjectName(u"cb_traystart")
-        self.cb_traystart.setAutoRepeat(False)
+        self.cb_minimize = QCheckBox(config_dialog)
+        self.cb_minimize.setObjectName(u"cb_minimize")
+        self.cb_minimize.setAutoRepeat(False)
 
-        self.formLayout.setWidget(6, QFormLayout.ItemRole.SpanningRole, self.cb_traystart)
+        self.formLayout.setWidget(6, QFormLayout.ItemRole.SpanningRole, self.cb_minimize)
 
         self.buttonBox = QDialogButtonBox(config_dialog)
         self.buttonBox.setObjectName(u"buttonBox")
@@ -135,7 +135,7 @@ class Ui_config_dialog(object):
         self.text_resultsfile.setPlaceholderText(QCoreApplication.translate("config_dialog", u"e.g. C:\\axware\\results_live.htm", None))
         self.button_resultsfile.setText("")
         self.cb_autostart.setText(QCoreApplication.translate("config_dialog", u"Connect to server on startup", None))
-        self.cb_traystart.setText(QCoreApplication.translate("config_dialog", u"Minimize to tray on startup", None))
+        self.cb_minimize.setText(QCoreApplication.translate("config_dialog", u"Minimize on startup", None))
         self.cb_logfile.setText(QCoreApplication.translate("config_dialog", u"Enable Logging to File ($HOME/.race-results-client/*.log)", None))
         self.label_heatsfile.setText(QCoreApplication.translate("config_dialog", u"Run/Work Heats Path", None))
         self.text_heatsfile.setInputMask("")

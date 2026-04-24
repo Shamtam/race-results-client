@@ -89,9 +89,9 @@
     </widget>
    </item>
    <item row="6" column="0" colspan="2">
-    <widget class="QCheckBox" name="cb_traystart">
+    <widget class="QCheckBox" name="cb_minimize">
      <property name="text">
-      <string>Minimize to tray on startup</string>
+      <string>Minimize on startup</string>
      </property>
      <property name="autoRepeat">
       <bool>false</bool>

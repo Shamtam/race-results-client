@@ -44,7 +44,7 @@ class MainWindow(QMainWindow):
         self.settings = SettingsStore()
 
         AutoStart = self.settings.AutoStart
-        TrayStart = self.settings.TrayStart
+        StartMinimized = self.settings.StartMinimized
         LogToFile = self.settings.LogToFile
 
         self.config_dlg = ConfigDialog(self, self.settings)
@@ -111,8 +111,8 @@ class MainWindow(QMainWindow):
         else:
             self.disconnected(notify=False)
 
-        if TrayStart:
-            self.setVisible(False)
+        if StartMinimized:
+            self.showMinimized()
         else:
             self.showNormal()
             self.activateWindow()
@@ -154,7 +154,7 @@ class MainWindow(QMainWindow):
         self.settings.setValue("ResultsPath", self.config_dlg.ResultsPath)
         self.settings.setValue("HeatsPath", self.config_dlg.HeatsPath)
         self.settings.setValue("AutoStart", self.config_dlg.AutoStart)
-        self.settings.setValue("TrayStart", self.config_dlg.TrayStart)
+        self.settings.setValue("StartMinimized", self.config_dlg.StartMinimized)
         self.settings.setValue("LogToFile", self.config_dlg.LogToFile)
 
         if host is not None:
