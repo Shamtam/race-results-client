@@ -3,8 +3,8 @@ import logging
 
 from typing import Any
 
-from PySide6.QtCore import Qt, QUrl, Signal, Slot
-from PySide6.QtGui import QCloseEvent, QDesktopServices, QHideEvent, QIcon
+from PySide6.QtCore import QEvent, Qt, QUrl, Signal, Slot, QSharedMemory
+from PySide6.QtGui import QCloseEvent, QDesktopServices, QIcon
 from PySide6.QtWidgets import (
     QApplication,
     QDialog,
@@ -18,7 +18,7 @@ from PySide6.QtWidgets import (
 # these must be absolute imports for PyInstaller
 from race_results.config import ConfigDialog
 from race_results.console import ConsoleDialog
-from race_results.defaults import default_log_fpath, help_permalink
+from race_results.defaults import default_app_guid, default_log_fpath, help_permalink
 from race_results.executive import ResultsFileWatcher
 from race_results.log import FileLogHandler, StatusBarLogHandler
 from race_results.settings import SettingsStore
@@ -41,9 +41,6 @@ class MainWindow(QMainWindow):
         self.setWindowFlag(Qt.WindowType.WindowMaximizeButtonHint, False)
         self.setWindowFlag(Qt.WindowType.MSWindowsFixedSizeDialogHint, True)
 
-        self.icon_normal = QIcon(":/icons/RR_logo.ico")
-        self.icon_connected = QIcon(":/icons/RR_logo_connected.ico")
-
         self.settings = SettingsStore()
 
         AutoStart = self.settings.AutoStart
@@ -61,7 +58,7 @@ class MainWindow(QMainWindow):
 
         self.watch_worker = ResultsFileWatcher(self, self.settings)
 
-        # setup tray icon
+        # setup tray
         self.tray_menu = QMenu(parent=self)
         self.tray_menu.addActions(
             [
@@ -85,6 +82,10 @@ class MainWindow(QMainWindow):
         )
         self.tray = QSystemTrayIcon(self.windowIcon())
         self.tray.setContextMenu(self.tray_menu)
+
+        # sync to system theme at startup before showing tray icon
+        self.process_theme_change()
+
         self.tray.show()
 
         # setup actions
@@ -115,6 +116,16 @@ class MainWindow(QMainWindow):
         else:
             self.showNormal()
             self.activateWindow()
+
+    def event(self, event: QEvent) -> bool:
+
+        super().event(event)
+
+        # handle system-wide theme change at runtime
+        if event.type() == event.Type.ThemeChange:
+            self.process_theme_change()
+
+        return True
 
     @Slot()
     def modify_config(self):
@@ -278,9 +289,20 @@ class MainWindow(QMainWindow):
     def show_help(self):
         QDesktopServices.openUrl(QUrl(help_permalink))
 
-    def hideEvent(self, event: QHideEvent) -> None:
-        self.setVisible(False)
-        event.ignore()
+    def process_theme_change(self):
+        suffix = (
+            "light"
+            if app.styleHints().colorScheme() == Qt.ColorScheme.Light
+            else "dark"
+        )
+        self.icon_normal = QIcon(f":/icons/logo_{suffix}.ico")
+        self.icon_connected = QIcon(f":/icons/connected_{suffix}.ico")
+
+        current_icon = (
+            self.icon_connected if self.watch_worker.isRunning() else self.icon_normal
+        )
+        self.setWindowIcon(current_icon)
+        self.tray.setIcon(current_icon)
 
     def closeEvent(self, event: QCloseEvent) -> None:
         result = QMessageBox.question(
@@ -313,5 +335,15 @@ class MainWindow(QMainWindow):
 
 
 app = QApplication(sys.argv)
-window = MainWindow()
-sys.exit(app.exec())
+m = QSharedMemory(default_app_guid)
+
+if not m.create(1):
+    dlg = QMessageBox.warning(
+        None,
+        "Race-Results already running",
+        "Another instance of Race Results is already running",
+    )
+    sys.exit(-1)
+else:
+    window = MainWindow()
+    sys.exit(app.exec())

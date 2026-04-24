@@ -32,7 +32,7 @@ class Ui_main_window(object):
         main_window.setSizePolicy(sizePolicy)
         main_window.setContextMenuPolicy(Qt.ContextMenuPolicy.NoContextMenu)
         icon = QIcon()
-        icon.addFile(u":/icons/RR_logo.ico", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
+        icon.addFile(u":/icons/logo_light.ico", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
         main_window.setWindowIcon(icon)
         main_window.setToolButtonStyle(Qt.ToolButtonStyle.ToolButtonTextUnderIcon)
         main_window.setDocumentMode(False)

@@ -1,6 +1,7 @@
 from datetime import datetime
 from pathlib import Path
 
+default_app_guid = "3D7E4601-5769-48C0-9698-69F0807E61B3"
 default_host = "https://race-results.live"
 default_auth_endpoint = "api/timing-client/auth"
 default_cfg_fpath = Path.home() / "race-results.ini"

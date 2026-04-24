@@ -26,7 +26,7 @@ class Ui_Dialog(object):
             Dialog.setObjectName(u"Dialog")
         Dialog.resize(600, 400)
         icon = QIcon()
-        icon.addFile(u":/icons/RR_logo.ico", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
+        icon.addFile(u":/icons/logo_light.ico", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
         Dialog.setWindowIcon(icon)
         Dialog.setSizeGripEnabled(True)
         self.verticalLayout = QVBoxLayout(Dialog)

@@ -1,6 +1,8 @@
 <RCC>
-  <qresource prefix="icons">
-    <file>RR_logo.ico</file>
-    <file>RR_logo_connected.ico</file>
+  <qresource prefix="/">
+    <file>icons/connected_dark.ico</file>
+    <file>icons/connected_light.ico</file>
+    <file>icons/logo_dark.ico</file>
+    <file>icons/logo_light.ico</file>
   </qresource>
 </RCC>

@@ -24,7 +24,7 @@
   </property>
   <property name="windowIcon">
    <iconset resource="resource.qrc">
-    <normaloff>:/icons/RR_logo.ico</normaloff>:/icons/RR_logo.ico</iconset>
+    <normaloff>:/icons/logo_light.ico</normaloff>:/icons/logo_light.ico</iconset>
   </property>
   <property name="toolButtonStyle">
    <enum>Qt::ToolButtonStyle::ToolButtonTextUnderIcon</enum>
