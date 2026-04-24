@@ -192,44 +192,37 @@ class MainWindow(QMainWindow):
 
     @Slot(dict)
     def connected(self, state: dict[str, Any]):
+        all_events = state["events"]
+        event_names = [x["name"] for x in all_events]
 
-        # latest multi-event server schema
-        if 'events' in state:
-            all_events = state['events']
-            event_names = [x['name'] for x in all_events]
+        # determine event and send to worker thread if necessary
+        if len(event_names) > 1:
+            name, ok = QInputDialog.getItem(
+                self,
+                "Event Selection",
+                "Choose current event",
+                event_names,
+                0,
+                False,
+            )
 
-            # determine event and send to worker thread if necessary
-            if len(event_names) > 1:
-                name, ok = QInputDialog.getItem(
-                    self,
-                    "Event Selection",
-                    "Choose current event",
-                    event_names,
-                    0,
-                    False,
-                )
+            # event selected
+            if ok and name:
+                idx = event_names.index(name)
+                event = all_events[idx]
+                self.set_current_event.emit(event)
 
-                # event selected
-                if ok and name:
-                    idx = event_names.index(name)
-                    event = all_events[idx]
-                    self.set_current_event.emit(event)
-
-                # selection aborted or invalid, kill worker thread
-                else:
-                    self.disconnect()
-                    return
-                
-            # only one event, worker thread already set current event
+            # selection aborted or invalid, kill worker thread
             else:
-                event = all_events[0]
+                self.disconnect()
+                return
 
-        # TODO: deprecated single-event server schema
+        # only one event, worker thread already set current event
         else:
-            event = state['event']
+            event = all_events[0]
 
         self.ui.text_org.setText(state["org"]["name"])
-        self.ui.text_event.setText(event['name'])
+        self.ui.text_event.setText(event["name"])
         self.ui.actionConnect.setVisible(False)
         self.ui.actionDisconnect.setVisible(True)
 

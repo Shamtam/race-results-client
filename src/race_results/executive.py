@@ -103,27 +103,15 @@ class ResultsFileWatcher(QThread):
             # validate response
             data = json.loads(r.content)
 
-            if (
-                "org" in data
-                and any(x in data for x in ("event", "events"))
-                and all(x in data["org"] for x in ("id", "name", "slug", "apis"))
+            if all(x in data for x in ("org", "events")) and all(
+                x in data["org"] for x in ("id", "name", "slug", "apis")
             ):
-
-                # latest multi-event server schema
-                if "events" in data and not data["events"]:
+                if not data["events"]:
                     raise NoCurrentEvent
 
-                elif "events" in data:
-                    self.current_event = (
-                        data["events"][0] if len(data["events"]) == 1 else {}
-                    )
-
-                # TODO: deprecated single-event schema
-                else:
-                    if not data['event']:
-                        raise NoCurrentEvent
-                    
-                    self.current_event = data["event"]
+                self.current_event = (
+                    data["events"][0] if len(data["events"]) == 1 else {}
+                )
 
                 self.event_selected_flag = True if self.current_event else False
                 self.state = data
@@ -134,7 +122,7 @@ class ResultsFileWatcher(QThread):
                 ERROR, "No current event configured on Race Results server!"
             )
             return False
-        
+
         except Exception:
             self.log_message.emit(ERROR, format_exc())
 
@@ -154,15 +142,8 @@ class ResultsFileWatcher(QThread):
         endpoint_base = self.state["org"]["apis"][
             "close-event" if close else "live-timing"
         ]
-
-        # latest multi-event server schema
-        if "events" in self.state:
-            event_id = self.current_event["eventId"]
-            endpoint = f"{endpoint_base}/{event_id}"
-
-        # TODO: deprecated single-event schema
-        else:
-            endpoint = endpoint_base
+        event_id = self.current_event["eventId"]
+        endpoint = f"{endpoint_base}/{event_id}"
 
         url = urljoin(host, endpoint)
         api_key = self.settings.ApiKey
@@ -202,15 +183,8 @@ class ResultsFileWatcher(QThread):
 
         host = self.get_host()
         endpoint_base = self.state["org"]["apis"]["run-work"]
-
-        # latest multi-event server schema
-        if "events" in self.state:
-            event_id = self.current_event["eventId"]
-            endpoint = f"{endpoint_base}/{event_id}"
-
-        # TODO: deprecated single-event schema
-        else:
-            endpoint = endpoint_base
+        event_id = self.current_event["eventId"]
+        endpoint = f"{endpoint_base}/{event_id}"
 
         url = urljoin(host, endpoint)
         api_key = self.settings.ApiKey
