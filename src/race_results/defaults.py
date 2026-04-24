@@ -10,6 +10,8 @@ default_log_fpath = (
     / ".race-results-client"
     / f'{datetime.now().strftime("%Y-%m-%d_%H%M%S")}.log'
 )
+
+results_file_watch_timeout_min = 5
 max_allowed_failures = 10
 
 help_permalink = "https://github.com/Shamtam/race-results-client/blob/40db16075cf10b8f02abd12d188a4410322369a1/doc/EVENT_SETUP.md"

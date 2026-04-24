@@ -99,6 +99,7 @@ class MainWindow(QMainWindow):
         self.watch_worker.finished.connect(self.disconnected)
         self.watch_worker.log_message.connect(self.process_worker_log)
         self.watch_worker.notification.connect(self.notify)
+        self.watch_worker.update_status.connect(self.update_status)
         self.set_close_event_flag.connect(self.watch_worker.queue_event_close)
         self.set_force_update_flag.connect(self.watch_worker.queue_force_update)
         self.set_current_event.connect(self.watch_worker.set_current_event)
@@ -248,7 +249,7 @@ class MainWindow(QMainWindow):
         self.tray.setIcon(self.icon_connected)
 
         _logger.info("Service successfully started")
-        self.ui.text_status.setText("Connected to server, watching live results file")
+        self.update_status("Successfully authenticated with server")
         self.notify("Connected to server")
 
     @Slot()
@@ -264,13 +265,17 @@ class MainWindow(QMainWindow):
 
         self.ui.text_org.setText("")
         self.ui.text_event.setText("")
-        self.ui.text_status.setText("Service not running.")
+        self.update_status("Service not running.")
 
         self.setWindowIcon(self.icon_normal)
         self.tray.setIcon(self.icon_normal)
 
         if notify:
             self.notify("Disconnected from server")
+
+    @Slot(str)
+    def update_status(self, msg: str):
+        self.ui.text_status.setText(msg)
 
     @Slot(int, str)
     def process_worker_log(self, loglvl: int, msg: str):
@@ -333,7 +338,7 @@ class MainWindow(QMainWindow):
 
     def watcher_started(self):
         _logger.debug("Worker thread launched...")
-        self.ui.text_status.setText("Authenticating with server...")
+        self.update_status("Authenticating with server...")
         self.ui.actionConnect.setEnabled(False)
         self.ui.actionConfigure.setEnabled(False)
 
