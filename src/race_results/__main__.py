@@ -175,8 +175,19 @@ class MainWindow(QMainWindow):
 
     @Slot()
     def connect(self):
-        if not self.watch_worker.isRunning() and self.watch_worker.CanRun:
-            self.start_watcher()
+        if self.watch_worker.isRunning():
+            _logger.debug("Trying to start a new watcher thread while one is already running!")
+            return
+        elif not self.watch_worker.CanRun:
+            msg = (
+                "Invalid Race-Results API key or AxWare live results file!\n"
+                + "Please ensure valid configuration and that the live results file exists."
+            )
+            _logger.warning(msg)
+            self.notify(msg)
+            return
+        
+        self.start_watcher()
 
     @Slot()
     def disconnect(self):
