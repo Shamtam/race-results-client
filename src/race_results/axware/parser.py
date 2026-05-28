@@ -68,7 +68,7 @@ def parse_time(raw_value: Optional[str]) -> Optional[Tuple[float, int, str]]:
             penalty = match.group("penalty")
 
             # penalty overrides cones
-            if penalty in ("dnf", "dsq", "off", "out"):
+            if penalty in ("dnf", "dsq", "off", "out", "rrn"):
                 return (raw_time, 0, penalty)
             # penalty is just cones
             elif penalty:
