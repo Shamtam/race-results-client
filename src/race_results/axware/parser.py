@@ -12,7 +12,9 @@ from bs4 import BeautifulSoup
 
 _logger = logging.getLogger(__name__)
 
-_re_time = re.compile(r"^\s*(?P<raw_time>\d+\.\d+)(\+(?P<penalty>.+?))?\s*$")
+_re_time = re.compile(
+    r"^\s*(?P<raw_time>\d+\.\d+)(\+(?P<penalty>(dnf|dsq|off|out|rrn|\d+)).*)?\s*$"
+)
 
 
 class ResultsParseError(Exception):
