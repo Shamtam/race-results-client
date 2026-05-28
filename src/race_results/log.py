@@ -53,6 +53,7 @@ class StatusBarLogHandler(logging.Handler):
     def __init__(self, statusbar: QStatusBar):
         super().__init__()
         self.statusbar = statusbar
+        self.setLevel(logging.WARNING)
 
     def emit(self, record: logging.LogRecord) -> None:
         if record.levelno < logging.INFO:

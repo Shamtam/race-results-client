@@ -25,7 +25,6 @@ from race_results.settings import SettingsStore
 from race_results.ui.main_window import Ui_main_window
 
 _logger = logging.getLogger()
-_worker_logger = logging.getLogger("executive")
 
 
 class MainWindow(QMainWindow):
@@ -50,6 +49,8 @@ class MainWindow(QMainWindow):
         self.config_dlg = ConfigDialog(self, self.settings)
 
         self.console_dlg = ConsoleDialog(self)
+
+        _logger.setLevel(0) # main logger records all log levels, handlers scoped independently
         _logger.addHandler(self.console_dlg.Handler)
         _logger.addHandler(StatusBarLogHandler(self.ui.statusbar))
 
@@ -279,7 +280,7 @@ class MainWindow(QMainWindow):
 
     @Slot(int, str)
     def process_worker_log(self, loglvl: int, msg: str):
-        _worker_logger.log(loglvl, msg)
+        _logger.log(loglvl, msg)
 
         # pop up notification for warnings/errors
         if loglvl >= logging.WARNING:

@@ -23,7 +23,7 @@ class ConsoleDialog(QDialog):
 
     @Slot(int)
     def change_level(self, level_idx: int):
-        logging.getLogger().setLevel(10 + level_idx * 10)
+        self.handler.setLevel(10 + level_idx * 10)
 
     @property
     def Handler(self) -> logging.Handler:
