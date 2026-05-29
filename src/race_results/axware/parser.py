@@ -83,18 +83,62 @@ def parse_time(raw_value: Optional[str]) -> Optional[Tuple[float, int, str]]:
             return None
 
     except Exception as e:
-        _logger.error(f"Unable to parse result `{raw_value}` ({str(e)})")
-        return None
+        raise RuntimeError(f"Unable to parse result `{raw_value}` ({str(e)})")
 
 
-def parse_axware_live_results(fpath: Path) -> list[dict[str, Any]]:
+def parse_axware_live_results(fpath: Path) -> tuple[list[dict[str, Any]], list]:
     """Returns all results in the event"""
 
     try:
+
+        s = None
         with open(fpath, "r", encoding="utf-8") as fp:
             s = BeautifulSoup(fp, "html.parser")
 
-        # get results table
+        if not s:
+            raise ResultsParseError(f"File {fpath.resolve()} not parsed")
+
+    except:
+        raise
+
+    # parse real-time table if it exists
+    realtime_runs = []
+    try:
+        realtime_table = next(
+            filter(lambda x: "wdivs" in x.attrs.get("class", {}), s.find_all("table"))
+        )
+
+        realtime_rows = realtime_table.contents[
+            0
+        ].find_all(  # pyright: ignore[reportAttributeAccessIssue]
+            lambda x: len(x.contents) > 3
+        )
+        header_row = realtime_rows[0]
+        latest_run_iter = filter(lambda x: len(x.text) > 11, realtime_rows[1:])
+        latest_runs = zip(latest_run_iter, latest_run_iter)
+
+        headers = [h.string.strip() for h in header_row.find_all("th")]
+        for row1, row2 in latest_runs:
+            vals = [x.text.strip() for x in row1.find_all("td")]
+            row_data = {k: v for k, v in zip(headers, vals)}
+
+            entryClass, entryNum = row_data["Entry"].split()
+            run = {
+                "class": entryClass,
+                "carNumber": entryNum,
+                "driverName": row_data["Driver"],
+                "carModel": row_data["Car Model"],
+                "time": parse_time(row_data["Time"]),
+            }
+
+            realtime_runs.append(run)
+
+    except:
+        _logger.warning("Unable to read real-time runs table")
+        realtime_runs = []
+
+    # get results table
+    try:
         results_table = s.find_all("table")[-1]
 
         # filter out class line rules and get header/result rows
@@ -115,16 +159,23 @@ def parse_axware_live_results(fpath: Path) -> list[dict[str, Any]]:
                 multirow = True
                 break
 
-        # extract results
-        results = []
+    except:
+        raise ResultsParseError
 
-        # only used for multirow mode
-        current_entry = {}
-        current_runs = []
-        current_row = 0
+    # extract results
+    results = []
 
-        for result in result_rows:
-            row_data = result.find_all("td")
+    # only used for multirow mode
+    current_entry = {}
+    current_runs = []
+    current_row = 0
+
+    for row in result_rows:
+
+        row_data = None
+
+        try:
+            row_data = row.find_all("td")
             entry = {}
             row_runs = []
 
@@ -185,6 +236,11 @@ def parse_axware_live_results(fpath: Path) -> list[dict[str, Any]]:
                 # next row for current entry, append runs to existing entry
                 else:
 
+                    # parsing failed before this row, move on to next row
+                    if current_entry is None:
+                        current_row += 1
+                        continue
+
                     # in multiday-files, terminate previous day results when encountering next day row
                     if (
                         "Day" in entry
@@ -207,16 +263,25 @@ def parse_axware_live_results(fpath: Path) -> list[dict[str, Any]]:
                 entry["runs"] = {"D1": row_runs}  # use default 'D1' for segment name
                 results.append(entry)
 
-        # append final entry to results in multirow mode
-        if multirow:
-            last_segment = next(reversed(current_entry["runs"].keys()))
-            current_entry["runs"][last_segment] = current_runs
-            results.append(current_entry)
+        except Exception as e:
+            _logger.warning(str(e))
 
-        return normalize_axware_entry(results)
+            if row_data is not None:
+                d = dict(zip(headers, [x.text for x in row_data]))
+                _logger.warning(f"Failed parsing row data: {str(d)}")
+            else:
+                _logger.warning(f"Failed parsing row: {row.text}")
 
-    except:
-        raise ResultsParseError
+            current_entry = None
+            continue
+
+    # append final entry to results in multirow mode
+    if multirow and current_entry is not None:
+        last_segment = next(reversed(current_entry["runs"].keys()))
+        current_entry["runs"][last_segment] = current_runs
+        results.append(current_entry)
+
+    return normalize_axware_entry(results), realtime_runs
 
 
 def extract_heats_from_section(matches: Iterable[re.Match]) -> list[str]:
@@ -284,13 +349,24 @@ if __name__ == "__main__":
     for fpath in args.file:
 
         fpath: Path
+        outdir = fpath.parent
+        fname = fpath.stem
+
+        results = None
+        realtime_results = None
 
         if fpath.suffix == ".txt":
             results = parse_axware_heats_txt(fpath)
         else:
-            results = parse_axware_live_results(fpath)
+            results, realtime_results = parse_axware_live_results(fpath)
 
         outpath = fpath.with_suffix(".json")
+        realtime_outpath = (outdir / f"{fname}_realtime").with_suffix(".json")
 
-        with open(outpath, "w") as fp:
-            json.dump(results, fp, indent=4)
+        if results:
+            with open(outpath, "w") as fp:
+                json.dump(results, fp, indent=4)
+
+        if realtime_results:
+            with open(realtime_outpath, "w") as fp:
+                json.dump(realtime_results, fp, indent=4)

@@ -412,7 +412,7 @@ class ResultsFileWatcher(QThread):
                     self.log_message.emit(
                         DEBUG, f"Parsing results file at {results_fpath}"
                     )
-                    results = parse_axware_live_results(results_fpath)
+                    results, realtime_results = parse_axware_live_results(results_fpath)
 
                 except ResultsParseError:
                     self.log_message.emit(

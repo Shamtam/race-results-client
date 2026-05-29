@@ -1,0 +1,57 @@
+[
+    {
+        "class": "bs",
+        "carNumber": "3",
+        "driverName": "Will Koscielny",
+        "carModel": "2024 Honda Civic Type R",
+        "time": [
+            856.0,
+            0,
+            "rrn"
+        ]
+    },
+    {
+        "class": "cs",
+        "carNumber": "171",
+        "driverName": "Jeff Seeger",
+        "carModel": "2019 Mazda Miata",
+        "time": [
+            89.0,
+            0,
+            "dnf"
+        ]
+    },
+    {
+        "class": "cs",
+        "carNumber": "75",
+        "driverName": "Mark Murphy",
+        "carModel": "2013 Scion FRS",
+        "time": [
+            98.0,
+            1,
+            "dirty"
+        ]
+    },
+    {
+        "class": "ss",
+        "carNumber": "69",
+        "driverName": "Krishna Harpanahalli",
+        "carModel": "2021 Porsche Cayman gt4",
+        "time": [
+            516.0,
+            0,
+            "clean"
+        ]
+    },
+    {
+        "class": "gs",
+        "carNumber": "13",
+        "driverName": "Shamit Som",
+        "carModel": "2022 Hyundai Kona N",
+        "time": [
+            516.0,
+            0,
+            "clean"
+        ]
+    }
+]
