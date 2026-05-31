@@ -1,16 +1,14 @@
 #!/usr/bin/env python
 import argparse
 import re
-import logging
 import json
 
 from collections import deque
+from logging import WARNING, DEBUG
 from pathlib import Path
 from typing import Any, Iterable, Optional, Tuple
 
 from bs4 import BeautifulSoup
-
-_logger = logging.getLogger(__name__)
 
 _re_time = re.compile(
     r"^\s*(?P<raw_time>\d+\.\d+)(\+(?P<penalty>(dnf|dsq|off|out|rrn|\d+)).*)?\s*$"
@@ -86,8 +84,15 @@ def parse_time(raw_value: Optional[str]) -> Optional[Tuple[float, int, str]]:
         raise RuntimeError(f"Unable to parse result `{raw_value}` ({str(e)})")
 
 
-def parse_axware_live_results(fpath: Path) -> tuple[list[dict[str, Any]], list]:
+def parse_axware_live_results(
+    fpath: Path,
+) -> tuple[list[dict[str, Any]], list, dict[int, list[str]]]:
     """Returns all results in the event"""
+
+    log_msgs = {
+        DEBUG: [],
+        WARNING: [],
+    }
 
     try:
 
@@ -134,7 +139,7 @@ def parse_axware_live_results(fpath: Path) -> tuple[list[dict[str, Any]], list]:
             realtime_runs.append(run)
 
     except:
-        _logger.warning("Unable to read real-time runs table")
+        log_msgs[DEBUG].append("Unable to read real-time runs table")
         realtime_runs = []
 
     # get results table
@@ -264,13 +269,13 @@ def parse_axware_live_results(fpath: Path) -> tuple[list[dict[str, Any]], list]:
                 results.append(entry)
 
         except Exception as e:
-            _logger.warning(str(e))
+            log_msgs[WARNING].append(str(e))
 
             if row_data is not None:
                 d = dict(zip(headers, [x.text for x in row_data]))
-                _logger.warning(f"Failed parsing row data: {str(d)}")
+                log_msgs[WARNING].append(f"Failed parsing row data: {str(d)}")
             else:
-                _logger.warning(f"Failed parsing row: {row.text}")
+                log_msgs[WARNING].append(f"Failed parsing row: {row.text}")
 
             current_entry = None
             continue
@@ -281,7 +286,7 @@ def parse_axware_live_results(fpath: Path) -> tuple[list[dict[str, Any]], list]:
         current_entry["runs"][last_segment] = current_runs
         results.append(current_entry)
 
-    return normalize_axware_entry(results), realtime_runs
+    return normalize_axware_entry(results), realtime_runs, log_msgs
 
 
 def extract_heats_from_section(matches: Iterable[re.Match]) -> list[str]:
@@ -358,7 +363,7 @@ if __name__ == "__main__":
         if fpath.suffix == ".txt":
             results = parse_axware_heats_txt(fpath)
         else:
-            results, realtime_results = parse_axware_live_results(fpath)
+            results, realtime_results, log_msgs = parse_axware_live_results(fpath)
 
         outpath = fpath.with_suffix(".json")
         realtime_outpath = (outdir / f"{fname}_realtime").with_suffix(".json")
