@@ -24,7 +24,7 @@ from race_results.log import FileLogHandler, StatusBarLogHandler
 from race_results.settings import SettingsStore
 from race_results.ui.main_window import Ui_main_window
 
-_logger = logging.getLogger()
+_logger = logging.getLogger(__name__)
 
 
 class MainWindow(QMainWindow):
@@ -50,7 +50,9 @@ class MainWindow(QMainWindow):
 
         self.console_dlg = ConsoleDialog(self)
 
-        _logger.setLevel(0) # main logger records all log levels, handlers scoped independently
+        # main logger records all log levels, handlers scoped independently
+        logging.getLogger().setLevel(0)
+        _logger.setLevel(0)
         _logger.addHandler(self.console_dlg.Handler)
         _logger.addHandler(StatusBarLogHandler(self.ui.statusbar))
 
@@ -178,7 +180,9 @@ class MainWindow(QMainWindow):
     @Slot()
     def connect(self):
         if self.watch_worker.isRunning():
-            _logger.debug("Trying to start a new watcher thread while one is already running!")
+            _logger.debug(
+                "Trying to start a new watcher thread while one is already running!"
+            )
             return
         elif not self.watch_worker.CanRun:
             msg = (
@@ -188,7 +192,7 @@ class MainWindow(QMainWindow):
             _logger.warning(msg)
             self.notify(msg)
             return
-        
+
         self.start_watcher()
 
     @Slot()

@@ -427,14 +427,16 @@ class ResultsFileWatcher(QThread):
                             for msg in msgs:
                                 self.log_message.emit(log_level, msg)
 
-                except ResultsParseError:
+                except ResultsParseError as e:
                     self.log_message.emit(
-                        WARNING,
-                        f"Error parsing {results_fpath}, ensure file exists and contains results!",
+                        DEBUG,
+                        f"Error parsing {results_fpath}. Sleeping for 10 seconds before retrying.\n"
+                        + f"Error details:\n{str(e)}",
                     )
                     consecutive_failures += 1
                     if self.force_update_flag:
                         self.force_update_flag = False
+                    time.sleep(10)
                     continue
 
                 except Exception:

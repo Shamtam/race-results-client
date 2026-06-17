@@ -7,6 +7,7 @@ from collections import deque
 from logging import WARNING, DEBUG
 from pathlib import Path
 from typing import Any, Iterable, Optional, Tuple
+from traceback import format_exc
 
 from bs4 import BeautifulSoup
 
@@ -101,7 +102,7 @@ def parse_axware_live_results(
             s = BeautifulSoup(fp, "html.parser")
 
         if not s:
-            raise ResultsParseError(f"File {fpath.resolve()} not parsed")
+            raise ResultsParseError(f"Unable to parse raw HTML from {fpath.resolve()}")
 
     except:
         raise
@@ -165,7 +166,10 @@ def parse_axware_live_results(
                 break
 
     except:
-        raise ResultsParseError
+        tb = format_exc()
+        raise ResultsParseError(
+            f"Unable to extract results table from AxWare HTM output\n\n{tb}"
+        )
 
     # extract results
     results = []

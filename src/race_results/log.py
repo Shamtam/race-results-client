@@ -6,7 +6,7 @@ from os import PathLike
 from PySide6.QtWidgets import QTextEdit, QStatusBar
 
 _default_formatter = logging.Formatter(
-    "%(asctime)s [%(levelname)s] {%(module)s}: %(message)s", "%H:%M:%S"
+    "%(asctime)s [%(levelname)s]: %(message)s", "%H:%M:%S"
 )
 
 
