@@ -25,11 +25,11 @@
             "args": [
                 "a",
                 "-tzip",
-                "\"dist\\race-results-client_$(Get-Date -Format yyyy-MM-dd).zip\"",
-                "dist\\race-results-client\\"
+                "\"race-results-client_$(Get-Date -Format yyyy-MM-dd).zip\"",
+                "race-results-client\\"
             ],
             "options": {
-                "cwd": "${workspaceFolder}"
+                "cwd": "${workspaceFolder}\\dist"
             }
         },
         {
