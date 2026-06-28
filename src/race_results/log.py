@@ -60,7 +60,7 @@ class StatusBarLogHandler(logging.Handler):
             return
 
         msg = (
-            record.message
+            record.getMessage()
             if record.levelno < logging.ERROR
             else "*** ERROR: See console for details ***"
         )
