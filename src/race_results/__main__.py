@@ -17,7 +17,7 @@ from PySide6.QtWidgets import (
 
 # these must be absolute imports for PyInstaller
 from race_results.config import ConfigDialog
-from race_results.console import ConsoleDialog
+# from race_results.console import ConsoleDialog
 from race_results.defaults import default_app_guid, default_log_fpath, help_permalink
 from race_results.executive import ResultsFileWatcher
 from race_results.log import FileLogHandler, StatusBarLogHandler
@@ -48,12 +48,12 @@ class MainWindow(QMainWindow):
 
         self.config_dlg = ConfigDialog(self, self.settings)
 
-        self.console_dlg = ConsoleDialog(self)
+        # self.console_dlg = ConsoleDialog(self)
 
         # main logger records all log levels, handlers scoped independently
         logging.getLogger().setLevel(0)
         _logger.setLevel(0)
-        _logger.addHandler(self.console_dlg.Handler)
+        # _logger.addHandler(self.console_dlg.Handler)
         _logger.addHandler(StatusBarLogHandler(self.ui.statusbar))
 
         if LogToFile:
@@ -94,7 +94,8 @@ class MainWindow(QMainWindow):
         # setup actions
         self.ui.actionForceUpdate.triggered.connect(self.force_update)
         self.ui.actionConfigure.triggered.connect(self.modify_config)
-        self.ui.actionConsole.toggled.connect(self.console_dlg.setVisible)
+        # self.ui.actionConsole.toggled.connect(self.console_dlg.setVisible)
+        self.ui.actionConsole.setVisible(False)
 
         # setup signals/slots
         self.watch_worker.started.connect(self.watcher_started)
@@ -107,7 +108,7 @@ class MainWindow(QMainWindow):
         self.set_force_update_flag.connect(self.watch_worker.queue_force_update)
         self.set_current_event.connect(self.watch_worker.set_current_event)
         self.config_dlg.finished.connect(self.update_config)
-        self.console_dlg.rejected.connect(self.ui.actionConsole.toggle)
+        # self.console_dlg.rejected.connect(self.ui.actionConsole.toggle)
         self.tray.activated.connect(self.process_tray)
 
         if AutoStart:
