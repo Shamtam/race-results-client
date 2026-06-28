@@ -93,6 +93,7 @@ for d in range(1, _num_drivers+1):
 generate_htm(data)
 
 # main loop
+total_run_count = 1
 for run_num in range(1, _num_runs + 1):
 
     for c in data:
@@ -105,7 +106,7 @@ for run_num in range(1, _num_runs + 1):
                 'dnf': random.paretovariate(5) > 2.0
             }
 
-            print(f'Adding result: {d:s} [{c:s}/{run_num:d}]: {format_run(new_run):s}')
+            print(f'Adding result {total_run_count:04d}: {d:s} [{c:s}/{run_num:d}]: {format_run(new_run):s}')
 
             # create new run
             runs[run_num-1] = new_run
@@ -115,3 +116,5 @@ for run_num in range(1, _num_runs + 1):
 
             # sleep
             sleep(_refresh_rate_sec)
+
+            total_run_count += 1
