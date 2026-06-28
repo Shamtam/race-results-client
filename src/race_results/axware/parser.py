@@ -97,15 +97,15 @@ def parse_axware_live_results(
 
     try:
 
-        s = None
-        with open(fpath, "r", encoding="utf-8") as fp:
-            s = BeautifulSoup(fp, "html.parser")
-
-        if not s:
-            raise ResultsParseError(f"Unable to parse raw HTML from {fpath.resolve()}")
-
+        # wait for buffered write from AxWare to be flushed before trying to parse
+        ftext = None
+        while not ftext:
+            with open(fpath, "r", encoding="utf-8") as fp:
+                ftext = fp.read()
+        s = BeautifulSoup(ftext, 'html.parser')
+        
     except:
-        raise
+        raise ResultsParseError(f"Unable to parse raw HTML from {fpath.resolve()}")
 
     # parse real-time table if it exists
     realtime_runs = []
