@@ -19,8 +19,10 @@ from .axware.parser import (
 from .defaults import (
     default_host,
     default_auth_endpoint,
+    results_file_parse_delay,
+    results_file_retry_delay,
     results_file_watch_timeout_min,
-    max_allowed_failures,
+    watcher_loop_period_sec,
 )
 from .settings import SettingsStore
 
@@ -62,6 +64,9 @@ class ResultsFileWatcher(QThread):
         self.close_event_flag = False
         self.event_selected_flag = False
         self.skip_heats_upload = False
+        self.last_modified_time = None
+        self.last_upload_time = None
+        self.next_parse_time = None
         self.state = {}
         self.current_event = {}
         self._initialized = True
@@ -372,13 +377,12 @@ class ResultsFileWatcher(QThread):
 
         # prepare results watcher loop
         results_fpath = Path(self.settings.value("ResultsPath"))
-
-        # force update upon entry
-        last_modified = datetime(1, 1, 1, tzinfo=timezone.utc)
         consecutive_failures = 0
 
         # begin main worker loop
         while True:
+
+            time.sleep(watcher_loop_period_sec)
 
             try:
 
@@ -386,26 +390,36 @@ class ResultsFileWatcher(QThread):
                     results_fpath.stat().st_mtime, timezone.utc
                 ).astimezone()
 
+                # capture initial file modification time
+                if self.last_modified_time is None:
+                    self.last_modified_time = mtime
+                    self.log_message.emit(
+                        INFO,
+                        f"Results last generated at {self.last_modified_time.strftime('%H:%M')}",
+                    )
+                    self.update_status.emit("Waiting for next result file update...")
+                    continue
+
+                # trigger parsing upon file update
+                elif mtime > self.last_modified_time:
+                    self.last_modified_time = mtime
+                    self.next_parse_time = (
+                        self.last_modified_time + results_file_parse_delay
+                    )
+
                 # force one final update if event closure requested
                 if self.close_event_flag:
                     self.force_update_flag = True
 
-                if consecutive_failures > max_allowed_failures:
-                    self.log_message.emit(
-                        ERROR,
-                        f"{max_allowed_failures:d} consecutive upload failures, killing upload worker",
-                    )
-                    self._initialized = False
-                    return
-
                 if self.isInterruptionRequested():
                     raise TerminateWorker
 
-                # skip parsing if file has not been modified since last upload and not forcing
-                if mtime <= last_modified and not self.force_update_flag:
+                # skip parsing if file has not been modified
+                if (
+                    self.next_parse_time is None
+                    or (datetime.now().astimezone() <= self.next_parse_time)
+                ) and not self.force_update_flag:
                     continue
-                else:
-                    last_modified = mtime
 
                 # issue specific warning if parsing fails
                 try:
@@ -430,13 +444,14 @@ class ResultsFileWatcher(QThread):
                 except ResultsParseError as e:
                     self.log_message.emit(
                         DEBUG,
-                        f"Error parsing {results_fpath}. Sleeping for 10 seconds before retrying.\n"
+                        f"Error parsing {results_fpath}. Sleeping for "
+                        + f"{results_file_retry_delay.total_seconds():g} seconds before retrying.\n"
                         + f"Error details:\n{str(e)}",
                     )
                     consecutive_failures += 1
                     if self.force_update_flag:
                         self.force_update_flag = False
-                    time.sleep(10)
+                    time.sleep(results_file_retry_delay.total_seconds())
                     continue
 
                 except Exception:
@@ -446,17 +461,19 @@ class ResultsFileWatcher(QThread):
                     results, close=self.close_event_flag
                 )
                 if success:
+                    self.last_upload_time = datetime.now()
+                    self.next_parse_time = None
                     self.log_message.emit(
                         INFO,
-                        f"Results last generated at {mtime.strftime('%H:%M')}"
-                        + f" | Last Uploaded at {datetime.now().strftime('%H:%M')}",
+                        f"Results last generated at {self.last_modified_time.strftime('%H:%M')}"
+                        + f" | Last Uploaded at {self.last_upload_time.strftime('%H:%M')}",
                     )
                     self.update_status.emit("Watching results file")
                     consecutive_failures = 0
 
                     if self.force_update_flag:
                         self.notification.emit(
-                            f'Forced update successful at {datetime.now().strftime("%H:%M")}'
+                            f'Forced update successful at {self.last_upload_time.strftime("%H:%M")}'
                         )
                     self.force_update_flag = False
 
@@ -466,6 +483,11 @@ class ResultsFileWatcher(QThread):
                         self.requestInterruption()
 
                 else:
+                    # retry parse/upload after delay upon upload failure
+                    self.next_parse_time = (
+                        datetime.now().astimezone() + results_file_retry_delay
+                    )
+
                     # clear flag if event closure failed
                     if self.close_event_flag:
                         self.close_event_flag = False
@@ -482,8 +504,6 @@ class ResultsFileWatcher(QThread):
                 if not self.wait_for_results_file():
                     return
 
-                # reset last modified time if file (re-)appears
-                last_modified = datetime(1, 1, 1, tzinfo=timezone.utc)
                 continue
 
             except TerminateWorker:
